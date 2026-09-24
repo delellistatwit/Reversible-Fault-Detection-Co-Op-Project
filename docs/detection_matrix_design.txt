@@ -1,0 +1,15 @@
+by: Matthew Santorsa
+
+- Rows (test vectors): Rows will represent the inputs, which are test vectors. To match simulator output, vectors will be stored as immutable tuples of 0s and 1s, where position corresponds to wire number.
+- Columns & Identifiers (faults): Columns will represent target faults. Identifiers will be stored as readable strings that match the simulator's fault ID.
+- Storage Format: Hashmap
+-> Keys: Input tuples from correct circuit's truth table
+-> A mathematical set of the string fault IDs that are detected by the specified input tuple. A fault is added to the set if the faulty output differs from the correct output for that row.
+
+JSON Example
+{
+    "(0, 0)": [],
+    "(0, 1)": ["REMOVE_G2", "SWAP_W0_W1"],
+    "(1, 0)": ["CONTROL_G1_W0_TO_W2"],
+    "(1, 1)": ["REMOVE_G2"]
+}
