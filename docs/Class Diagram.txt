@@ -1,0 +1,40 @@
+CLASS DIAGRAM
+Methods marked (next week) are placeholders in the current skeleton.
+
+Gate (base class)
+- Stores: name, wires
+- Methods: apply(bits)
+
+NOTGate (inherits from Gate)
+- Stores: target
+- Methods: apply(bits)
+
+CNOTGate (inherits from Gate)
+- Stores: control, target
+- Methods: apply(bits)
+
+ToffoliGate (inherits from Gate)
+- Stores: control1, control2, target
+- Methods: apply(bits)
+
+FredkinGate (inherits from Gate)
+- Stores: control, swap1, swap2
+- Methods: apply(bits)
+
+Circuit
+- Stores: num_wires, gates (list of Gate objects)
+- Methods: add_gate(gate), simulate(bits) (next week), validate() (next week), truth_table() (next week)
+
+Fault
+- Stores: fault_type (REMOVE, CONTROL, or SWAP), location
+- Methods: get_id() (next week), apply(circuit) (next week)
+
+FaultGenerator
+- Stores: circuit
+- Methods: generate_removal_faults(), generate_control_faults(), generate_swap_faults(), generate_all() (all later)
+
+Relationships
+- NOTGate, CNOTGate, ToffoliGate, and FredkinGate all inherit from Gate.
+- A Circuit holds a list of Gates and applies them in order.
+- A FaultGenerator takes a Circuit and creates Fault objects.
+- A Fault takes a Circuit and returns a broken copy of it.
