@@ -1,0 +1,36 @@
+input: 
+    V: set of all available test vectors {v1, v2, ..., vn}
+    F: set of all target faults {f1, f2, ..., fm}
+    matrix: 2D mapping of V to F
+
+initialize:
+    selected_vectors = Empty List
+    uncovered_faults = F
+
+while uncovered_faults is NOT empty: // stop condition
+    best_vector = NULL
+    max_new_covered = 0
+
+    // selection phase
+    for each vector 'v' in V:
+        new_covered = count of faults in uncovered_faults that 'v' detects
+        
+        if new_covered > max_new_covered:
+            best_vector = v
+            max_new_covered = new_covered
+            
+        // tie breaking rule for determinism
+        else if new_covered == max_new_covered AND new_covered > 0:
+            if v.index < best_vector.index:
+                best_vector = v
+                
+    // failsafe when undetectable faults are present
+    if max_new_covered == 0:
+        break 
+
+    // update sets and removal of faults algorithm covered
+    add best_vector to selected_vectors
+    remove faults detected by best_vector from uncovered_faults
+    remove best_vector from V
+
+return selected_vectors
