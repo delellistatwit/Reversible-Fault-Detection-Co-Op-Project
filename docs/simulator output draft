@@ -1,0 +1,37 @@
+# Simulator Output Format (Draft)
+
+## Bits
+
+- A circuit's state is stored as a tuple of 0s and 1s, for example (0, 1, 1).
+- The position in the tuple is the wire number: position 0 is wire 0, position 1 is wire 1, and so on.
+
+## truth_table() output
+
+- `Circuit.truth_table()` returns a list of (input, output) pairs.
+- There is one pair for every possible input, so an n-wire circuit returns 2^n pairs.
+- Rows are always in counting order, from all 0s to all 1s.
+- Wire 0 is the leftmost bit when counting. (To be confirmed with Jeramiah so it matches the VHDL bit order.)
+
+Example only, not an experimental result. A 2-wire circuit with one CNOT gate (control wire 0, target wire 1):
+
+    [
+        ((0, 0), (0, 0)),
+        ((0, 1), (0, 1)),
+        ((1, 0), (1, 1)),
+        ((1, 1), (1, 0)),
+    ]
+
+## Faulty circuits
+
+- A faulty circuit is a normal Circuit object, so its truth_table() uses the same format.
+- To check whether an input detects a fault, compare the output of the correct circuit and the faulty circuit for the same row. If they differ, that input detects the fault.
+
+## Fault IDs
+
+Each fault has a readable string ID, used as the column label in the detection matrix. Proposed format (to be finalized with the fault-module design next week):
+
+- Gate removal: REMOVE_G2 (gate 2 removed)
+- Control-line change: CONTROL_G1_W0_TO_W2 (gate 1's control moved from wire 0 to wire 2)
+- Wire swap: SWAP_W0_W1 (wires 0 and 1 swapped)
+
+Gates are numbered by their position in the circuit, starting at 0.
