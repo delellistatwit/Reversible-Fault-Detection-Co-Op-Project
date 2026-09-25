@@ -1,0 +1,7 @@
+﻿By Jeremiah Simon
+Study Reversible Logic Fundamentals
+Basic concepts of reversible logic:
+* One-to-one input/output mapping: Every input combination must produce a unique output combination.
+* Garbage outputs: Outputs that are required to preserve reversibility but are not part of the desired final result.
+* Constant/ancilla inputs: Inputs initialized to a fixed value, usually 0 or 1, to help implement a desired function.
+* Cascade operation: Connecting multiple reversible gates together so the output of one gate becomes the input of another.

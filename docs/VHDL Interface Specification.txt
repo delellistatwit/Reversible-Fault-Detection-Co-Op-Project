@@ -1,0 +1,41 @@
+﻿By Jeremiah Simon
+
+
+entity NOT_gate is
+    port(
+        A : in  std_logic;
+        Y : out std_logic 
+ );
+zend NOT_gate;
+Feynman/CNOT: 
+entity Feynman_gate is
+    port(
+        A : in  std_logic;
+        B : in  std_logic;
+        P : out std_logic;
+        Q : out std_logic
+    );
+end Feynman_gate;
+Toffoli: 
+entity Toffoli_gate is
+    port(
+        A : in  std_logic;
+        B : in  std_logic;
+        C : in  std_logic;
+        P : out std_logic;
+        Q : out std_logic;
+        R : out std_logic
+    );
+end Toffoli_gate;
+Fredkin: 
+entity Fredkin_gate is
+    port(
+        C : in  std_logic;
+        A : in  std_logic;
+        B : in  std_logic;
+        P : out std_logic;
+        Q : out std_logic;
+        R : out std_logic
+    );
+end Fredkin_gate;
+Use C consistently as the control line and identify the target lines explicitly in the documentation.
