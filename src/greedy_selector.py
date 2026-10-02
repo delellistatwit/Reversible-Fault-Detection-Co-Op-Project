@@ -1,5 +1,5 @@
 """
-by Matthew Santorsa
+By: Matthew Santorsa
 contains deliverables 3 and 4
 """
 import time
