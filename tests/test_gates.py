@@ -13,9 +13,15 @@ class TestNOTGate(unittest.TestCase):
         with self.assertRaises(ValueError):
             NOTGate(-1)
 
-    @unittest.skip("Truth-table test added next week")
     def test_truth_table(self):
-        pass
+        g = NOTGate(0)
+        expected = {
+            (0,): (1,),
+            (1,): (0,),
+        }
+        for inputs, output in expected.items():
+            with self.subTest(inputs=inputs):
+                self.assertEqual(g.apply(inputs), output)
 
 
 class TestCNOTGate(unittest.TestCase):
@@ -29,9 +35,17 @@ class TestCNOTGate(unittest.TestCase):
         with self.assertRaises(ValueError):
             CNOTGate(1, 1)
 
-    @unittest.skip("Truth-table test added next week")
     def test_truth_table(self):
-        pass
+        g = CNOTGate(0, 1)
+        expected = {
+            (0, 0): (0, 0),
+            (0, 1): (0, 1),
+            (1, 0): (1, 1),
+            (1, 1): (1, 0),
+        }
+        for inputs, output in expected.items():
+            with self.subTest(inputs=inputs):
+                self.assertEqual(g.apply(inputs), output)
 
 
 class TestToffoliGate(unittest.TestCase):
@@ -45,9 +59,21 @@ class TestToffoliGate(unittest.TestCase):
         with self.assertRaises(ValueError):
             ToffoliGate(0, 0, 2)
 
-    @unittest.skip("Truth-table test added next week")
     def test_truth_table(self):
-        pass
+        g = ToffoliGate(0, 1, 2)
+        expected = {
+            (0, 0, 0): (0, 0, 0),
+            (0, 0, 1): (0, 0, 1),
+            (0, 1, 0): (0, 1, 0),
+            (0, 1, 1): (0, 1, 1),
+            (1, 0, 0): (1, 0, 0),
+            (1, 0, 1): (1, 0, 1),
+            (1, 1, 0): (1, 1, 1),
+            (1, 1, 1): (1, 1, 0),
+        }
+        for inputs, output in expected.items():
+            with self.subTest(inputs=inputs):
+                self.assertEqual(g.apply(inputs), output)
 
 
 class TestFredkinGate(unittest.TestCase):
@@ -61,9 +87,21 @@ class TestFredkinGate(unittest.TestCase):
         with self.assertRaises(ValueError):
             FredkinGate(0, 1, 1)
 
-    @unittest.skip("Truth-table test added next week")
     def test_truth_table(self):
-        pass
+        g = FredkinGate(0, 1, 2)
+        expected = {
+            (0, 0, 0): (0, 0, 0),
+            (0, 0, 1): (0, 0, 1),
+            (0, 1, 0): (0, 1, 0),
+            (0, 1, 1): (0, 1, 1),
+            (1, 0, 0): (1, 0, 0),
+            (1, 0, 1): (1, 1, 0),
+            (1, 1, 0): (1, 0, 1),
+            (1, 1, 1): (1, 1, 1),
+        }
+        for inputs, output in expected.items():
+            with self.subTest(inputs=inputs):
+                self.assertEqual(g.apply(inputs), output)
 
 
 if __name__ == "__main__":

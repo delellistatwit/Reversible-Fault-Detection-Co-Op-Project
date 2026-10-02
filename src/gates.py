@@ -21,7 +21,7 @@ class Gate:
         self.wires = wires
 
     def apply(self, bits):
-        """Return a new list of bits after this gate acts on them."""
+        """Return a new tuple of bits after this gate acts on them. Each gate type overrides this."""
         raise NotImplementedError
 
 
@@ -33,8 +33,10 @@ class NOTGate(Gate):
         self.target = target
 
     def apply(self, bits):
-        """Flip the target wire (Added next week)"""
-        raise NotImplementedError
+        """Flip the target wire."""
+        bits = list(bits)
+        bits[self.target] ^= 1
+        return tuple(bits)
 
 class CNOTGate(Gate):
     #Flips the target wire if control wire = 1 (on)
@@ -45,8 +47,11 @@ class CNOTGate(Gate):
         self.target = target
 
     def apply(self, bits):
-        """Flip the target wire if the control wire is 1 (Added next week)"""
-        raise NotImplementedError
+        """Flip the target wire if the control wire is 1."""
+        bits = list(bits)
+        if bits[self.control] == 1:
+            bits[self.target] ^= 1
+        return tuple(bits)
 
 class ToffoliGate(Gate):
     #Flips the target wire if both control wires are 1 (on)
@@ -58,8 +63,11 @@ class ToffoliGate(Gate):
         self.target = target
 
     def apply(self, bits):
-        """Flip the target wire if both control wires are 1. (Implemented next week.)"""
-        raise NotImplementedError
+        """Flip the target wire if both control wires are 1."""
+        bits = list(bits)
+        if bits[self.control1] == 1 and bits[self.control2] == 1:
+            bits[self.target] ^= 1
+        return tuple(bits)
 
 
 class FredkinGate(Gate):
@@ -72,5 +80,8 @@ class FredkinGate(Gate):
         self.swap2 = swap2
 
     def apply(self, bits):
-        """Swap swap1 and swap2 if the control wire is 1. (Implemented next week.)"""
-        raise NotImplementedError
+        """Swap swap1 and swap2 if the control wire is 1."""
+        bits = list(bits)
+        if bits[self.control] == 1:
+            bits[self.swap1], bits[self.swap2] = bits[self.swap2], bits[self.swap1]
+        return tuple(bits)

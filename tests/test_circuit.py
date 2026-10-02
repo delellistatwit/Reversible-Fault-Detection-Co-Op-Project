@@ -1,6 +1,6 @@
 import unittest
 from src.circuit import Circuit
-from src.gates import CNOTGate
+from src.gates import NOTGate, CNOTGate
 
 
 class TestCircuit(unittest.TestCase):
@@ -29,17 +29,54 @@ class TestCircuit(unittest.TestCase):
         with self.assertRaises(TypeError):
             c.add_gate("not a gate")
 
-    @unittest.skip("simulate() added next week")
     def test_simulate(self):
-        pass
+        c = Circuit(2)
+        c.add_gate(CNOTGate(0, 1))
+        self.assertEqual(c.simulate((1, 0)), (1, 1))
 
-    @unittest.skip("validate() added next week")
+    def test_simulate_runs_gates_in_order(self):
+        # NOT on wire 0 first turns (0, 0) into (1, 0),
+        # then CNOT sees wire 0 on and flips wire 1, giving (1, 1).
+        c = Circuit(2)
+        c.add_gate(NOTGate(0))
+        c.add_gate(CNOTGate(0, 1))
+        self.assertEqual(c.simulate((0, 0)), (1, 1))
+
+    def test_simulate_rejects_bad_bits(self):
+        c = Circuit(2)
+        with self.assertRaises(ValueError):
+            c.simulate((1, 2))
+        with self.assertRaises(ValueError):
+            c.simulate((1, 0, 1))
+
     def test_validate(self):
-        pass
+        c = Circuit(2)
+        c.add_gate(CNOTGate(0, 1))
+        self.assertTrue(c.validate())
 
-    @unittest.skip("truth_table() added next week")
-    def test_truth_table_row_count(self):
-        pass
+    def test_validate_catches_non_gate(self):
+        c = Circuit(2)
+        c.gates.append("not a gate")
+        with self.assertRaises(TypeError):
+            c.validate()
+
+    def test_truth_table_row_count_and_order(self):
+        c = Circuit(3)
+        table = c.truth_table()
+        self.assertEqual(len(table), 8)
+        self.assertEqual(table[0][0], (0, 0, 0))
+        self.assertEqual(table[-1][0], (1, 1, 1))
+
+    def test_truth_table_cnot(self):
+        c = Circuit(2)
+        c.add_gate(CNOTGate(0, 1))
+        expected = [
+            ((0, 0), (0, 0)),
+            ((0, 1), (0, 1)),
+            ((1, 0), (1, 1)),
+            ((1, 1), (1, 0)),
+        ]
+        self.assertEqual(c.truth_table(), expected)
 
 
 if __name__ == "__main__":
