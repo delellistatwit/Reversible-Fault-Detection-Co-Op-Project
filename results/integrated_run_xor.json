@@ -1,0 +1,55 @@
+{
+  "run_id": "RUN_XOR_2026-10-08",
+  "circuit_id": "XOR",
+  "num_wires": 2,
+  "gates": [
+    [
+      "CNOT",
+      [
+        0,
+        1
+      ]
+    ]
+  ],
+  "faults": [
+    {
+      "fault_id": "REMOVE_G0",
+      "status": "UNIQUE_VALID",
+      "note": ""
+    },
+    {
+      "fault_id": "SWAP_G0_W0_W1",
+      "status": "UNIQUE_VALID",
+      "note": ""
+    }
+  ],
+  "detection_matrix": {
+    "(0, 0)": [],
+    "(0, 1)": [
+      "SWAP_G0_W0_W1"
+    ],
+    "(1, 0)": [
+      "REMOVE_G0",
+      "SWAP_G0_W0_W1"
+    ],
+    "(1, 1)": [
+      "REMOVE_G0"
+    ]
+  },
+  "selected_vectors": [
+    [
+      1,
+      0
+    ]
+  ],
+  "summary": {
+    "total_vectors": 4,
+    "faults_generated": 2,
+    "unique_valid": 2,
+    "duplicate": 0,
+    "invalid": 0,
+    "detectable": 2,
+    "undetectable": [],
+    "selected_vectors": 1
+  }
+}

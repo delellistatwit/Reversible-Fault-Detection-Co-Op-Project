@@ -1,0 +1,147 @@
+{
+  "run_id": "RUN_HALF_ADDER_2026-10-08",
+  "circuit_id": "HALF_ADDER",
+  "num_wires": 3,
+  "gates": [
+    [
+      "TOFFOLI",
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    [
+      "CNOT",
+      [
+        0,
+        1
+      ]
+    ]
+  ],
+  "faults": [
+    {
+      "fault_id": "REMOVE_G0",
+      "status": "UNIQUE_VALID",
+      "note": ""
+    },
+    {
+      "fault_id": "REMOVE_G1",
+      "status": "UNIQUE_VALID",
+      "note": ""
+    },
+    {
+      "fault_id": "CONTROL_G1_W0_TO_W2",
+      "status": "UNIQUE_VALID",
+      "note": ""
+    },
+    {
+      "fault_id": "SWAP_G0_W0_W1",
+      "status": "UNIQUE_VALID",
+      "note": ""
+    },
+    {
+      "fault_id": "SWAP_G0_W0_W2",
+      "status": "UNIQUE_VALID",
+      "note": ""
+    },
+    {
+      "fault_id": "SWAP_G0_W1_W2",
+      "status": "UNIQUE_VALID",
+      "note": ""
+    },
+    {
+      "fault_id": "SWAP_G1_W0_W1",
+      "status": "UNIQUE_VALID",
+      "note": ""
+    },
+    {
+      "fault_id": "SWAP_G1_W0_W2",
+      "status": "UNIQUE_VALID",
+      "note": ""
+    },
+    {
+      "fault_id": "SWAP_G1_W1_W2",
+      "status": "UNIQUE_VALID",
+      "note": ""
+    }
+  ],
+  "detection_matrix": {
+    "(0, 0, 0)": [],
+    "(0, 0, 1)": [
+      "CONTROL_G1_W0_TO_W2",
+      "SWAP_G0_W0_W2",
+      "SWAP_G0_W1_W2",
+      "SWAP_G1_W0_W2",
+      "SWAP_G1_W1_W2"
+    ],
+    "(0, 1, 0)": [
+      "SWAP_G0_W0_W1",
+      "SWAP_G0_W1_W2",
+      "SWAP_G1_W0_W1",
+      "SWAP_G1_W1_W2"
+    ],
+    "(0, 1, 1)": [
+      "CONTROL_G1_W0_TO_W2",
+      "SWAP_G0_W0_W1",
+      "SWAP_G0_W0_W2",
+      "SWAP_G1_W0_W1",
+      "SWAP_G1_W0_W2"
+    ],
+    "(1, 0, 0)": [
+      "CONTROL_G1_W0_TO_W2",
+      "REMOVE_G1",
+      "SWAP_G0_W0_W1",
+      "SWAP_G0_W0_W2",
+      "SWAP_G1_W0_W1",
+      "SWAP_G1_W0_W2"
+    ],
+    "(1, 0, 1)": [
+      "REMOVE_G1",
+      "SWAP_G0_W0_W1",
+      "SWAP_G0_W1_W2",
+      "SWAP_G1_W0_W1",
+      "SWAP_G1_W1_W2"
+    ],
+    "(1, 1, 0)": [
+      "REMOVE_G0",
+      "REMOVE_G1",
+      "SWAP_G0_W0_W2",
+      "SWAP_G0_W1_W2"
+    ],
+    "(1, 1, 1)": [
+      "CONTROL_G1_W0_TO_W2",
+      "REMOVE_G0",
+      "REMOVE_G1",
+      "SWAP_G1_W0_W2",
+      "SWAP_G1_W1_W2"
+    ]
+  },
+  "selected_vectors": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      1,
+      0
+    ]
+  ],
+  "summary": {
+    "total_vectors": 8,
+    "faults_generated": 9,
+    "unique_valid": 9,
+    "duplicate": 0,
+    "invalid": 0,
+    "detectable": 9,
+    "undetectable": [],
+    "selected_vectors": 3
+  }
+}
