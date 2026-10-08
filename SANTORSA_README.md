@@ -14,3 +14,6 @@ To run, simply run python vecgen.py in the console. Evidence of proper function 
 To run, simply run python detectionmatrix.py in the console. Evidence of proper function should print to sample_matrix.json and the console. File can be found under the src folder
 ## Deliverables 3 & 4
 To run, simply run greedy_selector.py. Evidence of proper function will print to console for both deliverables 3 and 4. File can be found under the src folder.
+# Week 3
+## All deliverables
+All deliverables can be found under week_3_deliverables.pdf
