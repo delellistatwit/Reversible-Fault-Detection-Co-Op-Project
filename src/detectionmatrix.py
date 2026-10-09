@@ -6,6 +6,8 @@ contains deliverable 2
 import json
 import ast
 
+from src.faults import FaultGenerator, UNIQUE_VALID, classify_faults
+
 class DetectionMatrix:
     def __init__(self):
         # init sparse dictionary map
@@ -47,6 +49,26 @@ class DetectionMatrix:
             original_tuple = ast.literal_eval(key_str)
             # converts the list back into a mathematical Set
             self.matrix[original_tuple] = set(fault_list)
+
+
+def build_detection_matrix(circuit):
+    """Build a detection matrix for a circuit using its unique valid faults."""
+    correct_table = circuit.truth_table()
+    vectors = [inputs for inputs, _ in correct_table]
+    classified = classify_faults(circuit, FaultGenerator(circuit).generate_all())
+    unique_faults = [fault for fault, status, _ in classified if status == UNIQUE_VALID]
+
+    matrix = DetectionMatrix()
+    for vector in vectors:
+        matrix.create_entry(vector)
+
+    for fault in unique_faults:
+        faulty_table = fault.apply(circuit).truth_table()
+        for (vector, correct_output), (_, faulty_output) in zip(correct_table, faulty_table):
+            if correct_output != faulty_output:
+                matrix.create_entry(vector, fault.get_id())
+
+    return matrix
 
 # --- required demonstration ---
 if __name__ == "__main__":
