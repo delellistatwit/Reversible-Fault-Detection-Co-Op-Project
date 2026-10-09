@@ -1,9 +1,10 @@
 {
-  "run_id": "RUN_HALF_ADDER_2026-10-08",
+  "run_id": "RUN_HALF_ADDER_2026-10-09",
   "circuit_id": "HALF_ADDER",
   "num_wires": 3,
   "gates": [
     [
+      "G0_TOFFOLI",
       "TOFFOLI",
       [
         0,
@@ -12,6 +13,7 @@
       ]
     ],
     [
+      "G1_CNOT",
       "CNOT",
       [
         0,

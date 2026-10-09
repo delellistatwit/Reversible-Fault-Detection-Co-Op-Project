@@ -1,5 +1,5 @@
 from src.circuit import Circuit
-from src.gates import CNOTGate, ToffoliGate
+from src.gates import NOTGate, CNOTGate, ToffoliGate, FredkinGate
 
 
 def build_xor():
@@ -22,4 +22,18 @@ def build_half_adder():
     c = Circuit(3)
     c.add_gate(ToffoliGate(0, 1, 2))
     c.add_gate(CNOTGate(0, 1))
+    return c
+
+
+def build_all_gates():
+    """Mixed circuit that uses all four gate types once.
+
+    Wires:   0, 1, 2, 3 (no constant inputs)
+    Gates:   NOT(3), CNOT(0, 1), TOFFOLI(0, 1, 2), FREDKIN(3, 1, 2)
+    """
+    c = Circuit(4)
+    c.add_gate(NOTGate(3))
+    c.add_gate(CNOTGate(0, 1))
+    c.add_gate(ToffoliGate(0, 1, 2))
+    c.add_gate(FredkinGate(3, 1, 2))
     return c
