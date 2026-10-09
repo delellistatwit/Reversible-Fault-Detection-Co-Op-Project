@@ -10,22 +10,42 @@ import json
 import os
 from datetime import date
 
-from src.benchmarks import build_xor, build_half_adder
+from src.benchmarks import build_xor, build_half_adder, build_all_gates
+from src.gate_specs import build_single_gate, check_gate_schema, gate_instance_id
 from src.faults import FaultGenerator, classify_faults, UNIQUE_VALID, DUPLICATE, INVALID
 from src.detectionmatrix import DetectionMatrix
 from src.greedy_selector import greedy_selector_v1
 from src.real_import import load_real
+from src.circuit import Circuit
 
 RUN_DATE = date.today().isoformat()
+
+
+def single_gate_circuit(type_id):
+    """One gate of the given type alone on its own wires."""
+    gate = build_single_gate(type_id)
+    c = Circuit(len(gate.wires))
+    c.add_gate(gate)
+    return c
+
+
 CIRCUITS = {
+    "NOT_GATE": lambda: single_gate_circuit("NOT"),
+    "CNOT_GATE": lambda: single_gate_circuit("CNOT"),
+    "TOFFOLI_GATE": lambda: single_gate_circuit("TOFFOLI"),
+    "FREDKIN_GATE": lambda: single_gate_circuit("FREDKIN"),
+    "ALL_GATES": build_all_gates,
     "XOR": build_xor,
-    "HALF_ADDER": build_half_adder,"GRAYCODE6": lambda: load_real("benchmarks/graycode6.real")[0],
+    "HALF_ADDER": build_half_adder,
+    "GRAYCODE6": lambda: load_real("benchmarks/graycode6.real")[0],
     "HAM7": lambda: load_real("benchmarks/ham7.real")[0],
 }
 
 
 def run(circuit_id):
     circuit = CIRCUITS[circuit_id]()
+    for gate in circuit.gates:
+        check_gate_schema(gate)
     run_id = f"RUN_{circuit_id}_{RUN_DATE}"
 
     # 1. correct truth table
@@ -57,7 +77,7 @@ def run(circuit_id):
         "run_id": run_id,
         "circuit_id": circuit_id,
         "num_wires": circuit.num_wires,
-        "gates": [[g.name, g.wires] for g in circuit.gates],
+        "gates": [[gate_instance_id(i, g), g.name, g.wires] for i, g in enumerate(circuit.gates)],
         "faults": [
             {"fault_id": f.get_id(), "status": status, "note": note}
             for f, status, note in classified

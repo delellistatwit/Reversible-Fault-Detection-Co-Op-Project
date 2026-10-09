@@ -1,0 +1,70 @@
+[
+  {
+    "gate": "CNOT",
+    "time_ns": 0,
+    "inputs": [
+      0,
+      0
+    ],
+    "vhdl": [
+      0,
+      0
+    ],
+    "python": [
+      0,
+      0
+    ],
+    "match": true
+  },
+  {
+    "gate": "CNOT",
+    "time_ns": 10,
+    "inputs": [
+      0,
+      1
+    ],
+    "vhdl": [
+      0,
+      1
+    ],
+    "python": [
+      0,
+      1
+    ],
+    "match": true
+  },
+  {
+    "gate": "CNOT",
+    "time_ns": 20,
+    "inputs": [
+      1,
+      0
+    ],
+    "vhdl": [
+      1,
+      1
+    ],
+    "python": [
+      1,
+      1
+    ],
+    "match": true
+  },
+  {
+    "gate": "CNOT",
+    "time_ns": 30,
+    "inputs": [
+      1,
+      1
+    ],
+    "vhdl": [
+      1,
+      0
+    ],
+    "python": [
+      1,
+      0
+    ],
+    "match": true
+  }
+]

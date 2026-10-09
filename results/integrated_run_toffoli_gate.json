@@ -1,0 +1,91 @@
+{
+  "run_id": "RUN_TOFFOLI_GATE_2026-10-09",
+  "circuit_id": "TOFFOLI_GATE",
+  "num_wires": 3,
+  "gates": [
+    [
+      "G0_TOFFOLI",
+      "TOFFOLI",
+      [
+        0,
+        1,
+        2
+      ]
+    ]
+  ],
+  "faults": [
+    {
+      "fault_id": "REMOVE_G0",
+      "status": "UNIQUE_VALID",
+      "note": ""
+    },
+    {
+      "fault_id": "SWAP_G0_W0_W1",
+      "status": "UNIQUE_VALID",
+      "note": ""
+    },
+    {
+      "fault_id": "SWAP_G0_W0_W2",
+      "status": "UNIQUE_VALID",
+      "note": ""
+    },
+    {
+      "fault_id": "SWAP_G0_W1_W2",
+      "status": "UNIQUE_VALID",
+      "note": ""
+    }
+  ],
+  "detection_matrix": {
+    "(0, 0, 0)": [],
+    "(0, 0, 1)": [
+      "SWAP_G0_W0_W2",
+      "SWAP_G0_W1_W2"
+    ],
+    "(0, 1, 0)": [
+      "SWAP_G0_W0_W1",
+      "SWAP_G0_W1_W2"
+    ],
+    "(0, 1, 1)": [
+      "SWAP_G0_W0_W1",
+      "SWAP_G0_W0_W2"
+    ],
+    "(1, 0, 0)": [
+      "SWAP_G0_W0_W1",
+      "SWAP_G0_W0_W2"
+    ],
+    "(1, 0, 1)": [
+      "SWAP_G0_W0_W1",
+      "SWAP_G0_W1_W2"
+    ],
+    "(1, 1, 0)": [
+      "REMOVE_G0",
+      "SWAP_G0_W0_W2",
+      "SWAP_G0_W1_W2"
+    ],
+    "(1, 1, 1)": [
+      "REMOVE_G0"
+    ]
+  },
+  "selected_vectors": [
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "summary": {
+    "total_vectors": 8,
+    "faults_generated": 4,
+    "unique_valid": 4,
+    "duplicate": 0,
+    "invalid": 0,
+    "detectable": 4,
+    "undetectable": [],
+    "selected_vectors": 2
+  }
+}

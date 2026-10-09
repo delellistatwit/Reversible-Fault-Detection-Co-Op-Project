@@ -1,0 +1,6 @@
+# Ports: inputs A, B; outputs P, Q. Values transcribed from the result sheet, not edited.
+gate,time_ns,A,B,P,Q
+CNOT,0,0,0,0,0
+CNOT,10,0,1,0,1
+CNOT,20,1,0,1,1
+CNOT,30,1,1,1,0

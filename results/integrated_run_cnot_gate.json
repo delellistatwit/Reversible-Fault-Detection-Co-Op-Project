@@ -1,6 +1,6 @@
 {
-  "run_id": "RUN_XOR_2026-10-09",
-  "circuit_id": "XOR",
+  "run_id": "RUN_CNOT_GATE_2026-10-09",
+  "circuit_id": "CNOT_GATE",
   "num_wires": 2,
   "gates": [
     [

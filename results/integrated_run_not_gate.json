@@ -1,0 +1,44 @@
+{
+  "run_id": "RUN_NOT_GATE_2026-10-09",
+  "circuit_id": "NOT_GATE",
+  "num_wires": 1,
+  "gates": [
+    [
+      "G0_NOT",
+      "NOT",
+      [
+        0
+      ]
+    ]
+  ],
+  "faults": [
+    {
+      "fault_id": "REMOVE_G0",
+      "status": "UNIQUE_VALID",
+      "note": ""
+    }
+  ],
+  "detection_matrix": {
+    "(0,)": [
+      "REMOVE_G0"
+    ],
+    "(1,)": [
+      "REMOVE_G0"
+    ]
+  },
+  "selected_vectors": [
+    [
+      0
+    ]
+  ],
+  "summary": {
+    "total_vectors": 2,
+    "faults_generated": 1,
+    "unique_valid": 1,
+    "duplicate": 0,
+    "invalid": 0,
+    "detectable": 1,
+    "undetectable": [],
+    "selected_vectors": 1
+  }
+}
