@@ -1,0 +1,1067 @@
+[
+  {
+    "gate_type": "NOT",
+    "gate_id": "G0_NOT",
+    "wires": [
+      0
+    ],
+    "spare_wire": 1,
+    "num_wires": 2,
+    "equation": "Y = NOT A",
+    "faults": [
+      {
+        "fault_id": "REMOVE_G0",
+        "type": "REMOVE",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "fault_id": "SWAP_G0_W0_W1",
+        "type": "SWAP",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "gate_type": "CNOT",
+    "gate_id": "G0_CNOT",
+    "wires": [
+      0,
+      1
+    ],
+    "spare_wire": 2,
+    "num_wires": 3,
+    "equation": "P = A, Q = A XOR B",
+    "faults": [
+      {
+        "fault_id": "REMOVE_G0",
+        "type": "REMOVE",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "fault_id": "CONTROL_G0_W0_TO_W2",
+        "type": "CONTROL",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "fault_id": "SWAP_G0_W0_W1",
+        "type": "SWAP",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "fault_id": "SWAP_G0_W0_W2",
+        "type": "SWAP",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "fault_id": "SWAP_G0_W1_W2",
+        "type": "SWAP",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "gate_type": "TOFFOLI",
+    "gate_id": "G0_TOFFOLI",
+    "wires": [
+      0,
+      1,
+      2
+    ],
+    "spare_wire": 3,
+    "num_wires": 4,
+    "equation": "P = A, Q = B, R = C XOR (A AND B)",
+    "faults": [
+      {
+        "fault_id": "REMOVE_G0",
+        "type": "REMOVE",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "fault_id": "CONTROL_G0_W0_TO_W3",
+        "type": "CONTROL",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "fault_id": "CONTROL_G0_W1_TO_W3",
+        "type": "CONTROL",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "fault_id": "SWAP_G0_W0_W1",
+        "type": "SWAP",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "fault_id": "SWAP_G0_W0_W2",
+        "type": "SWAP",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "fault_id": "SWAP_G0_W0_W3",
+        "type": "SWAP",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "fault_id": "SWAP_G0_W1_W2",
+        "type": "SWAP",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "fault_id": "SWAP_G0_W1_W3",
+        "type": "SWAP",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "fault_id": "SWAP_G0_W2_W3",
+        "type": "SWAP",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            0
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "gate_type": "FREDKIN",
+    "gate_id": "G0_FREDKIN",
+    "wires": [
+      0,
+      1,
+      2
+    ],
+    "spare_wire": 3,
+    "num_wires": 4,
+    "equation": "P = C, Q = B if C else A, R = A if C else B",
+    "faults": [
+      {
+        "fault_id": "REMOVE_G0",
+        "type": "REMOVE",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "fault_id": "CONTROL_G0_W0_TO_W3",
+        "type": "CONTROL",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "fault_id": "SWAP_G0_W0_W1",
+        "type": "SWAP",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            1
+          ]
+        ]
+      },
+      {
+        "fault_id": "SWAP_G0_W0_W2",
+        "type": "SWAP",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "fault_id": "SWAP_G0_W0_W3",
+        "type": "SWAP",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "fault_id": "SWAP_G0_W1_W2",
+        "type": "SWAP",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "fault_id": "SWAP_G0_W1_W3",
+        "type": "SWAP",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0
+          ]
+        ]
+      },
+      {
+        "fault_id": "SWAP_G0_W2_W3",
+        "type": "SWAP",
+        "status": "UNIQUE_VALID",
+        "note": "",
+        "detected_by": [
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            0
+          ]
+        ]
+      }
+    ]
+  }
+]
