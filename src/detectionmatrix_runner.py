@@ -1,6 +1,6 @@
-"""Build and save the CNOT, Toffoli, and Fredkin detection matrices.
+"""build and save the CNOT, Toffoli, and Fredkin detection matrices.
 
-Run from the repository root with:
+run from the repository root with:
     python -m src.detectionmatrix_runner
 """
 
@@ -19,7 +19,7 @@ MATRIX_BUILDERS = {
 
 
 def run_all(output_dir="results"):
-    """Build all matrices, save them as JSON, and return them by gate name."""
+    """build all matrices, save them as JSON, and return them by gate name."""
     os.makedirs(output_dir, exist_ok=True)
     matrices = {}
 

@@ -4,7 +4,7 @@ from src.fredkin_gate import FredkinGate
 
 
 def build_fredkin_matrix():
-    """Return the detection matrix for a single Fredkin gate on three wires."""
+    """return the detection matrix for a single Fredkin gate on three wires."""
     circuit = Circuit(3)
     circuit.add_gate(FredkinGate(0, 1, 2))
     return build_detection_matrix(circuit)
