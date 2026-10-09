@@ -4,14 +4,15 @@ Supported gates (the NCT library):
     t1 x        NOT on x
     t2 c x      CNOT, control c, target x
     t3 c1 c2 x  Toffoli, controls c1 and c2, target x
+    f3 c x y    Fredkin, control c, swaps x and y
 
 Wires are numbered in the order of the .variables line (first variable = wire 0).
 """
 
 from src.circuit import Circuit
-from src.gates import NOTGate, CNOTGate, ToffoliGate
+from src.gates import NOTGate, CNOTGate, ToffoliGate, FredkinGate
 
-GATE_TYPES = {"t1": NOTGate, "t2": CNOTGate, "t3": ToffoliGate}
+GATE_TYPES = {"t1": NOTGate, "t2": CNOTGate, "t3": ToffoliGate, "f3": FredkinGate}
 
 
 def load_real(path):
@@ -56,7 +57,7 @@ def load_real(path):
         gate_type, names = parts[0], parts[1:]
 
         if gate_type not in GATE_TYPES:
-            raise ValueError(f"{path} line {line_number}: unsupported gate '{gate_type}' (only t1, t2, t3 are supported)")
+            raise ValueError(f"{path} line {line_number}: unsupported gate '{gate_type}' (only t1, t2, t3, f3 are supported)")
 
         expected = int(gate_type[1:])
         if len(names) != expected:
