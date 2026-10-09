@@ -14,11 +14,13 @@ from src.benchmarks import build_xor, build_half_adder
 from src.faults import FaultGenerator, classify_faults, UNIQUE_VALID, DUPLICATE, INVALID
 from src.detectionmatrix import DetectionMatrix
 from src.greedy_selector import greedy_selector_v1
+from src.real_import import load_real
 
 RUN_DATE = date.today().isoformat()
 CIRCUITS = {
     "XOR": build_xor,
-    "HALF_ADDER": build_half_adder,
+    "HALF_ADDER": build_half_adder,"GRAYCODE6": lambda: load_real("benchmarks/graycode6.real")[0],
+    "HAM7": lambda: load_real("benchmarks/ham7.real")[0],
 }
 
 
