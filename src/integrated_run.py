@@ -7,6 +7,7 @@ Writes results/integrated_run_<circuit>.json and prints a summary.
 """
 
 import json
+import sys
 import os
 from datetime import date
 
@@ -39,6 +40,7 @@ CIRCUITS = {
     "HALF_ADDER": build_half_adder,
     "GRAYCODE6": lambda: load_real("benchmarks/graycode6.real")[0],
     "HAM7": lambda: load_real("benchmarks/ham7.real")[0],
+    "FREDKIN7": lambda: load_real("benchmarks/fredkin_7.real")[0],
 }
 
 
@@ -111,5 +113,7 @@ def run(circuit_id):
 
 
 if __name__ == "__main__":
-    for cid in CIRCUITS:
+    # Run every circuit, or only the ones named on the command line:
+    #   python -m src.integrated_run FREDKIN7 HAM7
+    for cid in sys.argv[1:] or CIRCUITS:
         run(cid)

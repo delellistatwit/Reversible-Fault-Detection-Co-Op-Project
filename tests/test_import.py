@@ -50,6 +50,14 @@ class TestLoadReal(unittest.TestCase):
             load_real(path)
         os.remove(path)
 
+    def test_fredkin7(self):
+        c, _ = load_real("benchmarks/fredkin_7.real")
+        self.assertEqual(c.num_wires, 3)
+        self.assertEqual(len(c.gates), 1)
+        # "f3 a c b": control a (wire 0), swaps c (wire 2) and b (wire 1)
+        g = c.gates[0]
+        self.assertEqual((g.name, g.control, g.swap1, g.swap2), ("FREDKIN", 0, 2, 1))
+
 
 if __name__ == "__main__":
     unittest.main()
