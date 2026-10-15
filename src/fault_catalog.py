@@ -4,10 +4,11 @@ Each row records the fault's ID, type, location, status (INVALID, DUPLICATE,
 or UNIQUE_VALID), and which inputs detect it. Bit strings list wire 0 first.
 
 Run from the repository root:
-    python -m src.fault_catalog                 (every circuit)
+    python -m src.fault_catalog                 (team circuits and graycode6)
     python -m src.fault_catalog HALF_ADDER      (only the circuits named)
 
-Writes results/fault_catalog_<circuit>.csv and prints a summary.
+Writes every circuit into one file, results/fault_catalog.csv, and prints a summary.
+HAM7 and FREDKIN7 are left out unless named.
 """
 
 import csv
@@ -75,19 +76,24 @@ def write_catalog(rows, path):
 def main():
     from src.integrated_run import CIRCUITS
 
+    EXTRAS = ("HAM7", "FREDKIN7")      # RevLib benchmarks, only included if named
+    default = [c for c in CIRCUITS if c not in EXTRAS]
+
     os.makedirs("results", exist_ok=True)
     print("\nFault catalog")
-    for circuit_id in sys.argv[1:] or CIRCUITS:
+    all_rows = []
+    for circuit_id in sys.argv[1:] or default:
         rows = build_catalog(circuit_id, CIRCUITS[circuit_id]())
-        path = f"results/fault_catalog_{circuit_id.lower()}.csv"
-        write_catalog(rows, path)
+        all_rows.extend(rows)
 
         counts = {}
         for r in rows:
             counts[r["status"]] = counts.get(r["status"], 0) + 1
         undetectable = sum(1 for r in rows if r["status"] == UNIQUE_VALID and r["detected_count"] == 0)
-        print(f"  {circuit_id:13} {len(rows):4} faults  {counts}  undetectable: {undetectable}  -> {path}")
+        print(f"  {circuit_id:16} {len(rows):4} faults  {counts}  undetectable: {undetectable}")
 
+    write_catalog(all_rows, "results/fault_catalog.csv")
+    print(f"  saved {len(all_rows)} rows to results/fault_catalog.csv")
 
 if __name__ == "__main__":
     main()

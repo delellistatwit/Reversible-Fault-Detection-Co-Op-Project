@@ -1,0 +1,497 @@
+{
+  "NOT_GATE": {
+    "passed": true,
+    "checks": {
+      "one_status_per_fault": {
+        "passed": true,
+        "detail": "1 results for 1 faults; bad statuses: []"
+      },
+      "counts_match_formulas": {
+        "passed": true,
+        "detail": "expected {'REMOVE': 1, 'CONTROL': 0, 'SWAP': 0}, got {'REMOVE': 1, 'CONTROL': 0, 'SWAP': 0}"
+      },
+      "unique_fault_ids": {
+        "passed": true,
+        "detail": "repeated: []"
+      },
+      "stable_generation_order": {
+        "passed": true,
+        "detail": "generator order is repeatable"
+      },
+      "mutants_change_circuit": {
+        "passed": true,
+        "detail": "unchanged mutants: []"
+      },
+      "duplicates_valid": {
+        "passed": true,
+        "detail": "bad duplicate links: []"
+      },
+      "invalid_have_reason": {
+        "passed": true,
+        "detail": "invalid without a reason: []"
+      }
+    }
+  },
+  "CNOT_GATE": {
+    "passed": true,
+    "checks": {
+      "one_status_per_fault": {
+        "passed": true,
+        "detail": "2 results for 2 faults; bad statuses: []"
+      },
+      "counts_match_formulas": {
+        "passed": true,
+        "detail": "expected {'REMOVE': 1, 'CONTROL': 0, 'SWAP': 1}, got {'REMOVE': 1, 'CONTROL': 0, 'SWAP': 1}"
+      },
+      "unique_fault_ids": {
+        "passed": true,
+        "detail": "repeated: []"
+      },
+      "stable_generation_order": {
+        "passed": true,
+        "detail": "generator order is repeatable"
+      },
+      "mutants_change_circuit": {
+        "passed": true,
+        "detail": "unchanged mutants: []"
+      },
+      "duplicates_valid": {
+        "passed": true,
+        "detail": "bad duplicate links: []"
+      },
+      "invalid_have_reason": {
+        "passed": true,
+        "detail": "invalid without a reason: []"
+      }
+    }
+  },
+  "TOFFOLI_GATE": {
+    "passed": true,
+    "checks": {
+      "one_status_per_fault": {
+        "passed": true,
+        "detail": "4 results for 4 faults; bad statuses: []"
+      },
+      "counts_match_formulas": {
+        "passed": true,
+        "detail": "expected {'REMOVE': 1, 'CONTROL': 0, 'SWAP': 3}, got {'REMOVE': 1, 'CONTROL': 0, 'SWAP': 3}"
+      },
+      "unique_fault_ids": {
+        "passed": true,
+        "detail": "repeated: []"
+      },
+      "stable_generation_order": {
+        "passed": true,
+        "detail": "generator order is repeatable"
+      },
+      "mutants_change_circuit": {
+        "passed": true,
+        "detail": "unchanged mutants: []"
+      },
+      "duplicates_valid": {
+        "passed": true,
+        "detail": "bad duplicate links: []"
+      },
+      "invalid_have_reason": {
+        "passed": true,
+        "detail": "invalid without a reason: []"
+      }
+    }
+  },
+  "FREDKIN_GATE": {
+    "passed": true,
+    "checks": {
+      "one_status_per_fault": {
+        "passed": true,
+        "detail": "4 results for 4 faults; bad statuses: []"
+      },
+      "counts_match_formulas": {
+        "passed": true,
+        "detail": "expected {'REMOVE': 1, 'CONTROL': 0, 'SWAP': 3}, got {'REMOVE': 1, 'CONTROL': 0, 'SWAP': 3}"
+      },
+      "unique_fault_ids": {
+        "passed": true,
+        "detail": "repeated: []"
+      },
+      "stable_generation_order": {
+        "passed": true,
+        "detail": "generator order is repeatable"
+      },
+      "mutants_change_circuit": {
+        "passed": true,
+        "detail": "unchanged mutants: []"
+      },
+      "duplicates_valid": {
+        "passed": true,
+        "detail": "bad duplicate links: []"
+      },
+      "invalid_have_reason": {
+        "passed": true,
+        "detail": "invalid without a reason: []"
+      }
+    }
+  },
+  "PERES_GATE": {
+    "passed": true,
+    "checks": {
+      "one_status_per_fault": {
+        "passed": true,
+        "detail": "4 results for 4 faults; bad statuses: []"
+      },
+      "counts_match_formulas": {
+        "passed": true,
+        "detail": "expected {'REMOVE': 1, 'CONTROL': 0, 'SWAP': 3}, got {'REMOVE': 1, 'CONTROL': 0, 'SWAP': 3}"
+      },
+      "unique_fault_ids": {
+        "passed": true,
+        "detail": "repeated: []"
+      },
+      "stable_generation_order": {
+        "passed": true,
+        "detail": "generator order is repeatable"
+      },
+      "mutants_change_circuit": {
+        "passed": true,
+        "detail": "unchanged mutants: []"
+      },
+      "duplicates_valid": {
+        "passed": true,
+        "detail": "bad duplicate links: []"
+      },
+      "invalid_have_reason": {
+        "passed": true,
+        "detail": "invalid without a reason: []"
+      }
+    }
+  },
+  "HNG_GATE": {
+    "passed": true,
+    "checks": {
+      "one_status_per_fault": {
+        "passed": true,
+        "detail": "7 results for 7 faults; bad statuses: []"
+      },
+      "counts_match_formulas": {
+        "passed": true,
+        "detail": "expected {'REMOVE': 1, 'CONTROL': 0, 'SWAP': 6}, got {'REMOVE': 1, 'CONTROL': 0, 'SWAP': 6}"
+      },
+      "unique_fault_ids": {
+        "passed": true,
+        "detail": "repeated: []"
+      },
+      "stable_generation_order": {
+        "passed": true,
+        "detail": "generator order is repeatable"
+      },
+      "mutants_change_circuit": {
+        "passed": true,
+        "detail": "unchanged mutants: []"
+      },
+      "duplicates_valid": {
+        "passed": true,
+        "detail": "bad duplicate links: []"
+      },
+      "invalid_have_reason": {
+        "passed": true,
+        "detail": "invalid without a reason: []"
+      }
+    }
+  },
+  "ALL_GATES": {
+    "passed": true,
+    "checks": {
+      "one_status_per_fault": {
+        "passed": true,
+        "detail": "33 results for 33 faults; bad statuses: []"
+      },
+      "counts_match_formulas": {
+        "passed": true,
+        "detail": "expected {'REMOVE': 4, 'CONTROL': 5, 'SWAP': 24}, got {'REMOVE': 4, 'CONTROL': 5, 'SWAP': 24}"
+      },
+      "unique_fault_ids": {
+        "passed": true,
+        "detail": "repeated: []"
+      },
+      "stable_generation_order": {
+        "passed": true,
+        "detail": "generator order is repeatable"
+      },
+      "mutants_change_circuit": {
+        "passed": true,
+        "detail": "unchanged mutants: []"
+      },
+      "duplicates_valid": {
+        "passed": true,
+        "detail": "bad duplicate links: []"
+      },
+      "invalid_have_reason": {
+        "passed": true,
+        "detail": "invalid without a reason: []"
+      }
+    }
+  },
+  "XOR": {
+    "passed": true,
+    "checks": {
+      "one_status_per_fault": {
+        "passed": true,
+        "detail": "2 results for 2 faults; bad statuses: []"
+      },
+      "counts_match_formulas": {
+        "passed": true,
+        "detail": "expected {'REMOVE': 1, 'CONTROL': 0, 'SWAP': 1}, got {'REMOVE': 1, 'CONTROL': 0, 'SWAP': 1}"
+      },
+      "unique_fault_ids": {
+        "passed": true,
+        "detail": "repeated: []"
+      },
+      "stable_generation_order": {
+        "passed": true,
+        "detail": "generator order is repeatable"
+      },
+      "mutants_change_circuit": {
+        "passed": true,
+        "detail": "unchanged mutants: []"
+      },
+      "duplicates_valid": {
+        "passed": true,
+        "detail": "bad duplicate links: []"
+      },
+      "invalid_have_reason": {
+        "passed": true,
+        "detail": "invalid without a reason: []"
+      }
+    }
+  },
+  "HALF_ADDER": {
+    "passed": true,
+    "checks": {
+      "one_status_per_fault": {
+        "passed": true,
+        "detail": "9 results for 9 faults; bad statuses: []"
+      },
+      "counts_match_formulas": {
+        "passed": true,
+        "detail": "expected {'REMOVE': 2, 'CONTROL': 1, 'SWAP': 6}, got {'REMOVE': 2, 'CONTROL': 1, 'SWAP': 6}"
+      },
+      "unique_fault_ids": {
+        "passed": true,
+        "detail": "repeated: []"
+      },
+      "stable_generation_order": {
+        "passed": true,
+        "detail": "generator order is repeatable"
+      },
+      "mutants_change_circuit": {
+        "passed": true,
+        "detail": "unchanged mutants: []"
+      },
+      "duplicates_valid": {
+        "passed": true,
+        "detail": "bad duplicate links: []"
+      },
+      "invalid_have_reason": {
+        "passed": true,
+        "detail": "invalid without a reason: []"
+      }
+    }
+  },
+  "FULL_ADDER": {
+    "passed": true,
+    "checks": {
+      "one_status_per_fault": {
+        "passed": true,
+        "detail": "36 results for 36 faults; bad statuses: []"
+      },
+      "counts_match_formulas": {
+        "passed": true,
+        "detail": "expected {'REMOVE': 4, 'CONTROL': 8, 'SWAP': 24}, got {'REMOVE': 4, 'CONTROL': 8, 'SWAP': 24}"
+      },
+      "unique_fault_ids": {
+        "passed": true,
+        "detail": "repeated: []"
+      },
+      "stable_generation_order": {
+        "passed": true,
+        "detail": "generator order is repeatable"
+      },
+      "mutants_change_circuit": {
+        "passed": true,
+        "detail": "unchanged mutants: []"
+      },
+      "duplicates_valid": {
+        "passed": true,
+        "detail": "bad duplicate links: []"
+      },
+      "invalid_have_reason": {
+        "passed": true,
+        "detail": "invalid without a reason: []"
+      }
+    }
+  },
+  "FULL_ADDER_PERES": {
+    "passed": true,
+    "checks": {
+      "one_status_per_fault": {
+        "passed": true,
+        "detail": "18 results for 18 faults; bad statuses: []"
+      },
+      "counts_match_formulas": {
+        "passed": true,
+        "detail": "expected {'REMOVE': 2, 'CONTROL': 4, 'SWAP': 12}, got {'REMOVE': 2, 'CONTROL': 4, 'SWAP': 12}"
+      },
+      "unique_fault_ids": {
+        "passed": true,
+        "detail": "repeated: []"
+      },
+      "stable_generation_order": {
+        "passed": true,
+        "detail": "generator order is repeatable"
+      },
+      "mutants_change_circuit": {
+        "passed": true,
+        "detail": "unchanged mutants: []"
+      },
+      "duplicates_valid": {
+        "passed": true,
+        "detail": "bad duplicate links: []"
+      },
+      "invalid_have_reason": {
+        "passed": true,
+        "detail": "invalid without a reason: []"
+      }
+    }
+  },
+  "FULL_ADDER_HNG": {
+    "passed": true,
+    "checks": {
+      "one_status_per_fault": {
+        "passed": true,
+        "detail": "7 results for 7 faults; bad statuses: []"
+      },
+      "counts_match_formulas": {
+        "passed": true,
+        "detail": "expected {'REMOVE': 1, 'CONTROL': 0, 'SWAP': 6}, got {'REMOVE': 1, 'CONTROL': 0, 'SWAP': 6}"
+      },
+      "unique_fault_ids": {
+        "passed": true,
+        "detail": "repeated: []"
+      },
+      "stable_generation_order": {
+        "passed": true,
+        "detail": "generator order is repeatable"
+      },
+      "mutants_change_circuit": {
+        "passed": true,
+        "detail": "unchanged mutants: []"
+      },
+      "duplicates_valid": {
+        "passed": true,
+        "detail": "bad duplicate links: []"
+      },
+      "invalid_have_reason": {
+        "passed": true,
+        "detail": "invalid without a reason: []"
+      }
+    }
+  },
+  "GRAYCODE6": {
+    "passed": true,
+    "checks": {
+      "one_status_per_fault": {
+        "passed": true,
+        "detail": "100 results for 100 faults; bad statuses: []"
+      },
+      "counts_match_formulas": {
+        "passed": true,
+        "detail": "expected {'REMOVE': 5, 'CONTROL': 20, 'SWAP': 75}, got {'REMOVE': 5, 'CONTROL': 20, 'SWAP': 75}"
+      },
+      "unique_fault_ids": {
+        "passed": true,
+        "detail": "repeated: []"
+      },
+      "stable_generation_order": {
+        "passed": true,
+        "detail": "generator order is repeatable"
+      },
+      "mutants_change_circuit": {
+        "passed": true,
+        "detail": "unchanged mutants: []"
+      },
+      "duplicates_valid": {
+        "passed": true,
+        "detail": "bad duplicate links: []"
+      },
+      "invalid_have_reason": {
+        "passed": true,
+        "detail": "invalid without a reason: []"
+      }
+    }
+  },
+  "HAM7": {
+    "passed": true,
+    "checks": {
+      "one_status_per_fault": {
+        "passed": true,
+        "detail": "693 results for 693 faults; bad statuses: []"
+      },
+      "counts_match_formulas": {
+        "passed": true,
+        "detail": "expected {'REMOVE': 25, 'CONTROL': 143, 'SWAP': 525}, got {'REMOVE': 25, 'CONTROL': 143, 'SWAP': 525}"
+      },
+      "unique_fault_ids": {
+        "passed": true,
+        "detail": "repeated: []"
+      },
+      "stable_generation_order": {
+        "passed": true,
+        "detail": "generator order is repeatable"
+      },
+      "mutants_change_circuit": {
+        "passed": true,
+        "detail": "unchanged mutants: []"
+      },
+      "duplicates_valid": {
+        "passed": true,
+        "detail": "bad duplicate links: []"
+      },
+      "invalid_have_reason": {
+        "passed": true,
+        "detail": "invalid without a reason: []"
+      }
+    }
+  },
+  "FREDKIN7": {
+    "passed": true,
+    "checks": {
+      "one_status_per_fault": {
+        "passed": true,
+        "detail": "4 results for 4 faults; bad statuses: []"
+      },
+      "counts_match_formulas": {
+        "passed": true,
+        "detail": "expected {'REMOVE': 1, 'CONTROL': 0, 'SWAP': 3}, got {'REMOVE': 1, 'CONTROL': 0, 'SWAP': 3}"
+      },
+      "unique_fault_ids": {
+        "passed": true,
+        "detail": "repeated: []"
+      },
+      "stable_generation_order": {
+        "passed": true,
+        "detail": "generator order is repeatable"
+      },
+      "mutants_change_circuit": {
+        "passed": true,
+        "detail": "unchanged mutants: []"
+      },
+      "duplicates_valid": {
+        "passed": true,
+        "detail": "bad duplicate links: []"
+      },
+      "invalid_have_reason": {
+        "passed": true,
+        "detail": "invalid without a reason: []"
+      }
+    }
+  }
+}
