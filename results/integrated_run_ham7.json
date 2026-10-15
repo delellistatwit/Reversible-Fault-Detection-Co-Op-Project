@@ -1,5 +1,5 @@
 {
-  "run_id": "RUN_HAM7_2026-10-09",
+  "run_id": "RUN_HAM7_2026-10-15",
   "circuit_id": "HAM7",
   "num_wires": 7,
   "gates": [
@@ -46613,6 +46613,7 @@
     "invalid": 0,
     "detectable": 693,
     "undetectable": [],
-    "selected_vectors": 5
+    "selected_vectors": 5,
+    "greedy_runtime_ms": 6.527559000005567
   }
 }

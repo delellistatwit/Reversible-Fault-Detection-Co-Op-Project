@@ -1,4 +1,17 @@
 import unittest
+import ast
+
+def load_matrix_from_json(json_data):
+    parsed_matrix = {}
+    raw_matrix = json_data.get("detection_matrix", {})
+    
+    for text_key, fault_list in raw_matrix.items():
+        # Converts the string "(0, 1)" back into a Python tuple (0, 1)
+        tuple_key = ast.literal_eval(text_key) 
+        # Converts sorted list back into a mathematical set
+        parsed_matrix[tuple_key] = set(fault_list) 
+        
+    return parsed_matrix
 
 def calculate_coverage(matrix, total_faults):
     """Returns the percentage of faults detected by the matrix."""

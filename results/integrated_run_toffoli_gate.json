@@ -1,5 +1,5 @@
 {
-  "run_id": "RUN_TOFFOLI_GATE_2026-10-09",
+  "run_id": "RUN_TOFFOLI_GATE_2026-10-15",
   "circuit_id": "TOFFOLI_GATE",
   "num_wires": 3,
   "gates": [
@@ -86,6 +86,7 @@
     "invalid": 0,
     "detectable": 4,
     "undetectable": [],
-    "selected_vectors": 2
+    "selected_vectors": 2,
+    "greedy_runtime_ms": 0.015368999925158278
   }
 }
