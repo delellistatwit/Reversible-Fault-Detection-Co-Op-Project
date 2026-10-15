@@ -11,7 +11,8 @@ import sys
 import os
 from datetime import date
 
-from src.benchmarks import build_xor, build_half_adder, build_all_gates, build_full_adder
+from src.benchmarks import (build_xor, build_half_adder, build_all_gates, build_full_adder,
+                            build_full_adder_peres, build_full_adder_hng)
 from src.gate_specs import build_single_gate, check_gate_schema, gate_instance_id
 from src.faults import FaultGenerator, classify_faults, UNIQUE_VALID, DUPLICATE, INVALID
 from src.detectionmatrix import DetectionMatrix
@@ -35,10 +36,14 @@ CIRCUITS = {
     "CNOT_GATE": lambda: single_gate_circuit("CNOT"),
     "TOFFOLI_GATE": lambda: single_gate_circuit("TOFFOLI"),
     "FREDKIN_GATE": lambda: single_gate_circuit("FREDKIN"),
+    "PERES_GATE": lambda: single_gate_circuit("PERES"),
+    "HNG_GATE": lambda: single_gate_circuit("HNG"),
     "ALL_GATES": build_all_gates,
     "XOR": build_xor,
     "HALF_ADDER": build_half_adder,
     "FULL_ADDER": build_full_adder,
+    "FULL_ADDER_PERES": build_full_adder_peres,
+    "FULL_ADDER_HNG": build_full_adder_hng,
     "GRAYCODE6": lambda: load_real("benchmarks/graycode6.real")[0],
     "HAM7": lambda: load_real("benchmarks/ham7.real")[0],
     "FREDKIN7": lambda: load_real("benchmarks/fredkin_7.real")[0],

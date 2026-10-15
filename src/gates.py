@@ -85,3 +85,39 @@ class FredkinGate(Gate):
         if bits[self.control] == 1:
             bits[self.swap1], bits[self.swap2] = bits[self.swap2], bits[self.swap1]
         return tuple(bits)
+
+class PeresGate(Gate):
+    #A Toffoli followed by a CNOT, packed into one gate
+
+    def __init__(self, a, b, c):
+        super().__init__("PERES", [a, b, c])
+        self.a = a
+        self.b = b
+        self.c = c
+
+    def apply(self, bits):
+        """P = A, Q = A XOR B, R = (A AND B) XOR C."""
+        bits = list(bits)
+        A, B, C = bits[self.a], bits[self.b], bits[self.c]
+        bits[self.b] = A ^ B
+        bits[self.c] = (A & B) ^ C
+        return tuple(bits)
+
+
+class HNGGate(Gate):
+    #One gate that works as a full adder when D starts at 0
+
+    def __init__(self, a, b, c, d):
+        super().__init__("HNG", [a, b, c, d])
+        self.a = a
+        self.b = b
+        self.c = c
+        self.d = d
+
+    def apply(self, bits):
+        """P = A, Q = B, R = A XOR B XOR C, S = ((A XOR B) AND C) XOR (A AND B) XOR D."""
+        bits = list(bits)
+        A, B, C, D = bits[self.a], bits[self.b], bits[self.c], bits[self.d]
+        bits[self.c] = A ^ B ^ C
+        bits[self.d] = ((A ^ B) & C) ^ (A & B) ^ D
+        return tuple(bits)

@@ -10,7 +10,7 @@ from src.circuit import Circuit
 from src.gate_specs import GATE_SPECS, build_single_gate, check_gate_schema
 from src.faults import Fault, FaultGenerator, classify_faults, UNIQUE_VALID
 
-GATE_TYPES = ("NOT", "CNOT", "TOFFOLI", "FREDKIN")
+GATE_TYPES = ("NOT", "CNOT", "TOFFOLI", "FREDKIN", "PERES", "HNG")
 
 # expected fault counts for each gate alone plus one spare wire
 EXPECTED_COUNTS = {
@@ -18,6 +18,8 @@ EXPECTED_COUNTS = {
     "CNOT":    {"REMOVE": 1, "CONTROL": 1, "SWAP": 3},
     "TOFFOLI": {"REMOVE": 1, "CONTROL": 2, "SWAP": 6},
     "FREDKIN": {"REMOVE": 1, "CONTROL": 1, "SWAP": 6},
+    "PERES":   {"REMOVE": 1, "CONTROL": 2, "SWAP": 6},
+    "HNG":     {"REMOVE": 1, "CONTROL": 2, "SWAP": 10},
 }
 
 
@@ -58,7 +60,7 @@ class TestControlOnEveryGate(unittest.TestCase):
         self.assertIsNotNone(Fault("CONTROL", (0, 0, spare(c))).check(c))
 
     def test_valid_control_move(self):
-        for t in ("CNOT", "TOFFOLI", "FREDKIN"):
+        for t in ("CNOT", "TOFFOLI", "FREDKIN", "PERES", "HNG"):
             with self.subTest(gate=t):
                 c = gate_circuit(t)
                 faulty = Fault("CONTROL", (0, 0, spare(c))).apply(c)
@@ -69,19 +71,19 @@ class TestControlOnEveryGate(unittest.TestCase):
                 self.assertEqual(getattr(c.gates[0], first_control), 0)  # original unchanged
 
     def test_rejects_wire_already_used(self):
-        for t in ("CNOT", "TOFFOLI", "FREDKIN"):
+        for t in ("CNOT", "TOFFOLI", "FREDKIN", "PERES", "HNG"):
             with self.subTest(gate=t):
                 self.assertIsNotNone(Fault("CONTROL", (0, 0, 1)).check(gate_circuit(t)))
 
     def test_rejects_moving_a_target(self):
-        for t in ("CNOT", "TOFFOLI", "FREDKIN"):
+        for t in ("CNOT", "TOFFOLI", "FREDKIN", "PERES", "HNG"):
             with self.subTest(gate=t):
                 c = gate_circuit(t)
                 target = c.gates[0].wires[-1]                            # last wire is never a control
                 self.assertIsNotNone(Fault("CONTROL", (0, target, spare(c))).check(c))
 
     def test_rejects_wire_out_of_range(self):
-        for t in ("CNOT", "TOFFOLI", "FREDKIN"):
+        for t in ("CNOT", "TOFFOLI", "FREDKIN", "PERES", "HNG"):
             with self.subTest(gate=t):
                 c = gate_circuit(t)
                 self.assertIsNotNone(Fault("CONTROL", (0, 0, c.num_wires + 3)).check(c))

@@ -1,5 +1,6 @@
 import unittest
-from src.gates import NOTGate, CNOTGate, ToffoliGate, FredkinGate
+from itertools import product
+from src.gates import NOTGate, CNOTGate, ToffoliGate, FredkinGate, PeresGate, HNGGate
 
 
 class TestNOTGate(unittest.TestCase):
@@ -102,6 +103,45 @@ class TestFredkinGate(unittest.TestCase):
         for inputs, output in expected.items():
             with self.subTest(inputs=inputs):
                 self.assertEqual(g.apply(inputs), output)
+
+
+class TestPeresGate(unittest.TestCase):
+
+    def test_stores_wires(self):
+        g = PeresGate(0, 1, 2)
+        self.assertEqual(g.name, "PERES")
+        self.assertEqual(g.wires, [0, 1, 2])
+
+    def test_truth_table(self):
+        g = PeresGate(0, 1, 2)
+        for a, b, c in product((0, 1), repeat=3):
+            with self.subTest(inputs=(a, b, c)):
+                self.assertEqual(g.apply((a, b, c)), (a, a ^ b, (a & b) ^ c))
+
+    def test_is_reversible(self):
+        g = PeresGate(0, 1, 2)
+        outputs = {g.apply(bits) for bits in product((0, 1), repeat=3)}
+        self.assertEqual(len(outputs), 8)          # every input gives a different output
+
+
+class TestHNGGate(unittest.TestCase):
+
+    def test_stores_wires(self):
+        g = HNGGate(0, 1, 2, 3)
+        self.assertEqual(g.name, "HNG")
+        self.assertEqual(g.wires, [0, 1, 2, 3])
+
+    def test_truth_table(self):
+        g = HNGGate(0, 1, 2, 3)
+        for a, b, c, d in product((0, 1), repeat=4):
+            with self.subTest(inputs=(a, b, c, d)):
+                expected = (a, b, a ^ b ^ c, ((a ^ b) & c) ^ (a & b) ^ d)
+                self.assertEqual(g.apply((a, b, c, d)), expected)
+
+    def test_is_reversible(self):
+        g = HNGGate(0, 1, 2, 3)
+        outputs = {g.apply(bits) for bits in product((0, 1), repeat=4)}
+        self.assertEqual(len(outputs), 16)         # every input gives a different output
 
 
 if __name__ == "__main__":

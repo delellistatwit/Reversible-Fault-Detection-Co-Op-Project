@@ -8,7 +8,7 @@ Nothing here may change without notifying the team.
 
 from itertools import product
 
-from src.gates import NOTGate, CNOTGate, ToffoliGate, FredkinGate
+from src.gates import NOTGate, CNOTGate, ToffoliGate, FredkinGate, PeresGate, HNGGate
 
 
 GATE_SPECS = {
@@ -55,6 +55,28 @@ GATE_SPECS = {
         "vhdl_outputs": ("P", "Q", "R"),
         "equation": "P = C, Q = B if C else A, R = A if C else B",
         "reference": lambda c, a, b: (c, b if c else a, a if c else b),
+    },
+    "PERES": {
+        "class": PeresGate,
+        "fields": ("a", "b", "c"),
+        "controls": ("a", "b"),
+        "targets": ("b", "c"),
+        "vhdl_entity": "Peres_gate",
+        "vhdl_inputs": ("A", "B", "C"),
+        "vhdl_outputs": ("P", "Q", "R"),
+        "equation": "P = A, Q = A XOR B, R = (A AND B) XOR C",
+        "reference": lambda a, b, c: (a, a ^ b, (a & b) ^ c),
+    },
+    "HNG": {
+        "class": HNGGate,
+        "fields": ("a", "b", "c", "d"),
+        "controls": ("a", "b"),
+        "targets": ("c", "d"),
+        "vhdl_entity": "HNG_gate",
+        "vhdl_inputs": ("A", "B", "C", "D"),
+        "vhdl_outputs": ("P", "Q", "R", "S"),
+        "equation": "P = A, Q = B, R = A XOR B XOR C, S = ((A XOR B) AND C) XOR (A AND B) XOR D",
+        "reference": lambda a, b, c, d: (a, b, a ^ b ^ c, ((a ^ b) & c) ^ (a & b) ^ d),
     },
 }
 
