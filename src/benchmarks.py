@@ -37,3 +37,17 @@ def build_all_gates():
     c.add_gate(ToffoliGate(0, 1, 2))
     c.add_gate(FredkinGate(3, 1, 2))
     return c
+
+
+def build_full_adder():
+    """reversible full adder from primitive gates. standard design, to be checked against Jeramiah's handoff.
+
+    Wires:   0 = A, 1 = B, 2 = Cin, 3 = constant input, always starts at 0
+    Outputs: wire 2 = SUM (A XOR B XOR Cin), wire 3 = CARRY (majority of A, B, Cin)
+    """
+    c = Circuit(4)
+    c.add_gate(ToffoliGate(0, 1, 3))
+    c.add_gate(CNOTGate(0, 1))
+    c.add_gate(ToffoliGate(1, 2, 3))
+    c.add_gate(CNOTGate(1, 2))
+    return c

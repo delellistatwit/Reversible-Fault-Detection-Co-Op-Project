@@ -1,6 +1,6 @@
 import unittest
 from itertools import product
-from src.benchmarks import build_xor, build_half_adder
+from src.benchmarks import build_xor, build_half_adder, build_full_adder
 
 
 class TestXOR(unittest.TestCase):
@@ -29,5 +29,16 @@ class TestHalfAdder(unittest.TestCase):
         self.assertEqual(names, ["TOFFOLI", "CNOT"])
 
 
+class TestFullAdder(unittest.TestCase):
+
+      def test_sum_and_carry(self):
+          c = build_full_adder()
+          for a, b, cin in product((0, 1), repeat=3):
+              with self.subTest(a=a, b=b, cin=cin):
+                  out = c.simulate((a, b, cin, 0))
+                  self.assertEqual(out[2], a ^ b ^ cin)                        # sum
+                  self.assertEqual(out[3], (a & b) | (a & cin) | (b & cin))   # carry
+
+                  
 if __name__ == "__main__":
     unittest.main()

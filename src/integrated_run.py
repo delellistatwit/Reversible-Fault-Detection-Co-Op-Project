@@ -11,7 +11,7 @@ import sys
 import os
 from datetime import date
 
-from src.benchmarks import build_xor, build_half_adder, build_all_gates
+from src.benchmarks import build_xor, build_half_adder, build_all_gates, build_full_adder
 from src.gate_specs import build_single_gate, check_gate_schema, gate_instance_id
 from src.faults import FaultGenerator, classify_faults, UNIQUE_VALID, DUPLICATE, INVALID
 from src.detectionmatrix import DetectionMatrix
@@ -38,6 +38,7 @@ CIRCUITS = {
     "ALL_GATES": build_all_gates,
     "XOR": build_xor,
     "HALF_ADDER": build_half_adder,
+    "FULL_ADDER": build_full_adder,
     "GRAYCODE6": lambda: load_real("benchmarks/graycode6.real")[0],
     "HAM7": lambda: load_real("benchmarks/ham7.real")[0],
     "FREDKIN7": lambda: load_real("benchmarks/fredkin_7.real")[0],
