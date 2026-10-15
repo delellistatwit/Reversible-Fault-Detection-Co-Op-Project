@@ -7,7 +7,7 @@ The goal is to simulate small reversible logic circuits, inject predefined fault
 ## Team
 
 - Jeramiah Simon: hardware design and VHDL validation
-- Tyler deLlellis: simulator and fault injection
+- Tyler deLellis: simulator and fault injection
 - Matthew Santorsa: testing, optimization, and analytics
 
 ## Folder Structure
@@ -21,4 +21,9 @@ The goal is to simulate small reversible logic circuits, inject predefined fault
 
 ## How to Run
 
-Instructions will be added as each part of the project is completed.
+python -m unittest discover tests        # run all unit tests
+python -m src.integrated_run             # full pipeline: simulate, inject faults, detection matrix, greedy selection
+python -m src.fault_catalog              # one CSV row per fault, with the inputs that detect it
+python -m src.mutant_audit               # checks that the generated faults are correct and complete
+```
+Add circuit names to run only those, for example `python -m src.integrated_run HALF_ADDER FULL_ADDER`.

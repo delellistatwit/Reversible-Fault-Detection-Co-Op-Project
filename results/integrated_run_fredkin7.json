@@ -1,5 +1,5 @@
 {
-  "run_id": "RUN_FREDKIN7_2026-10-09",
+  "run_id": "RUN_FREDKIN7_2026-10-15",
   "circuit_id": "FREDKIN7",
   "num_wires": 3,
   "gates": [
@@ -85,6 +85,7 @@
     "invalid": 0,
     "detectable": 4,
     "undetectable": [],
-    "selected_vectors": 2
+    "selected_vectors": 2,
+    "greedy_runtime_ms": 0.010831000054167816
   }
 }

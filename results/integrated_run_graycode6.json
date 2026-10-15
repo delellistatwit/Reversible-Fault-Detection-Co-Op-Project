@@ -1,5 +1,5 @@
 {
-  "run_id": "RUN_GRAYCODE6_2026-10-09",
+  "run_id": "RUN_GRAYCODE6_2026-10-15",
   "circuit_id": "GRAYCODE6",
   "num_wires": 6,
   "gates": [
@@ -3917,6 +3917,7 @@
     "invalid": 0,
     "detectable": 100,
     "undetectable": [],
-    "selected_vectors": 4
+    "selected_vectors": 4,
+    "greedy_runtime_ms": 0.6925239999873156
   }
 }

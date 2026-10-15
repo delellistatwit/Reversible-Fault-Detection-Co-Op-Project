@@ -1,5 +1,5 @@
 {
-  "run_id": "RUN_XOR_2026-10-09",
+  "run_id": "RUN_XOR_2026-10-15",
   "circuit_id": "XOR",
   "num_wires": 2,
   "gates": [
@@ -51,6 +51,7 @@
     "invalid": 0,
     "detectable": 2,
     "undetectable": [],
-    "selected_vectors": 1
+    "selected_vectors": 1,
+    "greedy_runtime_ms": 0.00927799999317358
   }
 }

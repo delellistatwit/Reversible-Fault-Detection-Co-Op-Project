@@ -15,7 +15,7 @@ from src.benchmarks import build_xor, build_half_adder, build_all_gates, build_f
 from src.gate_specs import build_single_gate, check_gate_schema, gate_instance_id
 from src.faults import FaultGenerator, classify_faults, UNIQUE_VALID, DUPLICATE, INVALID
 from src.detectionmatrix import DetectionMatrix
-from src.greedy_selector import greedy_selector_v1
+from src.greedy_selector import run_with_metrics
 from src.real_import import load_real
 from src.circuit import Circuit
 
@@ -71,7 +71,7 @@ def run(circuit_id):
 
     # 4. greedy selection
     fault_ids = [f.get_id() for f in unique]
-    selected = greedy_selector_v1(vectors, fault_ids, dm.matrix)
+    selected, greedy_runtime_ms = run_with_metrics(vectors, fault_ids, dm.matrix)
 
     detected = set().union(*dm.matrix.values())
     undetectable = [fid for fid in fault_ids if fid not in detected]
@@ -96,6 +96,7 @@ def run(circuit_id):
             "detectable": len(fault_ids) - len(undetectable),
             "undetectable": undetectable,
             "selected_vectors": len(selected),
+            "greedy_runtime_ms": greedy_runtime_ms,
         },
     }
 

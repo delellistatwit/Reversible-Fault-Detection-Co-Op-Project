@@ -1,5 +1,5 @@
 {
-  "run_id": "RUN_NOT_GATE_2026-10-09",
+  "run_id": "RUN_NOT_GATE_2026-10-15",
   "circuit_id": "NOT_GATE",
   "num_wires": 1,
   "gates": [
@@ -39,6 +39,7 @@
     "invalid": 0,
     "detectable": 1,
     "undetectable": [],
-    "selected_vectors": 1
+    "selected_vectors": 1,
+    "greedy_runtime_ms": 0.009146999900622177
   }
 }

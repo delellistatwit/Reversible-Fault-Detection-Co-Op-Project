@@ -20,13 +20,13 @@ def calculate_reduction(selected_vectors_list, total_vectors_list):
 def run_with_metrics(V, F, matrix):
     """Wrapper function to execute the selector and capture runtime in milliseconds."""
     start_time = time.perf_counter()
-    selected = greedy_selector_v1(V, F, matrix)
+    selected = greedy_selector_v1(V, F, matrix, trace=False)
     end_time = time.perf_counter()
     
     runtime_ms = (end_time - start_time) * 1000
     return selected, runtime_ms
 
-def greedy_selector_v1(V, F, matrix):
+def greedy_selector_v1(V, F, matrix, trace=True):
     """
     executes deterministic greedy selection based pseudocode
     includes selection trace for verification.
@@ -38,7 +38,8 @@ def greedy_selector_v1(V, F, matrix):
     vector_indices = {v: i for i, v in enumerate(V)}
     available_vectors = list(V)  # working copy to remove vectors from
     
-    print("--- Starting Selection Trace ---")
+    if trace:
+        print("--- Starting Selection Trace ---")
     
     while len(uncovered_faults) > 0:
         best_vector = None
@@ -61,7 +62,8 @@ def greedy_selector_v1(V, F, matrix):
                     
         # failsafe when undetectable faults are present
         if max_new_covered == 0:
-            print("Trace Log: Failsafe triggered. Remaining faults undetectable.")
+            if trace:
+                print("Trace Log: Failsafe triggered. Remaining faults undetectable.")
             break
             
         # update sets and removal of faults
@@ -71,9 +73,11 @@ def greedy_selector_v1(V, F, matrix):
         available_vectors.remove(best_vector)
         
         # selection trace output
-        print(f"Trace Log: Selected Vector {best_vector} | New Faults Covered: {max_new_covered} | Remaining Target Faults: {len(uncovered_faults)}")
+        if trace:
+            print(f"Trace Log: Selected Vector {best_vector} | New Faults Covered: {max_new_covered} | Remaining Target Faults: {len(uncovered_faults)}")
         
-    print("--- End of Trace ---")
+    if trace:
+        print("--- End of Trace ---")
     return selected_vectors
 
 
