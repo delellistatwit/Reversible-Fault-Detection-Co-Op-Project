@@ -17,3 +17,8 @@ To run, simply run greedy_selector.py. Evidence of proper function will print to
 # Week 3
 ## All deliverables
 All deliverables can be found under week_3_deliverables.pdf
+# Week 4
+## Deliverable 1
+To run, simply run python metrics.py in the console. Evidence of proper function will print to console
+## Deliverable 2
+No run instructions are required, work can be found under docs/week 4 worked example.pdf
