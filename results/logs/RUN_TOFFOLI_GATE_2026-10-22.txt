@@ -1,0 +1,17 @@
+run_id: RUN_TOFFOLI_GATE_2026-10-22
+experiment: week5_exhaustive
+circuit: TOFFOLI_GATE
+date: 2026-10-22
+commit: bc6170b
+wires: 3
+gates: 1
+inputs: 8
+faults simulated: 4
+raw rows: 32
+undetectable faults: 0 []
+simulation time (s): 0.0004
+checks:
+  PASS  inputs = 2^wires
+  PASS  raw rows = faults x inputs
+  PASS  every matrix row has one value per input
+  PASS  matrix agrees with fault catalog

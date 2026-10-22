@@ -1,0 +1,19 @@
+{
+  "experiment": "week5_exhaustive",
+  "description": "Correct and faulty simulations on every input for the primary circuits and the external benchmark.",
+  "circuits": [
+    "NOT_GATE",
+    "CNOT_GATE",
+    "TOFFOLI_GATE",
+    "FREDKIN_GATE",
+    "PERES_GATE",
+    "HNG_GATE",
+    "XOR",
+    "HALF_ADDER",
+    "FULL_ADDER",
+    "FULL_ADDER_PERES",
+    "FULL_ADDER_HNG",
+    "ALL_GATES",
+    "GRAYCODE6"
+  ]
+}

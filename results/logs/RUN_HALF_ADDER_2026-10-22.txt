@@ -1,0 +1,17 @@
+run_id: RUN_HALF_ADDER_2026-10-22
+experiment: week5_exhaustive
+circuit: HALF_ADDER
+date: 2026-10-22
+commit: bc6170b
+wires: 3
+gates: 2
+inputs: 8
+faults simulated: 9
+raw rows: 72
+undetectable faults: 0 []
+simulation time (s): 0.0013
+checks:
+  PASS  inputs = 2^wires
+  PASS  raw rows = faults x inputs
+  PASS  every matrix row has one value per input
+  PASS  matrix agrees with fault catalog

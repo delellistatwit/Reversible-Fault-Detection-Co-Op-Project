@@ -1,0 +1,3 @@
+run_id,circuit_id,fault_id,status,input,correct_output,faulty_output,detected
+RUN_NOT_GATE_2026-10-22,NOT_GATE,REMOVE_G0,UNIQUE_VALID,0,1,0,1
+RUN_NOT_GATE_2026-10-22,NOT_GATE,REMOVE_G0,UNIQUE_VALID,1,0,1,1

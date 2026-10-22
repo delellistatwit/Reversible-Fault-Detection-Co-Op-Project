@@ -1,0 +1,17 @@
+run_id: RUN_NOT_GATE_2026-10-22
+experiment: week5_exhaustive
+circuit: NOT_GATE
+date: 2026-10-22
+commit: bc6170b
+wires: 1
+gates: 1
+inputs: 2
+faults simulated: 1
+raw rows: 2
+undetectable faults: 0 []
+simulation time (s): 0.0002
+checks:
+  PASS  inputs = 2^wires
+  PASS  raw rows = faults x inputs
+  PASS  every matrix row has one value per input
+  PASS  matrix agrees with fault catalog
