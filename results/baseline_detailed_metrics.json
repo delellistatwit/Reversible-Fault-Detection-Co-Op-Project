@@ -1,0 +1,2712 @@
+{
+  "NOT_GATE": {
+    "metadata": {
+      "run_id": "RUN_NOT_GATE_2026-10-15",
+      "circuit_id": "NOT_GATE",
+      "wires": 1,
+      "gates": 1,
+      "total_vectors_2n": 2,
+      "faults_generated": 1,
+      "unique_valid_faults": 1,
+      "duplicate_faults": 0,
+      "invalid_faults": 0,
+      "detectable_faults": 1,
+      "undetectable_faults": 0,
+      "total_matrix_cells": 2,
+      "total_positive_detections": 2,
+      "coverage_pct": 100.0,
+      "density_pct": 100.0,
+      "min_multiplicity": 2,
+      "avg_multiplicity": 2.0,
+      "max_multiplicity": 2,
+      "essential_vector_count": 0,
+      "signature_class_count": 1,
+      "greedy_selected_vectors": 1,
+      "test_set_reduction_pct": 50.0,
+      "greedy_runtime_ms": 0.009147,
+      "audit_status": "PASS"
+    },
+    "audit_checks": {
+      "expected_rows_2n": 2,
+      "actual_rows": 2,
+      "expected_cols_uv": 1,
+      "actual_cols": 1,
+      "total_ones": 2,
+      "total_cells": 2,
+      "eq1_row_count_pass": true,
+      "eq2_fault_catalog_pass": true,
+      "eq3_detectability_pass": true,
+      "eq4_matrix_sum_pass": true,
+      "audit_status": "PASS"
+    },
+    "essential_vectors": [],
+    "signature_classes": [
+      [
+        "REMOVE_G0"
+      ]
+    ],
+    "multiplicity": {
+      "REMOVE_G0": 2
+    }
+  },
+  "CNOT_GATE": {
+    "metadata": {
+      "run_id": "RUN_CNOT_GATE_2026-10-15",
+      "circuit_id": "CNOT_GATE",
+      "wires": 2,
+      "gates": 1,
+      "total_vectors_2n": 4,
+      "faults_generated": 2,
+      "unique_valid_faults": 2,
+      "duplicate_faults": 0,
+      "invalid_faults": 0,
+      "detectable_faults": 2,
+      "undetectable_faults": 0,
+      "total_matrix_cells": 8,
+      "total_positive_detections": 4,
+      "coverage_pct": 100.0,
+      "density_pct": 50.0,
+      "min_multiplicity": 2,
+      "avg_multiplicity": 2.0,
+      "max_multiplicity": 2,
+      "essential_vector_count": 0,
+      "signature_class_count": 2,
+      "greedy_selected_vectors": 1,
+      "test_set_reduction_pct": 75.0,
+      "greedy_runtime_ms": 0.009127,
+      "audit_status": "PASS"
+    },
+    "audit_checks": {
+      "expected_rows_2n": 4,
+      "actual_rows": 4,
+      "expected_cols_uv": 2,
+      "actual_cols": 2,
+      "total_ones": 4,
+      "total_cells": 8,
+      "eq1_row_count_pass": true,
+      "eq2_fault_catalog_pass": true,
+      "eq3_detectability_pass": true,
+      "eq4_matrix_sum_pass": true,
+      "audit_status": "PASS"
+    },
+    "essential_vectors": [],
+    "signature_classes": [
+      [
+        "REMOVE_G0"
+      ],
+      [
+        "SWAP_G0_W0_W1"
+      ]
+    ],
+    "multiplicity": {
+      "SWAP_G0_W0_W1": 2,
+      "REMOVE_G0": 2
+    }
+  },
+  "XOR": {
+    "metadata": {
+      "run_id": "RUN_XOR_2026-10-15",
+      "circuit_id": "XOR",
+      "wires": 2,
+      "gates": 1,
+      "total_vectors_2n": 4,
+      "faults_generated": 2,
+      "unique_valid_faults": 2,
+      "duplicate_faults": 0,
+      "invalid_faults": 0,
+      "detectable_faults": 2,
+      "undetectable_faults": 0,
+      "total_matrix_cells": 8,
+      "total_positive_detections": 4,
+      "coverage_pct": 100.0,
+      "density_pct": 50.0,
+      "min_multiplicity": 2,
+      "avg_multiplicity": 2.0,
+      "max_multiplicity": 2,
+      "essential_vector_count": 0,
+      "signature_class_count": 2,
+      "greedy_selected_vectors": 1,
+      "test_set_reduction_pct": 75.0,
+      "greedy_runtime_ms": 0.009278,
+      "audit_status": "PASS"
+    },
+    "audit_checks": {
+      "expected_rows_2n": 4,
+      "actual_rows": 4,
+      "expected_cols_uv": 2,
+      "actual_cols": 2,
+      "total_ones": 4,
+      "total_cells": 8,
+      "eq1_row_count_pass": true,
+      "eq2_fault_catalog_pass": true,
+      "eq3_detectability_pass": true,
+      "eq4_matrix_sum_pass": true,
+      "audit_status": "PASS"
+    },
+    "essential_vectors": [],
+    "signature_classes": [
+      [
+        "REMOVE_G0"
+      ],
+      [
+        "SWAP_G0_W0_W1"
+      ]
+    ],
+    "multiplicity": {
+      "SWAP_G0_W0_W1": 2,
+      "REMOVE_G0": 2
+    }
+  },
+  "TOFFOLI_GATE": {
+    "metadata": {
+      "run_id": "RUN_TOFFOLI_GATE_2026-10-15",
+      "circuit_id": "TOFFOLI_GATE",
+      "wires": 3,
+      "gates": 1,
+      "total_vectors_2n": 8,
+      "faults_generated": 4,
+      "unique_valid_faults": 4,
+      "duplicate_faults": 0,
+      "invalid_faults": 0,
+      "detectable_faults": 4,
+      "undetectable_faults": 0,
+      "total_matrix_cells": 32,
+      "total_positive_detections": 14,
+      "coverage_pct": 100.0,
+      "density_pct": 43.75,
+      "min_multiplicity": 2,
+      "avg_multiplicity": 3.5,
+      "max_multiplicity": 4,
+      "essential_vector_count": 0,
+      "signature_class_count": 4,
+      "greedy_selected_vectors": 2,
+      "test_set_reduction_pct": 75.0,
+      "greedy_runtime_ms": 0.015369,
+      "audit_status": "PASS"
+    },
+    "audit_checks": {
+      "expected_rows_2n": 8,
+      "actual_rows": 8,
+      "expected_cols_uv": 4,
+      "actual_cols": 4,
+      "total_ones": 14,
+      "total_cells": 32,
+      "eq1_row_count_pass": true,
+      "eq2_fault_catalog_pass": true,
+      "eq3_detectability_pass": true,
+      "eq4_matrix_sum_pass": true,
+      "audit_status": "PASS"
+    },
+    "essential_vectors": [],
+    "signature_classes": [
+      [
+        "REMOVE_G0"
+      ],
+      [
+        "SWAP_G0_W0_W1"
+      ],
+      [
+        "SWAP_G0_W0_W2"
+      ],
+      [
+        "SWAP_G0_W1_W2"
+      ]
+    ],
+    "multiplicity": {
+      "SWAP_G0_W1_W2": 4,
+      "SWAP_G0_W0_W2": 4,
+      "SWAP_G0_W0_W1": 4,
+      "REMOVE_G0": 2
+    }
+  },
+  "FREDKIN_GATE": {
+    "metadata": {
+      "run_id": "RUN_FREDKIN_GATE_2026-10-15",
+      "circuit_id": "FREDKIN_GATE",
+      "wires": 3,
+      "gates": 1,
+      "total_vectors_2n": 8,
+      "faults_generated": 4,
+      "unique_valid_faults": 4,
+      "duplicate_faults": 0,
+      "invalid_faults": 0,
+      "detectable_faults": 4,
+      "undetectable_faults": 0,
+      "total_matrix_cells": 32,
+      "total_positive_detections": 14,
+      "coverage_pct": 100.0,
+      "density_pct": 43.75,
+      "min_multiplicity": 2,
+      "avg_multiplicity": 3.5,
+      "max_multiplicity": 4,
+      "essential_vector_count": 0,
+      "signature_class_count": 4,
+      "greedy_selected_vectors": 2,
+      "test_set_reduction_pct": 75.0,
+      "greedy_runtime_ms": 0.014027,
+      "audit_status": "PASS"
+    },
+    "audit_checks": {
+      "expected_rows_2n": 8,
+      "actual_rows": 8,
+      "expected_cols_uv": 4,
+      "actual_cols": 4,
+      "total_ones": 14,
+      "total_cells": 32,
+      "eq1_row_count_pass": true,
+      "eq2_fault_catalog_pass": true,
+      "eq3_detectability_pass": true,
+      "eq4_matrix_sum_pass": true,
+      "audit_status": "PASS"
+    },
+    "essential_vectors": [],
+    "signature_classes": [
+      [
+        "REMOVE_G0"
+      ],
+      [
+        "SWAP_G0_W0_W1"
+      ],
+      [
+        "SWAP_G0_W0_W2"
+      ],
+      [
+        "SWAP_G0_W1_W2"
+      ]
+    ],
+    "multiplicity": {
+      "SWAP_G0_W1_W2": 4,
+      "SWAP_G0_W0_W2": 4,
+      "SWAP_G0_W0_W1": 4,
+      "REMOVE_G0": 2
+    }
+  },
+  "FREDKIN7": {
+    "metadata": {
+      "run_id": "RUN_FREDKIN7_2026-10-15",
+      "circuit_id": "FREDKIN7",
+      "wires": 3,
+      "gates": 1,
+      "total_vectors_2n": 8,
+      "faults_generated": 4,
+      "unique_valid_faults": 4,
+      "duplicate_faults": 0,
+      "invalid_faults": 0,
+      "detectable_faults": 4,
+      "undetectable_faults": 0,
+      "total_matrix_cells": 32,
+      "total_positive_detections": 14,
+      "coverage_pct": 100.0,
+      "density_pct": 43.75,
+      "min_multiplicity": 2,
+      "avg_multiplicity": 3.5,
+      "max_multiplicity": 4,
+      "essential_vector_count": 0,
+      "signature_class_count": 4,
+      "greedy_selected_vectors": 2,
+      "test_set_reduction_pct": 75.0,
+      "greedy_runtime_ms": 0.010831,
+      "audit_status": "PASS"
+    },
+    "audit_checks": {
+      "expected_rows_2n": 8,
+      "actual_rows": 8,
+      "expected_cols_uv": 4,
+      "actual_cols": 4,
+      "total_ones": 14,
+      "total_cells": 32,
+      "eq1_row_count_pass": true,
+      "eq2_fault_catalog_pass": true,
+      "eq3_detectability_pass": true,
+      "eq4_matrix_sum_pass": true,
+      "audit_status": "PASS"
+    },
+    "essential_vectors": [],
+    "signature_classes": [
+      [
+        "REMOVE_G0"
+      ],
+      [
+        "SWAP_G0_W0_W1"
+      ],
+      [
+        "SWAP_G0_W0_W2"
+      ],
+      [
+        "SWAP_G0_W1_W2"
+      ]
+    ],
+    "multiplicity": {
+      "SWAP_G0_W1_W2": 4,
+      "SWAP_G0_W0_W2": 4,
+      "SWAP_G0_W0_W1": 4,
+      "REMOVE_G0": 2
+    }
+  },
+  "HALF_ADDER": {
+    "metadata": {
+      "run_id": "RUN_HALF_ADDER_2026-10-15",
+      "circuit_id": "HALF_ADDER",
+      "wires": 3,
+      "gates": 2,
+      "total_vectors_2n": 8,
+      "faults_generated": 9,
+      "unique_valid_faults": 9,
+      "duplicate_faults": 0,
+      "invalid_faults": 0,
+      "detectable_faults": 9,
+      "undetectable_faults": 0,
+      "total_matrix_cells": 72,
+      "total_positive_detections": 34,
+      "coverage_pct": 100.0,
+      "density_pct": 47.22,
+      "min_multiplicity": 2,
+      "avg_multiplicity": 3.78,
+      "max_multiplicity": 4,
+      "essential_vector_count": 0,
+      "signature_class_count": 7,
+      "greedy_selected_vectors": 3,
+      "test_set_reduction_pct": 62.5,
+      "greedy_runtime_ms": 0.021862,
+      "audit_status": "PASS"
+    },
+    "audit_checks": {
+      "expected_rows_2n": 8,
+      "actual_rows": 8,
+      "expected_cols_uv": 9,
+      "actual_cols": 9,
+      "total_ones": 34,
+      "total_cells": 72,
+      "eq1_row_count_pass": true,
+      "eq2_fault_catalog_pass": true,
+      "eq3_detectability_pass": true,
+      "eq4_matrix_sum_pass": true,
+      "audit_status": "PASS"
+    },
+    "essential_vectors": [],
+    "signature_classes": [
+      [
+        "CONTROL_G1_W0_TO_W2",
+        "SWAP_G1_W0_W2"
+      ],
+      [
+        "REMOVE_G0"
+      ],
+      [
+        "REMOVE_G1"
+      ],
+      [
+        "SWAP_G0_W0_W1",
+        "SWAP_G1_W0_W1"
+      ],
+      [
+        "SWAP_G0_W0_W2"
+      ],
+      [
+        "SWAP_G0_W1_W2"
+      ],
+      [
+        "SWAP_G1_W1_W2"
+      ]
+    ],
+    "multiplicity": {
+      "SWAP_G0_W1_W2": 4,
+      "SWAP_G0_W0_W2": 4,
+      "SWAP_G1_W0_W2": 4,
+      "CONTROL_G1_W0_TO_W2": 4,
+      "SWAP_G1_W1_W2": 4,
+      "SWAP_G1_W0_W1": 4,
+      "SWAP_G0_W0_W1": 4,
+      "REMOVE_G1": 4,
+      "REMOVE_G0": 2
+    }
+  },
+  "ALL_GATES": {
+    "metadata": {
+      "run_id": "RUN_ALL_GATES_2026-10-15",
+      "circuit_id": "ALL_GATES",
+      "wires": 4,
+      "gates": 4,
+      "total_vectors_2n": 16,
+      "faults_generated": 33,
+      "unique_valid_faults": 33,
+      "duplicate_faults": 0,
+      "invalid_faults": 0,
+      "detectable_faults": 33,
+      "undetectable_faults": 0,
+      "total_matrix_cells": 528,
+      "total_positive_detections": 252,
+      "coverage_pct": 100.0,
+      "density_pct": 47.73,
+      "min_multiplicity": 4,
+      "avg_multiplicity": 7.64,
+      "max_multiplicity": 16,
+      "essential_vector_count": 0,
+      "signature_class_count": 22,
+      "greedy_selected_vectors": 3,
+      "test_set_reduction_pct": 81.25,
+      "greedy_runtime_ms": 0.076965,
+      "audit_status": "PASS"
+    },
+    "audit_checks": {
+      "expected_rows_2n": 16,
+      "actual_rows": 16,
+      "expected_cols_uv": 33,
+      "actual_cols": 33,
+      "total_ones": 252,
+      "total_cells": 528,
+      "eq1_row_count_pass": true,
+      "eq2_fault_catalog_pass": true,
+      "eq3_detectability_pass": true,
+      "eq4_matrix_sum_pass": true,
+      "audit_status": "PASS"
+    },
+    "essential_vectors": [],
+    "signature_classes": [
+      [
+        "CONTROL_G1_W0_TO_W2",
+        "SWAP_G0_W0_W2",
+        "SWAP_G1_W0_W2",
+        "SWAP_G2_W0_W2"
+      ],
+      [
+        "CONTROL_G1_W0_TO_W3",
+        "SWAP_G1_W0_W3",
+        "SWAP_G2_W0_W3",
+        "SWAP_G3_W0_W3"
+      ],
+      [
+        "CONTROL_G2_W0_TO_W3"
+      ],
+      [
+        "CONTROL_G2_W1_TO_W3"
+      ],
+      [
+        "CONTROL_G3_W3_TO_W0"
+      ],
+      [
+        "REMOVE_G0"
+      ],
+      [
+        "REMOVE_G1"
+      ],
+      [
+        "REMOVE_G2"
+      ],
+      [
+        "REMOVE_G3"
+      ],
+      [
+        "SWAP_G0_W0_W1",
+        "SWAP_G1_W0_W1"
+      ],
+      [
+        "SWAP_G0_W0_W3"
+      ],
+      [
+        "SWAP_G0_W1_W2",
+        "SWAP_G1_W1_W2"
+      ],
+      [
+        "SWAP_G0_W1_W3"
+      ],
+      [
+        "SWAP_G0_W2_W3"
+      ],
+      [
+        "SWAP_G1_W1_W3"
+      ],
+      [
+        "SWAP_G1_W2_W3",
+        "SWAP_G2_W2_W3"
+      ],
+      [
+        "SWAP_G2_W0_W1",
+        "SWAP_G3_W0_W1"
+      ],
+      [
+        "SWAP_G2_W1_W2"
+      ],
+      [
+        "SWAP_G2_W1_W3",
+        "SWAP_G3_W1_W3"
+      ],
+      [
+        "SWAP_G3_W0_W2"
+      ],
+      [
+        "SWAP_G3_W1_W2"
+      ],
+      [
+        "SWAP_G3_W2_W3"
+      ]
+    ],
+    "multiplicity": {
+      "REMOVE_G0": 16,
+      "SWAP_G2_W1_W3": 8,
+      "SWAP_G1_W2_W3": 8,
+      "SWAP_G3_W0_W3": 8,
+      "SWAP_G2_W2_W3": 8,
+      "SWAP_G1_W0_W3": 8,
+      "CONTROL_G1_W0_TO_W3": 8,
+      "SWAP_G3_W1_W3": 8,
+      "SWAP_G3_W2_W3": 8,
+      "SWAP_G2_W0_W3": 8,
+      "SWAP_G1_W1_W3": 8,
+      "SWAP_G0_W1_W3": 8,
+      "SWAP_G0_W0_W3": 8,
+      "SWAP_G0_W2_W3": 8,
+      "SWAP_G2_W1_W2": 8,
+      "CONTROL_G1_W0_TO_W2": 8,
+      "SWAP_G3_W0_W2": 8,
+      "SWAP_G2_W0_W2": 8,
+      "SWAP_G1_W0_W2": 8,
+      "SWAP_G1_W1_W2": 8,
+      "REMOVE_G3": 4,
+      "SWAP_G0_W0_W2": 8,
+      "SWAP_G3_W1_W2": 8,
+      "SWAP_G0_W1_W2": 8,
+      "CONTROL_G3_W3_TO_W0": 4,
+      "SWAP_G1_W0_W1": 8,
+      "SWAP_G0_W0_W1": 8,
+      "SWAP_G3_W0_W1": 8,
+      "SWAP_G2_W0_W1": 8,
+      "CONTROL_G2_W0_TO_W3": 4,
+      "REMOVE_G2": 4,
+      "REMOVE_G1": 8,
+      "CONTROL_G2_W1_TO_W3": 4
+    }
+  },
+  "GRAYCODE6": {
+    "metadata": {
+      "run_id": "RUN_GRAYCODE6_2026-10-15",
+      "circuit_id": "GRAYCODE6",
+      "wires": 6,
+      "gates": 5,
+      "total_vectors_2n": 64,
+      "faults_generated": 100,
+      "unique_valid_faults": 100,
+      "duplicate_faults": 0,
+      "invalid_faults": 0,
+      "detectable_faults": 100,
+      "undetectable_faults": 0,
+      "total_matrix_cells": 6400,
+      "total_positive_detections": 3200,
+      "coverage_pct": 100.0,
+      "density_pct": 50.0,
+      "min_multiplicity": 32,
+      "avg_multiplicity": 32.0,
+      "max_multiplicity": 32,
+      "essential_vector_count": 0,
+      "signature_class_count": 34,
+      "greedy_selected_vectors": 4,
+      "test_set_reduction_pct": 93.75,
+      "greedy_runtime_ms": 0.692524,
+      "audit_status": "PASS"
+    },
+    "audit_checks": {
+      "expected_rows_2n": 64,
+      "actual_rows": 64,
+      "expected_cols_uv": 100,
+      "actual_cols": 100,
+      "total_ones": 3200,
+      "total_cells": 6400,
+      "eq1_row_count_pass": true,
+      "eq2_fault_catalog_pass": true,
+      "eq3_detectability_pass": true,
+      "eq4_matrix_sum_pass": true,
+      "audit_status": "PASS"
+    },
+    "essential_vectors": [],
+    "signature_classes": [
+      [
+        "CONTROL_G0_W1_TO_W2",
+        "SWAP_G0_W1_W2",
+        "SWAP_G1_W1_W2"
+      ],
+      [
+        "CONTROL_G0_W1_TO_W3",
+        "SWAP_G0_W1_W3",
+        "SWAP_G1_W1_W3",
+        "SWAP_G3_W1_W2",
+        "SWAP_G4_W1_W2"
+      ],
+      [
+        "CONTROL_G0_W1_TO_W4",
+        "SWAP_G0_W1_W4",
+        "SWAP_G1_W1_W4"
+      ],
+      [
+        "CONTROL_G0_W1_TO_W5",
+        "SWAP_G0_W1_W5",
+        "SWAP_G1_W1_W5"
+      ],
+      [
+        "CONTROL_G1_W2_TO_W0",
+        "SWAP_G1_W0_W2",
+        "SWAP_G2_W0_W2"
+      ],
+      [
+        "CONTROL_G1_W2_TO_W3",
+        "SWAP_G0_W2_W3",
+        "SWAP_G1_W2_W3",
+        "SWAP_G2_W2_W3"
+      ],
+      [
+        "CONTROL_G1_W2_TO_W4",
+        "SWAP_G0_W2_W4",
+        "SWAP_G1_W2_W4",
+        "SWAP_G2_W2_W4",
+        "SWAP_G4_W2_W3"
+      ],
+      [
+        "CONTROL_G1_W2_TO_W5",
+        "SWAP_G0_W2_W5",
+        "SWAP_G1_W2_W5",
+        "SWAP_G2_W2_W5"
+      ],
+      [
+        "CONTROL_G2_W3_TO_W0",
+        "SWAP_G1_W0_W3",
+        "SWAP_G2_W0_W3",
+        "SWAP_G3_W0_W3"
+      ],
+      [
+        "CONTROL_G2_W3_TO_W1",
+        "SWAP_G2_W1_W3",
+        "SWAP_G3_W1_W3"
+      ],
+      [
+        "CONTROL_G2_W3_TO_W4",
+        "SWAP_G0_W3_W4",
+        "SWAP_G1_W3_W4",
+        "SWAP_G2_W3_W4",
+        "SWAP_G3_W3_W4"
+      ],
+      [
+        "CONTROL_G2_W3_TO_W5",
+        "SWAP_G0_W3_W5",
+        "SWAP_G1_W3_W5",
+        "SWAP_G2_W3_W5",
+        "SWAP_G3_W3_W5"
+      ],
+      [
+        "CONTROL_G3_W4_TO_W0",
+        "SWAP_G1_W0_W4",
+        "SWAP_G2_W0_W4",
+        "SWAP_G3_W0_W4",
+        "SWAP_G4_W0_W4"
+      ],
+      [
+        "CONTROL_G3_W4_TO_W1",
+        "SWAP_G2_W1_W4",
+        "SWAP_G3_W1_W4",
+        "SWAP_G4_W1_W4"
+      ],
+      [
+        "CONTROL_G3_W4_TO_W2",
+        "SWAP_G3_W2_W4",
+        "SWAP_G4_W2_W4"
+      ],
+      [
+        "CONTROL_G3_W4_TO_W5",
+        "SWAP_G0_W4_W5",
+        "SWAP_G1_W4_W5",
+        "SWAP_G2_W4_W5",
+        "SWAP_G3_W4_W5",
+        "SWAP_G4_W4_W5"
+      ],
+      [
+        "CONTROL_G4_W5_TO_W0",
+        "SWAP_G1_W0_W5",
+        "SWAP_G2_W0_W5",
+        "SWAP_G3_W0_W5",
+        "SWAP_G4_W0_W5"
+      ],
+      [
+        "CONTROL_G4_W5_TO_W1",
+        "SWAP_G2_W1_W5",
+        "SWAP_G3_W1_W5",
+        "SWAP_G4_W1_W5"
+      ],
+      [
+        "CONTROL_G4_W5_TO_W2",
+        "SWAP_G3_W2_W5",
+        "SWAP_G4_W2_W5"
+      ],
+      [
+        "CONTROL_G4_W5_TO_W3",
+        "SWAP_G4_W3_W5"
+      ],
+      [
+        "REMOVE_G0",
+        "SWAP_G2_W1_W2"
+      ],
+      [
+        "REMOVE_G1",
+        "SWAP_G3_W2_W3"
+      ],
+      [
+        "REMOVE_G2",
+        "SWAP_G4_W3_W4"
+      ],
+      [
+        "REMOVE_G3"
+      ],
+      [
+        "REMOVE_G4"
+      ],
+      [
+        "SWAP_G0_W0_W1"
+      ],
+      [
+        "SWAP_G0_W0_W2",
+        "SWAP_G2_W0_W1",
+        "SWAP_G3_W0_W1",
+        "SWAP_G4_W0_W1"
+      ],
+      [
+        "SWAP_G0_W0_W3"
+      ],
+      [
+        "SWAP_G0_W0_W4"
+      ],
+      [
+        "SWAP_G0_W0_W5"
+      ],
+      [
+        "SWAP_G1_W0_W1"
+      ],
+      [
+        "SWAP_G3_W0_W2",
+        "SWAP_G4_W0_W2"
+      ],
+      [
+        "SWAP_G4_W0_W3"
+      ],
+      [
+        "SWAP_G4_W1_W3"
+      ]
+    ],
+    "multiplicity": {
+      "SWAP_G0_W1_W5": 32,
+      "CONTROL_G2_W3_TO_W5": 32,
+      "CONTROL_G4_W5_TO_W0": 32,
+      "SWAP_G2_W2_W5": 32,
+      "SWAP_G4_W4_W5": 32,
+      "CONTROL_G1_W2_TO_W5": 32,
+      "SWAP_G1_W4_W5": 32,
+      "CONTROL_G4_W5_TO_W1": 32,
+      "CONTROL_G4_W5_TO_W2": 32,
+      "SWAP_G1_W1_W5": 32,
+      "SWAP_G0_W3_W5": 32,
+      "CONTROL_G4_W5_TO_W3": 32,
+      "SWAP_G1_W0_W5": 32,
+      "SWAP_G1_W2_W5": 32,
+      "SWAP_G2_W1_W5": 32,
+      "SWAP_G4_W1_W5": 32,
+      "SWAP_G4_W2_W5": 32,
+      "SWAP_G4_W3_W5": 32,
+      "SWAP_G0_W4_W5": 32,
+      "SWAP_G3_W3_W5": 32,
+      "SWAP_G0_W2_W5": 32,
+      "SWAP_G0_W0_W5": 32,
+      "SWAP_G3_W2_W5": 32,
+      "REMOVE_G4": 32,
+      "SWAP_G3_W0_W5": 32,
+      "SWAP_G4_W0_W5": 32,
+      "SWAP_G1_W3_W5": 32,
+      "SWAP_G3_W4_W5": 32,
+      "CONTROL_G3_W4_TO_W5": 32,
+      "SWAP_G3_W1_W5": 32,
+      "SWAP_G2_W3_W5": 32,
+      "CONTROL_G0_W1_TO_W5": 32,
+      "SWAP_G2_W4_W5": 32,
+      "SWAP_G2_W0_W5": 32,
+      "CONTROL_G3_W4_TO_W1": 32,
+      "SWAP_G1_W2_W4": 32,
+      "SWAP_G2_W0_W4": 32,
+      "CONTROL_G0_W1_TO_W4": 32,
+      "SWAP_G0_W1_W4": 32,
+      "SWAP_G3_W1_W4": 32,
+      "SWAP_G4_W2_W3": 32,
+      "SWAP_G1_W0_W4": 32,
+      "REMOVE_G3": 32,
+      "SWAP_G3_W3_W4": 32,
+      "SWAP_G3_W2_W4": 32,
+      "SWAP_G4_W0_W4": 32,
+      "SWAP_G2_W1_W4": 32,
+      "SWAP_G3_W0_W4": 32,
+      "SWAP_G0_W0_W4": 32,
+      "SWAP_G0_W2_W4": 32,
+      "SWAP_G2_W3_W4": 32,
+      "SWAP_G0_W3_W4": 32,
+      "SWAP_G4_W1_W3": 32,
+      "CONTROL_G2_W3_TO_W4": 32,
+      "SWAP_G4_W2_W4": 32,
+      "SWAP_G1_W3_W4": 32,
+      "SWAP_G1_W1_W4": 32,
+      "CONTROL_G1_W2_TO_W4": 32,
+      "SWAP_G2_W2_W4": 32,
+      "SWAP_G4_W1_W4": 32,
+      "CONTROL_G3_W4_TO_W0": 32,
+      "SWAP_G4_W0_W3": 32,
+      "CONTROL_G3_W4_TO_W2": 32,
+      "SWAP_G2_W1_W3": 32,
+      "CONTROL_G2_W3_TO_W0": 32,
+      "SWAP_G3_W0_W2": 32,
+      "CONTROL_G0_W1_TO_W3": 32,
+      "SWAP_G0_W1_W3": 32,
+      "SWAP_G0_W0_W3": 32,
+      "SWAP_G1_W2_W3": 32,
+      "SWAP_G2_W2_W3": 32,
+      "SWAP_G3_W0_W3": 32,
+      "CONTROL_G2_W3_TO_W1": 32,
+      "REMOVE_G2": 32,
+      "SWAP_G4_W0_W2": 32,
+      "SWAP_G0_W2_W3": 32,
+      "SWAP_G4_W1_W2": 32,
+      "SWAP_G3_W1_W2": 32,
+      "SWAP_G4_W3_W4": 32,
+      "SWAP_G2_W0_W3": 32,
+      "CONTROL_G1_W2_TO_W3": 32,
+      "SWAP_G1_W0_W3": 32,
+      "SWAP_G3_W1_W3": 32,
+      "SWAP_G1_W1_W3": 32,
+      "CONTROL_G0_W1_TO_W2": 32,
+      "SWAP_G3_W0_W1": 32,
+      "SWAP_G2_W0_W2": 32,
+      "SWAP_G1_W0_W2": 32,
+      "SWAP_G2_W0_W1": 32,
+      "SWAP_G1_W1_W2": 32,
+      "CONTROL_G1_W2_TO_W0": 32,
+      "SWAP_G3_W2_W3": 32,
+      "SWAP_G0_W0_W2": 32,
+      "REMOVE_G1": 32,
+      "SWAP_G0_W1_W2": 32,
+      "SWAP_G4_W0_W1": 32,
+      "SWAP_G0_W0_W1": 32,
+      "SWAP_G2_W1_W2": 32,
+      "REMOVE_G0": 32,
+      "SWAP_G1_W0_W1": 32
+    }
+  },
+  "HAM7": {
+    "metadata": {
+      "run_id": "RUN_HAM7_2026-10-15",
+      "circuit_id": "HAM7",
+      "wires": 7,
+      "gates": 25,
+      "total_vectors_2n": 128,
+      "faults_generated": 693,
+      "unique_valid_faults": 693,
+      "duplicate_faults": 0,
+      "invalid_faults": 0,
+      "detectable_faults": 693,
+      "undetectable_faults": 0,
+      "total_matrix_cells": 88704,
+      "total_positive_detections": 42624,
+      "coverage_pct": 100.0,
+      "density_pct": 48.05,
+      "min_multiplicity": 32,
+      "avg_multiplicity": 61.51,
+      "max_multiplicity": 64,
+      "essential_vector_count": 0,
+      "signature_class_count": 193,
+      "greedy_selected_vectors": 5,
+      "test_set_reduction_pct": 96.09,
+      "greedy_runtime_ms": 6.527559,
+      "audit_status": "PASS"
+    },
+    "audit_checks": {
+      "expected_rows_2n": 128,
+      "actual_rows": 128,
+      "expected_cols_uv": 693,
+      "actual_cols": 693,
+      "total_ones": 42624,
+      "total_cells": 88704,
+      "eq1_row_count_pass": true,
+      "eq2_fault_catalog_pass": true,
+      "eq3_detectability_pass": true,
+      "eq4_matrix_sum_pass": true,
+      "audit_status": "PASS"
+    },
+    "essential_vectors": [],
+    "signature_classes": [
+      [
+        "CONTROL_G0_W4_TO_W0",
+        "SWAP_G0_W0_W4",
+        "SWAP_G1_W0_W4",
+        "SWAP_G2_W0_W4",
+        "SWAP_G3_W0_W4",
+        "SWAP_G4_W0_W4"
+      ],
+      [
+        "CONTROL_G0_W4_TO_W1",
+        "SWAP_G0_W1_W4",
+        "SWAP_G1_W1_W4"
+      ],
+      [
+        "CONTROL_G0_W4_TO_W2",
+        "SWAP_G0_W2_W4",
+        "SWAP_G1_W2_W4",
+        "SWAP_G2_W2_W4"
+      ],
+      [
+        "CONTROL_G0_W4_TO_W3",
+        "SWAP_G0_W3_W4",
+        "SWAP_G1_W3_W4",
+        "SWAP_G2_W3_W4",
+        "SWAP_G3_W3_W4",
+        "SWAP_G4_W3_W4"
+      ],
+      [
+        "CONTROL_G0_W4_TO_W6",
+        "CONTROL_G1_W6_TO_W4",
+        "CONTROL_G2_W6_TO_W4",
+        "SWAP_G0_W4_W6",
+        "SWAP_G1_W4_W6",
+        "SWAP_G2_W4_W6",
+        "SWAP_G3_W4_W6"
+      ],
+      [
+        "CONTROL_G10_W4_TO_W0"
+      ],
+      [
+        "CONTROL_G10_W4_TO_W1"
+      ],
+      [
+        "CONTROL_G10_W4_TO_W3"
+      ],
+      [
+        "CONTROL_G10_W4_TO_W5",
+        "REMOVE_G16"
+      ],
+      [
+        "CONTROL_G10_W6_TO_W0"
+      ],
+      [
+        "CONTROL_G10_W6_TO_W1"
+      ],
+      [
+        "CONTROL_G10_W6_TO_W3"
+      ],
+      [
+        "CONTROL_G10_W6_TO_W5"
+      ],
+      [
+        "CONTROL_G11_W2_TO_W0"
+      ],
+      [
+        "CONTROL_G11_W2_TO_W1"
+      ],
+      [
+        "CONTROL_G11_W2_TO_W4"
+      ],
+      [
+        "CONTROL_G11_W2_TO_W6",
+        "CONTROL_G13_W6_TO_W2"
+      ],
+      [
+        "CONTROL_G11_W5_TO_W0"
+      ],
+      [
+        "CONTROL_G11_W5_TO_W1"
+      ],
+      [
+        "CONTROL_G11_W5_TO_W4"
+      ],
+      [
+        "CONTROL_G11_W5_TO_W6"
+      ],
+      [
+        "CONTROL_G12_W3_TO_W0",
+        "SWAP_G12_W0_W3",
+        "SWAP_G13_W0_W3",
+        "SWAP_G14_W0_W3",
+        "SWAP_G23_W0_W3"
+      ],
+      [
+        "CONTROL_G12_W3_TO_W2",
+        "CONTROL_G14_W3_TO_W2",
+        "CONTROL_G15_W3_TO_W2",
+        "SWAP_G12_W2_W3",
+        "SWAP_G13_W2_W3",
+        "SWAP_G14_W2_W3",
+        "SWAP_G15_W2_W3",
+        "SWAP_G16_W2_W3"
+      ],
+      [
+        "CONTROL_G12_W3_TO_W4",
+        "SWAP_G12_W3_W4",
+        "SWAP_G13_W3_W4"
+      ],
+      [
+        "CONTROL_G12_W3_TO_W5",
+        "CONTROL_G14_W3_TO_W5",
+        "SWAP_G12_W3_W5",
+        "SWAP_G13_W3_W5",
+        "SWAP_G14_W3_W5",
+        "SWAP_G15_W3_W5",
+        "SWAP_G21_W2_W5",
+        "SWAP_G22_W2_W5",
+        "SWAP_G23_W2_W5",
+        "SWAP_G24_W2_W5"
+      ],
+      [
+        "CONTROL_G12_W3_TO_W6",
+        "CONTROL_G14_W3_TO_W6",
+        "CONTROL_G15_W3_TO_W6",
+        "SWAP_G12_W3_W6",
+        "SWAP_G13_W3_W6",
+        "SWAP_G14_W3_W6",
+        "SWAP_G15_W3_W6",
+        "SWAP_G16_W3_W6"
+      ],
+      [
+        "CONTROL_G13_W5_TO_W0"
+      ],
+      [
+        "CONTROL_G13_W5_TO_W1"
+      ],
+      [
+        "CONTROL_G13_W5_TO_W2"
+      ],
+      [
+        "CONTROL_G13_W5_TO_W3"
+      ],
+      [
+        "CONTROL_G13_W6_TO_W0"
+      ],
+      [
+        "CONTROL_G13_W6_TO_W1"
+      ],
+      [
+        "CONTROL_G13_W6_TO_W3"
+      ],
+      [
+        "CONTROL_G14_W3_TO_W1",
+        "CONTROL_G15_W3_TO_W1",
+        "CONTROL_G6_W3_TO_W1",
+        "CONTROL_G7_W3_TO_W1",
+        "SWAP_G13_W1_W3",
+        "SWAP_G14_W1_W3",
+        "SWAP_G15_W1_W3",
+        "SWAP_G16_W1_W3",
+        "SWAP_G2_W1_W3",
+        "SWAP_G3_W1_W3",
+        "SWAP_G4_W1_W3",
+        "SWAP_G5_W1_W3",
+        "SWAP_G6_W1_W3",
+        "SWAP_G7_W1_W3",
+        "SWAP_G8_W1_W3"
+      ],
+      [
+        "CONTROL_G14_W3_TO_W4",
+        "CONTROL_G15_W3_TO_W4",
+        "SWAP_G14_W3_W4",
+        "SWAP_G15_W3_W4",
+        "SWAP_G16_W3_W4"
+      ],
+      [
+        "CONTROL_G15_W3_TO_W0",
+        "CONTROL_G6_W3_TO_W0",
+        "SWAP_G0_W0_W3",
+        "SWAP_G15_W0_W3",
+        "SWAP_G16_W0_W3",
+        "SWAP_G1_W0_W3",
+        "SWAP_G2_W0_W3",
+        "SWAP_G3_W0_W3",
+        "SWAP_G4_W0_W3",
+        "SWAP_G5_W0_W3",
+        "SWAP_G6_W0_W3",
+        "SWAP_G7_W0_W3"
+      ],
+      [
+        "CONTROL_G16_W4_TO_W0"
+      ],
+      [
+        "CONTROL_G16_W4_TO_W1"
+      ],
+      [
+        "CONTROL_G16_W4_TO_W2"
+      ],
+      [
+        "CONTROL_G16_W4_TO_W5"
+      ],
+      [
+        "CONTROL_G16_W6_TO_W0"
+      ],
+      [
+        "CONTROL_G16_W6_TO_W1"
+      ],
+      [
+        "CONTROL_G16_W6_TO_W2"
+      ],
+      [
+        "CONTROL_G16_W6_TO_W5"
+      ],
+      [
+        "CONTROL_G17_W1_TO_W0",
+        "SWAP_G10_W0_W1",
+        "SWAP_G11_W0_W1",
+        "SWAP_G12_W0_W1",
+        "SWAP_G15_W0_W1",
+        "SWAP_G16_W0_W1",
+        "SWAP_G17_W0_W1",
+        "SWAP_G18_W0_W1",
+        "SWAP_G2_W0_W1",
+        "SWAP_G3_W0_W1",
+        "SWAP_G4_W0_W1",
+        "SWAP_G5_W0_W1",
+        "SWAP_G6_W0_W1",
+        "SWAP_G7_W0_W1",
+        "SWAP_G9_W0_W1"
+      ],
+      [
+        "CONTROL_G17_W1_TO_W2",
+        "REMOVE_G21",
+        "SWAP_G13_W1_W2",
+        "SWAP_G14_W1_W2",
+        "SWAP_G15_W1_W2",
+        "SWAP_G16_W1_W2",
+        "SWAP_G17_W1_W2",
+        "SWAP_G18_W1_W2"
+      ],
+      [
+        "CONTROL_G17_W1_TO_W3",
+        "CONTROL_G22_W3_TO_W2",
+        "SWAP_G17_W1_W3",
+        "SWAP_G18_W1_W3",
+        "SWAP_G22_W2_W3",
+        "SWAP_G23_W2_W3"
+      ],
+      [
+        "CONTROL_G17_W1_TO_W5",
+        "CONTROL_G21_W1_TO_W5",
+        "SWAP_G10_W1_W5",
+        "SWAP_G11_W1_W5",
+        "SWAP_G12_W1_W5",
+        "SWAP_G16_W1_W5",
+        "SWAP_G17_W1_W5",
+        "SWAP_G18_W1_W5",
+        "SWAP_G21_W1_W5",
+        "SWAP_G22_W1_W5",
+        "SWAP_G23_W1_W5",
+        "SWAP_G24_W1_W5",
+        "SWAP_G9_W1_W5"
+      ],
+      [
+        "CONTROL_G17_W1_TO_W6",
+        "SWAP_G13_W1_W6",
+        "SWAP_G14_W1_W6",
+        "SWAP_G15_W1_W6",
+        "SWAP_G16_W1_W6",
+        "SWAP_G17_W1_W6",
+        "SWAP_G18_W1_W6"
+      ],
+      [
+        "CONTROL_G18_W2_TO_W0",
+        "CONTROL_G20_W2_TO_W0",
+        "SWAP_G15_W0_W2",
+        "SWAP_G16_W0_W2",
+        "SWAP_G17_W0_W2",
+        "SWAP_G18_W0_W2",
+        "SWAP_G19_W0_W2",
+        "SWAP_G20_W0_W2",
+        "SWAP_G21_W0_W2",
+        "SWAP_G22_W0_W2",
+        "SWAP_G24_W2_W3"
+      ],
+      [
+        "CONTROL_G18_W2_TO_W3",
+        "CONTROL_G19_W3_TO_W2",
+        "CONTROL_G20_W2_TO_W3",
+        "SWAP_G17_W2_W3",
+        "SWAP_G18_W2_W3",
+        "SWAP_G19_W2_W3",
+        "SWAP_G20_W2_W3",
+        "SWAP_G21_W2_W3"
+      ],
+      [
+        "CONTROL_G18_W2_TO_W4",
+        "CONTROL_G20_W2_TO_W4",
+        "SWAP_G18_W2_W4",
+        "SWAP_G19_W2_W4",
+        "SWAP_G20_W2_W4",
+        "SWAP_G21_W2_W4",
+        "SWAP_G22_W2_W4",
+        "SWAP_G23_W2_W4",
+        "SWAP_G24_W2_W4"
+      ],
+      [
+        "CONTROL_G18_W2_TO_W5",
+        "SWAP_G16_W2_W5",
+        "SWAP_G17_W2_W5",
+        "SWAP_G18_W2_W5",
+        "SWAP_G19_W2_W5",
+        "SWAP_G20_W2_W5"
+      ],
+      [
+        "CONTROL_G18_W2_TO_W6",
+        "SWAP_G11_W2_W6",
+        "SWAP_G12_W2_W6",
+        "SWAP_G13_W2_W6",
+        "SWAP_G14_W2_W6",
+        "SWAP_G15_W2_W6",
+        "SWAP_G16_W2_W6",
+        "SWAP_G17_W2_W6",
+        "SWAP_G18_W2_W6",
+        "SWAP_G19_W2_W6"
+      ],
+      [
+        "CONTROL_G19_W3_TO_W0",
+        "CONTROL_G23_W0_TO_W1",
+        "CONTROL_G24_W0_TO_W1",
+        "SWAP_G17_W0_W3",
+        "SWAP_G18_W0_W3",
+        "SWAP_G19_W0_W3",
+        "SWAP_G20_W0_W3",
+        "SWAP_G21_W0_W3",
+        "SWAP_G23_W0_W1",
+        "SWAP_G24_W0_W1"
+      ],
+      [
+        "CONTROL_G19_W3_TO_W1",
+        "CONTROL_G24_W0_TO_W3",
+        "REMOVE_G22",
+        "SWAP_G19_W1_W3",
+        "SWAP_G20_W1_W3",
+        "SWAP_G21_W1_W3",
+        "SWAP_G24_W0_W3"
+      ],
+      [
+        "CONTROL_G19_W3_TO_W4",
+        "SWAP_G18_W3_W4",
+        "SWAP_G19_W3_W4",
+        "SWAP_G20_W3_W4",
+        "SWAP_G21_W3_W4"
+      ],
+      [
+        "CONTROL_G19_W3_TO_W5",
+        "SWAP_G17_W3_W5",
+        "SWAP_G18_W3_W5",
+        "SWAP_G19_W3_W5",
+        "SWAP_G20_W3_W5"
+      ],
+      [
+        "CONTROL_G1_W6_TO_W0",
+        "CONTROL_G2_W6_TO_W0",
+        "SWAP_G0_W0_W6",
+        "SWAP_G1_W0_W6",
+        "SWAP_G2_W0_W6",
+        "SWAP_G3_W0_W6"
+      ],
+      [
+        "CONTROL_G1_W6_TO_W2",
+        "CONTROL_G7_W3_TO_W2",
+        "CONTROL_G8_W3_TO_W2",
+        "SWAP_G0_W2_W6",
+        "SWAP_G1_W2_W6",
+        "SWAP_G2_W2_W6",
+        "SWAP_G7_W2_W3",
+        "SWAP_G8_W2_W3",
+        "SWAP_G9_W2_W3"
+      ],
+      [
+        "CONTROL_G1_W6_TO_W3",
+        "CONTROL_G2_W6_TO_W3",
+        "SWAP_G0_W3_W6",
+        "SWAP_G1_W3_W6",
+        "SWAP_G2_W3_W6",
+        "SWAP_G3_W3_W6"
+      ],
+      [
+        "CONTROL_G1_W6_TO_W5",
+        "CONTROL_G2_W6_TO_W5",
+        "SWAP_G1_W5_W6",
+        "SWAP_G2_W5_W6",
+        "SWAP_G3_W5_W6"
+      ],
+      [
+        "CONTROL_G20_W2_TO_W1",
+        "CONTROL_G21_W1_TO_W2",
+        "REMOVE_G17",
+        "SWAP_G12_W1_W3",
+        "SWAP_G19_W1_W2",
+        "SWAP_G20_W1_W2",
+        "SWAP_G21_W1_W2",
+        "SWAP_G22_W1_W2",
+        "SWAP_G23_W1_W2",
+        "SWAP_G24_W1_W2"
+      ],
+      [
+        "CONTROL_G20_W2_TO_W6",
+        "SWAP_G20_W2_W6",
+        "SWAP_G21_W2_W6",
+        "SWAP_G22_W2_W6",
+        "SWAP_G23_W2_W6",
+        "SWAP_G24_W2_W6"
+      ],
+      [
+        "CONTROL_G21_W1_TO_W0",
+        "SWAP_G19_W0_W1",
+        "SWAP_G20_W0_W1",
+        "SWAP_G21_W0_W1",
+        "SWAP_G22_W0_W1",
+        "SWAP_G24_W1_W3"
+      ],
+      [
+        "CONTROL_G21_W1_TO_W4",
+        "SWAP_G14_W2_W4",
+        "SWAP_G15_W2_W4",
+        "SWAP_G16_W2_W4",
+        "SWAP_G17_W2_W4",
+        "SWAP_G19_W1_W4",
+        "SWAP_G20_W1_W4",
+        "SWAP_G21_W1_W4",
+        "SWAP_G22_W1_W4",
+        "SWAP_G23_W1_W4",
+        "SWAP_G24_W1_W4"
+      ],
+      [
+        "CONTROL_G21_W1_TO_W6",
+        "SWAP_G20_W1_W6",
+        "SWAP_G21_W1_W6",
+        "SWAP_G22_W1_W6",
+        "SWAP_G23_W1_W6",
+        "SWAP_G24_W1_W6"
+      ],
+      [
+        "CONTROL_G22_W3_TO_W1",
+        "REMOVE_G19",
+        "SWAP_G22_W1_W3",
+        "SWAP_G23_W1_W3"
+      ],
+      [
+        "CONTROL_G22_W3_TO_W4",
+        "SWAP_G22_W3_W4",
+        "SWAP_G23_W3_W4"
+      ],
+      [
+        "CONTROL_G22_W3_TO_W5",
+        "SWAP_G22_W3_W5",
+        "SWAP_G23_W3_W5"
+      ],
+      [
+        "CONTROL_G22_W3_TO_W6",
+        "SWAP_G19_W1_W6",
+        "SWAP_G22_W3_W6",
+        "SWAP_G23_W3_W6"
+      ],
+      [
+        "CONTROL_G23_W0_TO_W2",
+        "SWAP_G23_W0_W2",
+        "SWAP_G24_W0_W2"
+      ],
+      [
+        "CONTROL_G23_W0_TO_W4",
+        "CONTROL_G24_W0_TO_W4",
+        "SWAP_G23_W0_W4",
+        "SWAP_G24_W0_W4"
+      ],
+      [
+        "CONTROL_G23_W0_TO_W5",
+        "CONTROL_G24_W0_TO_W5",
+        "SWAP_G23_W0_W5",
+        "SWAP_G24_W0_W5"
+      ],
+      [
+        "CONTROL_G23_W0_TO_W6",
+        "CONTROL_G24_W0_TO_W6",
+        "SWAP_G23_W0_W6",
+        "SWAP_G24_W0_W6"
+      ],
+      [
+        "CONTROL_G2_W6_TO_W1",
+        "SWAP_G2_W1_W6",
+        "SWAP_G3_W1_W6"
+      ],
+      [
+        "CONTROL_G3_W4_TO_W0"
+      ],
+      [
+        "CONTROL_G3_W4_TO_W1"
+      ],
+      [
+        "CONTROL_G3_W4_TO_W2"
+      ],
+      [
+        "CONTROL_G3_W4_TO_W3"
+      ],
+      [
+        "CONTROL_G3_W5_TO_W0"
+      ],
+      [
+        "CONTROL_G3_W5_TO_W1"
+      ],
+      [
+        "CONTROL_G3_W5_TO_W2"
+      ],
+      [
+        "CONTROL_G3_W5_TO_W3"
+      ],
+      [
+        "CONTROL_G4_W6_TO_W0",
+        "CONTROL_G5_W6_TO_W0",
+        "SWAP_G4_W0_W6",
+        "SWAP_G5_W0_W6",
+        "SWAP_G6_W0_W6",
+        "SWAP_G7_W0_W6"
+      ],
+      [
+        "CONTROL_G4_W6_TO_W1",
+        "CONTROL_G5_W6_TO_W1",
+        "SWAP_G4_W1_W6",
+        "SWAP_G5_W1_W6",
+        "SWAP_G6_W1_W6",
+        "SWAP_G7_W1_W6",
+        "SWAP_G8_W1_W6"
+      ],
+      [
+        "CONTROL_G4_W6_TO_W2",
+        "CONTROL_G5_W6_TO_W2",
+        "SWAP_G4_W2_W6",
+        "SWAP_G5_W2_W6",
+        "SWAP_G6_W2_W6"
+      ],
+      [
+        "CONTROL_G4_W6_TO_W3",
+        "CONTROL_G5_W6_TO_W3",
+        "CONTROL_G6_W3_TO_W6",
+        "CONTROL_G7_W3_TO_W6",
+        "CONTROL_G8_W3_TO_W6",
+        "SWAP_G4_W3_W6",
+        "SWAP_G5_W3_W6",
+        "SWAP_G6_W3_W6",
+        "SWAP_G7_W3_W6",
+        "SWAP_G8_W3_W6",
+        "SWAP_G9_W3_W6"
+      ],
+      [
+        "CONTROL_G4_W6_TO_W5",
+        "SWAP_G16_W3_W5",
+        "SWAP_G4_W5_W6",
+        "SWAP_G5_W5_W6"
+      ],
+      [
+        "CONTROL_G5_W6_TO_W4",
+        "REMOVE_G0",
+        "SWAP_G10_W4_W6",
+        "SWAP_G11_W4_W6",
+        "SWAP_G12_W4_W6",
+        "SWAP_G13_W4_W6",
+        "SWAP_G5_W4_W6",
+        "SWAP_G6_W4_W6",
+        "SWAP_G7_W4_W6",
+        "SWAP_G8_W4_W6",
+        "SWAP_G9_W4_W6"
+      ],
+      [
+        "CONTROL_G6_W3_TO_W4",
+        "CONTROL_G7_W3_TO_W4",
+        "CONTROL_G8_W3_TO_W4",
+        "SWAP_G5_W3_W4",
+        "SWAP_G6_W3_W4",
+        "SWAP_G7_W3_W4",
+        "SWAP_G8_W3_W4",
+        "SWAP_G9_W3_W4"
+      ],
+      [
+        "CONTROL_G6_W3_TO_W5",
+        "CONTROL_G7_W3_TO_W5",
+        "CONTROL_G8_W3_TO_W5",
+        "SWAP_G6_W3_W5",
+        "SWAP_G7_W3_W5",
+        "SWAP_G8_W3_W5",
+        "SWAP_G9_W3_W5"
+      ],
+      [
+        "CONTROL_G8_W3_TO_W0",
+        "SWAP_G8_W0_W3",
+        "SWAP_G9_W0_W3"
+      ],
+      [
+        "CONTROL_G9_W2_TO_W0"
+      ],
+      [
+        "CONTROL_G9_W2_TO_W1"
+      ],
+      [
+        "CONTROL_G9_W2_TO_W4"
+      ],
+      [
+        "CONTROL_G9_W2_TO_W6"
+      ],
+      [
+        "CONTROL_G9_W5_TO_W0"
+      ],
+      [
+        "CONTROL_G9_W5_TO_W1"
+      ],
+      [
+        "CONTROL_G9_W5_TO_W4"
+      ],
+      [
+        "CONTROL_G9_W5_TO_W6"
+      ],
+      [
+        "REMOVE_G1",
+        "REMOVE_G2"
+      ],
+      [
+        "REMOVE_G10"
+      ],
+      [
+        "REMOVE_G11"
+      ],
+      [
+        "REMOVE_G12",
+        "REMOVE_G14",
+        "REMOVE_G15"
+      ],
+      [
+        "REMOVE_G13"
+      ],
+      [
+        "REMOVE_G18",
+        "REMOVE_G20"
+      ],
+      [
+        "REMOVE_G23",
+        "REMOVE_G24",
+        "SWAP_G22_W0_W3"
+      ],
+      [
+        "REMOVE_G3"
+      ],
+      [
+        "REMOVE_G4",
+        "REMOVE_G5",
+        "SWAP_G20_W3_W6",
+        "SWAP_G21_W3_W6"
+      ],
+      [
+        "REMOVE_G6",
+        "REMOVE_G7",
+        "REMOVE_G8"
+      ],
+      [
+        "REMOVE_G9"
+      ],
+      [
+        "SWAP_G0_W0_W1",
+        "SWAP_G1_W0_W1"
+      ],
+      [
+        "SWAP_G0_W0_W2",
+        "SWAP_G1_W0_W2",
+        "SWAP_G2_W0_W2"
+      ],
+      [
+        "SWAP_G0_W0_W5"
+      ],
+      [
+        "SWAP_G0_W1_W2",
+        "SWAP_G10_W1_W2",
+        "SWAP_G1_W1_W2",
+        "SWAP_G3_W1_W2",
+        "SWAP_G4_W1_W2",
+        "SWAP_G5_W1_W2",
+        "SWAP_G6_W1_W2",
+        "SWAP_G9_W1_W2"
+      ],
+      [
+        "SWAP_G0_W1_W3",
+        "SWAP_G1_W1_W3"
+      ],
+      [
+        "SWAP_G0_W1_W5"
+      ],
+      [
+        "SWAP_G0_W1_W6",
+        "SWAP_G1_W1_W6",
+        "SWAP_G9_W1_W3"
+      ],
+      [
+        "SWAP_G0_W2_W3",
+        "SWAP_G1_W2_W3",
+        "SWAP_G2_W2_W3"
+      ],
+      [
+        "SWAP_G0_W2_W5"
+      ],
+      [
+        "SWAP_G0_W3_W5"
+      ],
+      [
+        "SWAP_G0_W4_W5",
+        "SWAP_G10_W5_W6",
+        "SWAP_G11_W5_W6",
+        "SWAP_G12_W5_W6",
+        "SWAP_G13_W5_W6",
+        "SWAP_G14_W5_W6",
+        "SWAP_G15_W5_W6",
+        "SWAP_G6_W5_W6",
+        "SWAP_G7_W5_W6",
+        "SWAP_G8_W5_W6",
+        "SWAP_G9_W5_W6"
+      ],
+      [
+        "SWAP_G0_W5_W6"
+      ],
+      [
+        "SWAP_G10_W0_W2",
+        "SWAP_G3_W0_W2",
+        "SWAP_G4_W0_W2",
+        "SWAP_G5_W0_W2",
+        "SWAP_G6_W0_W2",
+        "SWAP_G8_W0_W2",
+        "SWAP_G9_W0_W2"
+      ],
+      [
+        "SWAP_G10_W0_W3",
+        "SWAP_G11_W0_W3"
+      ],
+      [
+        "SWAP_G10_W0_W4",
+        "SWAP_G11_W0_W4",
+        "SWAP_G12_W0_W4",
+        "SWAP_G13_W0_W4",
+        "SWAP_G8_W0_W4",
+        "SWAP_G9_W0_W4"
+      ],
+      [
+        "SWAP_G10_W0_W5",
+        "SWAP_G11_W0_W5",
+        "SWAP_G12_W0_W5",
+        "SWAP_G13_W0_W5",
+        "SWAP_G14_W0_W5",
+        "SWAP_G16_W0_W5",
+        "SWAP_G17_W0_W5",
+        "SWAP_G18_W0_W5",
+        "SWAP_G19_W0_W5",
+        "SWAP_G20_W0_W5",
+        "SWAP_G8_W0_W5",
+        "SWAP_G9_W0_W5"
+      ],
+      [
+        "SWAP_G10_W0_W6",
+        "SWAP_G11_W0_W6",
+        "SWAP_G12_W0_W6",
+        "SWAP_G13_W0_W6",
+        "SWAP_G14_W0_W6",
+        "SWAP_G8_W0_W6",
+        "SWAP_G9_W0_W6"
+      ],
+      [
+        "SWAP_G10_W1_W3",
+        "SWAP_G11_W1_W3"
+      ],
+      [
+        "SWAP_G10_W1_W4",
+        "SWAP_G11_W1_W4",
+        "SWAP_G12_W1_W4",
+        "SWAP_G9_W1_W4"
+      ],
+      [
+        "SWAP_G10_W1_W6",
+        "SWAP_G11_W1_W6",
+        "SWAP_G12_W1_W6",
+        "SWAP_G9_W1_W6"
+      ],
+      [
+        "SWAP_G10_W2_W3"
+      ],
+      [
+        "SWAP_G10_W2_W4",
+        "SWAP_G7_W2_W4",
+        "SWAP_G8_W2_W4",
+        "SWAP_G9_W2_W4"
+      ],
+      [
+        "SWAP_G10_W2_W5",
+        "SWAP_G7_W2_W5",
+        "SWAP_G8_W2_W5",
+        "SWAP_G9_W2_W5"
+      ],
+      [
+        "SWAP_G10_W2_W6",
+        "SWAP_G7_W2_W6",
+        "SWAP_G8_W2_W6",
+        "SWAP_G9_W2_W6"
+      ],
+      [
+        "SWAP_G10_W3_W4",
+        "SWAP_G11_W3_W4"
+      ],
+      [
+        "SWAP_G10_W3_W5",
+        "SWAP_G11_W3_W5"
+      ],
+      [
+        "SWAP_G10_W3_W6",
+        "SWAP_G11_W3_W6"
+      ],
+      [
+        "SWAP_G10_W4_W5",
+        "SWAP_G11_W4_W5",
+        "SWAP_G12_W4_W5",
+        "SWAP_G13_W4_W5",
+        "SWAP_G1_W4_W5",
+        "SWAP_G2_W4_W5",
+        "SWAP_G3_W4_W5",
+        "SWAP_G4_W4_W5",
+        "SWAP_G6_W4_W5",
+        "SWAP_G7_W4_W5",
+        "SWAP_G8_W4_W5",
+        "SWAP_G9_W4_W5"
+      ],
+      [
+        "SWAP_G11_W0_W2",
+        "SWAP_G12_W0_W2",
+        "SWAP_G13_W0_W2",
+        "SWAP_G14_W0_W2"
+      ],
+      [
+        "SWAP_G11_W1_W2",
+        "SWAP_G12_W1_W2"
+      ],
+      [
+        "SWAP_G11_W2_W3"
+      ],
+      [
+        "SWAP_G11_W2_W4",
+        "SWAP_G12_W2_W4",
+        "SWAP_G13_W2_W4"
+      ],
+      [
+        "SWAP_G11_W2_W5",
+        "SWAP_G12_W2_W5",
+        "SWAP_G13_W2_W5",
+        "SWAP_G14_W2_W5",
+        "SWAP_G15_W2_W5"
+      ],
+      [
+        "SWAP_G13_W0_W1",
+        "SWAP_G14_W0_W1"
+      ],
+      [
+        "SWAP_G13_W1_W4"
+      ],
+      [
+        "SWAP_G13_W1_W5",
+        "SWAP_G14_W1_W5",
+        "SWAP_G15_W1_W5"
+      ],
+      [
+        "SWAP_G14_W0_W4"
+      ],
+      [
+        "SWAP_G14_W1_W4",
+        "SWAP_G15_W1_W4",
+        "SWAP_G16_W1_W4",
+        "SWAP_G17_W1_W4"
+      ],
+      [
+        "SWAP_G14_W4_W5",
+        "SWAP_G15_W4_W5"
+      ],
+      [
+        "SWAP_G14_W4_W6",
+        "SWAP_G15_W4_W6",
+        "SWAP_G16_W4_W6",
+        "SWAP_G17_W4_W6"
+      ],
+      [
+        "SWAP_G15_W0_W4",
+        "SWAP_G16_W0_W4",
+        "SWAP_G17_W0_W4"
+      ],
+      [
+        "SWAP_G15_W0_W5"
+      ],
+      [
+        "SWAP_G15_W0_W6",
+        "SWAP_G16_W0_W6",
+        "SWAP_G17_W0_W6",
+        "SWAP_G18_W0_W6",
+        "SWAP_G19_W0_W6"
+      ],
+      [
+        "SWAP_G16_W4_W5",
+        "SWAP_G17_W4_W5"
+      ],
+      [
+        "SWAP_G16_W5_W6",
+        "SWAP_G17_W5_W6",
+        "SWAP_G18_W5_W6",
+        "SWAP_G19_W5_W6"
+      ],
+      [
+        "SWAP_G17_W3_W4"
+      ],
+      [
+        "SWAP_G17_W3_W6",
+        "SWAP_G18_W3_W6",
+        "SWAP_G19_W3_W6"
+      ],
+      [
+        "SWAP_G18_W0_W4",
+        "SWAP_G19_W0_W4",
+        "SWAP_G20_W0_W4",
+        "SWAP_G21_W0_W4",
+        "SWAP_G22_W0_W4",
+        "SWAP_G24_W3_W4"
+      ],
+      [
+        "SWAP_G18_W1_W4"
+      ],
+      [
+        "SWAP_G18_W4_W5",
+        "SWAP_G19_W4_W5",
+        "SWAP_G20_W4_W5"
+      ],
+      [
+        "SWAP_G18_W4_W6",
+        "SWAP_G19_W4_W6"
+      ],
+      [
+        "SWAP_G19_W1_W5",
+        "SWAP_G20_W1_W5"
+      ],
+      [
+        "SWAP_G1_W0_W5",
+        "SWAP_G2_W0_W5",
+        "SWAP_G3_W0_W5",
+        "SWAP_G4_W0_W5",
+        "SWAP_G5_W0_W5"
+      ],
+      [
+        "SWAP_G1_W1_W5"
+      ],
+      [
+        "SWAP_G1_W2_W5",
+        "SWAP_G2_W2_W5"
+      ],
+      [
+        "SWAP_G1_W3_W5",
+        "SWAP_G2_W3_W5",
+        "SWAP_G3_W3_W5",
+        "SWAP_G4_W3_W5",
+        "SWAP_G5_W3_W5"
+      ],
+      [
+        "SWAP_G20_W0_W6",
+        "SWAP_G21_W0_W6",
+        "SWAP_G22_W0_W6",
+        "SWAP_G24_W3_W6"
+      ],
+      [
+        "SWAP_G20_W4_W6",
+        "SWAP_G21_W4_W6",
+        "SWAP_G22_W4_W6",
+        "SWAP_G23_W4_W6",
+        "SWAP_G24_W4_W6"
+      ],
+      [
+        "SWAP_G20_W5_W6"
+      ],
+      [
+        "SWAP_G21_W0_W5",
+        "SWAP_G22_W0_W5",
+        "SWAP_G24_W3_W5"
+      ],
+      [
+        "SWAP_G21_W3_W5"
+      ],
+      [
+        "SWAP_G21_W4_W5",
+        "SWAP_G22_W4_W5",
+        "SWAP_G23_W4_W5",
+        "SWAP_G24_W4_W5"
+      ],
+      [
+        "SWAP_G21_W5_W6",
+        "SWAP_G22_W5_W6",
+        "SWAP_G23_W5_W6",
+        "SWAP_G24_W5_W6"
+      ],
+      [
+        "SWAP_G2_W1_W2"
+      ],
+      [
+        "SWAP_G2_W1_W4",
+        "SWAP_G3_W1_W4",
+        "SWAP_G4_W1_W4"
+      ],
+      [
+        "SWAP_G2_W1_W5",
+        "SWAP_G3_W1_W5",
+        "SWAP_G4_W1_W5",
+        "SWAP_G5_W1_W5"
+      ],
+      [
+        "SWAP_G3_W2_W3",
+        "SWAP_G4_W2_W3",
+        "SWAP_G5_W2_W3",
+        "SWAP_G6_W2_W3"
+      ],
+      [
+        "SWAP_G3_W2_W4",
+        "SWAP_G4_W2_W4"
+      ],
+      [
+        "SWAP_G3_W2_W5",
+        "SWAP_G4_W2_W5",
+        "SWAP_G5_W2_W5"
+      ],
+      [
+        "SWAP_G3_W2_W6"
+      ],
+      [
+        "SWAP_G4_W4_W6"
+      ],
+      [
+        "SWAP_G5_W0_W4",
+        "SWAP_G6_W0_W4",
+        "SWAP_G7_W0_W4"
+      ],
+      [
+        "SWAP_G5_W1_W4",
+        "SWAP_G6_W1_W4",
+        "SWAP_G7_W1_W4",
+        "SWAP_G8_W1_W4"
+      ],
+      [
+        "SWAP_G5_W2_W4",
+        "SWAP_G6_W2_W4"
+      ],
+      [
+        "SWAP_G5_W4_W5"
+      ],
+      [
+        "SWAP_G6_W0_W5",
+        "SWAP_G7_W0_W5"
+      ],
+      [
+        "SWAP_G6_W1_W5",
+        "SWAP_G7_W1_W5",
+        "SWAP_G8_W1_W5"
+      ],
+      [
+        "SWAP_G6_W2_W5"
+      ],
+      [
+        "SWAP_G7_W0_W2"
+      ],
+      [
+        "SWAP_G7_W1_W2",
+        "SWAP_G8_W1_W2"
+      ],
+      [
+        "SWAP_G8_W0_W1"
+      ]
+    ],
+    "multiplicity": {
+      "SWAP_G5_W3_W6": 64,
+      "SWAP_G3_W1_W4": 64,
+      "SWAP_G19_W0_W4": 64,
+      "REMOVE_G10": 32,
+      "SWAP_G2_W0_W1": 64,
+      "SWAP_G21_W0_W4": 64,
+      "SWAP_G2_W1_W5": 64,
+      "SWAP_G0_W1_W6": 64,
+      "CONTROL_G6_W3_TO_W6": 64,
+      "SWAP_G0_W4_W6": 64,
+      "SWAP_G15_W0_W4": 64,
+      "SWAP_G12_W2_W5": 64,
+      "CONTROL_G18_W2_TO_W6": 64,
+      "SWAP_G14_W1_W5": 64,
+      "SWAP_G18_W0_W2": 64,
+      "REMOVE_G2": 64,
+      "CONTROL_G22_W3_TO_W2": 64,
+      "SWAP_G9_W1_W3": 64,
+      "SWAP_G24_W2_W3": 64,
+      "SWAP_G3_W2_W5": 64,
+      "CONTROL_G19_W3_TO_W1": 64,
+      "SWAP_G5_W3_W4": 64,
+      "CONTROL_G22_W3_TO_W5": 64,
+      "SWAP_G8_W0_W1": 64,
+      "SWAP_G20_W0_W4": 64,
+      "SWAP_G16_W0_W2": 64,
+      "CONTROL_G11_W2_TO_W4": 32,
+      "SWAP_G13_W1_W3": 64,
+      "SWAP_G21_W0_W5": 64,
+      "SWAP_G12_W0_W5": 64,
+      "CONTROL_G18_W2_TO_W3": 64,
+      "CONTROL_G4_W6_TO_W3": 64,
+      "SWAP_G9_W0_W6": 64,
+      "SWAP_G8_W3_W5": 64,
+      "CONTROL_G1_W6_TO_W5": 64,
+      "SWAP_G2_W5_W6": 64,
+      "SWAP_G17_W2_W3": 64,
+      "SWAP_G6_W0_W2": 64,
+      "SWAP_G24_W3_W6": 64,
+      "SWAP_G1_W5_W6": 64,
+      "SWAP_G13_W2_W5": 64,
+      "CONTROL_G17_W1_TO_W3": 64,
+      "SWAP_G24_W1_W3": 64,
+      "SWAP_G14_W3_W4": 64,
+      "SWAP_G9_W0_W5": 64,
+      "SWAP_G14_W1_W6": 64,
+      "CONTROL_G7_W3_TO_W6": 64,
+      "SWAP_G13_W0_W4": 64,
+      "SWAP_G3_W4_W6": 64,
+      "CONTROL_G18_W2_TO_W0": 64,
+      "SWAP_G9_W3_W4": 64,
+      "SWAP_G20_W3_W5": 64,
+      "SWAP_G3_W1_W3": 64,
+      "SWAP_G19_W5_W6": 64,
+      "CONTROL_G8_W3_TO_W5": 64,
+      "SWAP_G13_W2_W6": 64,
+      "CONTROL_G19_W3_TO_W2": 64,
+      "SWAP_G10_W0_W3": 64,
+      "SWAP_G23_W0_W3": 64,
+      "REMOVE_G12": 64,
+      "SWAP_G3_W0_W6": 64,
+      "SWAP_G18_W0_W4": 64,
+      "SWAP_G22_W3_W4": 64,
+      "SWAP_G16_W0_W5": 64,
+      "SWAP_G20_W0_W6": 64,
+      "SWAP_G10_W0_W4": 64,
+      "SWAP_G5_W0_W1": 64,
+      "SWAP_G8_W2_W3": 64,
+      "SWAP_G15_W0_W1": 64,
+      "SWAP_G22_W0_W1": 64,
+      "SWAP_G14_W2_W3": 64,
+      "SWAP_G11_W0_W6": 64,
+      "CONTROL_G15_W3_TO_W1": 64,
+      "CONTROL_G13_W6_TO_W2": 32,
+      "SWAP_G11_W0_W4": 64,
+      "SWAP_G16_W5_W6": 64,
+      "SWAP_G1_W4_W6": 64,
+      "CONTROL_G22_W3_TO_W6": 64,
+      "CONTROL_G7_W3_TO_W2": 64,
+      "SWAP_G3_W2_W4": 64,
+      "SWAP_G18_W0_W1": 64,
+      "SWAP_G14_W4_W6": 64,
+      "CONTROL_G6_W3_TO_W4": 64,
+      "CONTROL_G13_W5_TO_W2": 32,
+      "SWAP_G20_W0_W1": 64,
+      "CONTROL_G10_W6_TO_W0": 32,
+      "SWAP_G4_W4_W6": 64,
+      "SWAP_G7_W1_W3": 64,
+      "SWAP_G4_W0_W6": 64,
+      "SWAP_G17_W2_W6": 64,
+      "SWAP_G4_W1_W5": 64,
+      "SWAP_G6_W1_W3": 64,
+      "SWAP_G7_W0_W2": 64,
+      "SWAP_G2_W1_W3": 64,
+      "SWAP_G2_W1_W2": 64,
+      "SWAP_G3_W0_W1": 64,
+      "SWAP_G8_W0_W5": 64,
+      "SWAP_G0_W3_W6": 64,
+      "SWAP_G13_W1_W6": 64,
+      "SWAP_G2_W2_W6": 64,
+      "CONTROL_G7_W3_TO_W1": 64,
+      "SWAP_G14_W4_W5": 64,
+      "SWAP_G15_W1_W3": 64,
+      "CONTROL_G14_W3_TO_W4": 64,
+      "SWAP_G5_W0_W4": 64,
+      "SWAP_G21_W2_W3": 64,
+      "SWAP_G5_W1_W3": 64,
+      "SWAP_G4_W5_W6": 64,
+      "SWAP_G12_W0_W3": 64,
+      "SWAP_G4_W1_W3": 64,
+      "SWAP_G23_W1_W3": 64,
+      "SWAP_G12_W2_W6": 64,
+      "SWAP_G21_W0_W6": 64,
+      "SWAP_G4_W0_W1": 64,
+      "SWAP_G16_W3_W4": 64,
+      "CONTROL_G14_W3_TO_W1": 64,
+      "SWAP_G6_W3_W5": 64,
+      "SWAP_G18_W2_W3": 64,
+      "SWAP_G7_W3_W6": 64,
+      "SWAP_G18_W3_W4": 64,
+      "REMOVE_G19": 64,
+      "CONTROL_G6_W3_TO_W1": 64,
+      "SWAP_G6_W0_W6": 64,
+      "SWAP_G10_W0_W2": 64,
+      "SWAP_G4_W2_W3": 64,
+      "SWAP_G6_W3_W4": 64,
+      "SWAP_G10_W0_W1": 64,
+      "SWAP_G16_W1_W6": 64,
+      "SWAP_G6_W0_W4": 64,
+      "SWAP_G5_W0_W6": 64,
+      "CONTROL_G1_W6_TO_W3": 64,
+      "SWAP_G7_W0_W5": 64,
+      "SWAP_G19_W4_W6": 64,
+      "CONTROL_G2_W6_TO_W3": 64,
+      "SWAP_G13_W1_W4": 64,
+      "SWAP_G16_W2_W3": 64,
+      "SWAP_G11_W2_W6": 64,
+      "SWAP_G16_W1_W3": 64,
+      "SWAP_G17_W0_W5": 64,
+      "SWAP_G20_W0_W5": 64,
+      "SWAP_G5_W2_W5": 64,
+      "SWAP_G15_W0_W2": 64,
+      "SWAP_G22_W0_W6": 64,
+      "SWAP_G18_W5_W6": 64,
+      "SWAP_G5_W1_W5": 64,
+      "SWAP_G19_W1_W3": 64,
+      "SWAP_G22_W0_W5": 64,
+      "SWAP_G15_W1_W5": 64,
+      "SWAP_G7_W3_W4": 64,
+      "SWAP_G9_W0_W1": 64,
+      "CONTROL_G1_W6_TO_W2": 64,
+      "SWAP_G12_W0_W4": 64,
+      "CONTROL_G1_W6_TO_W4": 64,
+      "CONTROL_G22_W3_TO_W1": 64,
+      "CONTROL_G21_W1_TO_W0": 64,
+      "SWAP_G17_W0_W1": 64,
+      "SWAP_G9_W3_W5": 64,
+      "SWAP_G19_W2_W6": 64,
+      "SWAP_G15_W2_W6": 64,
+      "SWAP_G4_W2_W4": 64,
+      "SWAP_G12_W2_W4": 64,
+      "SWAP_G5_W2_W3": 64,
+      "SWAP_G22_W2_W3": 64,
+      "SWAP_G11_W2_W4": 64,
+      "SWAP_G1_W0_W6": 64,
+      "SWAP_G6_W3_W6": 64,
+      "CONTROL_G13_W6_TO_W0": 32,
+      "SWAP_G11_W0_W5": 64,
+      "CONTROL_G12_W3_TO_W2": 64,
+      "CONTROL_G2_W6_TO_W5": 64,
+      "SWAP_G14_W2_W6": 64,
+      "SWAP_G17_W1_W6": 64,
+      "SWAP_G17_W5_W6": 64,
+      "SWAP_G17_W1_W3": 64,
+      "SWAP_G16_W2_W6": 64,
+      "SWAP_G7_W3_W5": 64,
+      "SWAP_G4_W2_W5": 64,
+      "SWAP_G23_W3_W5": 64,
+      "CONTROL_G19_W3_TO_W4": 64,
+      "CONTROL_G1_W6_TO_W0": 64,
+      "SWAP_G9_W2_W3": 64,
+      "SWAP_G8_W1_W3": 64,
+      "SWAP_G15_W2_W3": 64,
+      "REMOVE_G13": 32,
+      "SWAP_G2_W3_W6": 64,
+      "CONTROL_G5_W6_TO_W0": 64,
+      "SWAP_G2_W4_W6": 64,
+      "CONTROL_G17_W1_TO_W6": 64,
+      "SWAP_G20_W2_W3": 64,
+      "SWAP_G3_W0_W2": 64,
+      "SWAP_G13_W2_W4": 64,
+      "SWAP_G24_W3_W5": 64,
+      "SWAP_G6_W0_W1": 64,
+      "CONTROL_G0_W4_TO_W6": 64,
+      "SWAP_G13_W0_W3": 64,
+      "SWAP_G22_W3_W6": 64,
+      "SWAP_G12_W0_W6": 64,
+      "SWAP_G9_W3_W6": 64,
+      "SWAP_G3_W2_W3": 64,
+      "CONTROL_G13_W5_TO_W0": 32,
+      "SWAP_G11_W0_W1": 64,
+      "CONTROL_G5_W6_TO_W3": 64,
+      "SWAP_G7_W0_W6": 64,
+      "SWAP_G1_W2_W6": 64,
+      "SWAP_G6_W0_W5": 64,
+      "REMOVE_G9": 32,
+      "SWAP_G7_W0_W4": 64,
+      "SWAP_G18_W3_W5": 64,
+      "CONTROL_G19_W3_TO_W5": 64,
+      "SWAP_G14_W2_W5": 64,
+      "SWAP_G4_W1_W4": 64,
+      "SWAP_G17_W3_W4": 64,
+      "SWAP_G16_W4_W6": 64,
+      "SWAP_G8_W0_W2": 64,
+      "SWAP_G14_W1_W3": 64,
+      "SWAP_G8_W0_W6": 64,
+      "SWAP_G22_W0_W2": 64,
+      "SWAP_G7_W2_W3": 64,
+      "REMOVE_G15": 64,
+      "SWAP_G21_W3_W5": 64,
+      "CONTROL_G4_W6_TO_W5": 64,
+      "CONTROL_G9_W5_TO_W0": 32,
+      "CONTROL_G11_W2_TO_W1": 32,
+      "SWAP_G11_W2_W5": 64,
+      "SWAP_G3_W5_W6": 64,
+      "CONTROL_G10_W4_TO_W0": 32,
+      "SWAP_G5_W0_W2": 64,
+      "CONTROL_G15_W3_TO_W4": 64,
+      "REMOVE_G22": 64,
+      "SWAP_G22_W3_W5": 64,
+      "CONTROL_G7_W3_TO_W5": 64,
+      "SWAP_G11_W0_W3": 64,
+      "SWAP_G15_W4_W5": 64,
+      "SWAP_G1_W1_W6": 64,
+      "SWAP_G13_W1_W5": 64,
+      "SWAP_G19_W0_W2": 64,
+      "SWAP_G12_W2_W3": 64,
+      "SWAP_G18_W1_W3": 64,
+      "CONTROL_G13_W6_TO_W1": 32,
+      "CONTROL_G2_W6_TO_W4": 64,
+      "SWAP_G14_W0_W6": 64,
+      "CONTROL_G17_W1_TO_W0": 64,
+      "SWAP_G19_W3_W4": 64,
+      "SWAP_G15_W2_W5": 64,
+      "CONTROL_G8_W3_TO_W2": 64,
+      "SWAP_G8_W3_W6": 64,
+      "SWAP_G2_W1_W4": 64,
+      "CONTROL_G20_W2_TO_W0": 64,
+      "SWAP_G10_W0_W6": 64,
+      "SWAP_G16_W0_W4": 64,
+      "REMOVE_G5": 64,
+      "SWAP_G21_W1_W3": 64,
+      "SWAP_G16_W0_W1": 64,
+      "CONTROL_G16_W4_TO_W0": 32,
+      "CONTROL_G11_W2_TO_W6": 32,
+      "SWAP_G17_W0_W4": 64,
+      "REMOVE_G14": 64,
+      "SWAP_G0_W0_W6": 64,
+      "CONTROL_G13_W5_TO_W1": 32,
+      "SWAP_G5_W5_W6": 64,
+      "SWAP_G18_W0_W5": 64,
+      "SWAP_G2_W0_W6": 64,
+      "CONTROL_G14_W3_TO_W2": 64,
+      "SWAP_G11_W2_W3": 64,
+      "SWAP_G14_W0_W3": 64,
+      "SWAP_G21_W3_W6": 64,
+      "SWAP_G17_W3_W5": 64,
+      "SWAP_G6_W2_W3": 64,
+      "SWAP_G24_W0_W3": 64,
+      "SWAP_G23_W3_W4": 64,
+      "SWAP_G16_W3_W5": 64,
+      "SWAP_G18_W4_W6": 64,
+      "SWAP_G19_W3_W5": 64,
+      "CONTROL_G22_W3_TO_W4": 64,
+      "CONTROL_G8_W3_TO_W6": 64,
+      "CONTROL_G7_W3_TO_W4": 64,
+      "SWAP_G0_W5_W6": 64,
+      "SWAP_G19_W2_W3": 64,
+      "SWAP_G3_W3_W6": 64,
+      "SWAP_G5_W4_W5": 64,
+      "CONTROL_G6_W3_TO_W5": 64,
+      "SWAP_G22_W1_W3": 64,
+      "SWAP_G20_W0_W2": 64,
+      "SWAP_G14_W0_W5": 64,
+      "CONTROL_G12_W3_TO_W0": 64,
+      "SWAP_G9_W0_W2": 64,
+      "SWAP_G20_W3_W6": 64,
+      "SWAP_G12_W1_W2": 64,
+      "SWAP_G23_W2_W3": 64,
+      "SWAP_G18_W2_W6": 64,
+      "SWAP_G4_W0_W2": 64,
+      "SWAP_G9_W0_W4": 64,
+      "REMOVE_G1": 64,
+      "REMOVE_G4": 64,
+      "SWAP_G15_W4_W6": 64,
+      "CONTROL_G9_W2_TO_W0": 32,
+      "SWAP_G3_W1_W5": 64,
+      "SWAP_G22_W0_W4": 64,
+      "SWAP_G12_W0_W1": 64,
+      "SWAP_G19_W1_W6": 64,
+      "SWAP_G18_W1_W6": 64,
+      "SWAP_G19_W0_W5": 64,
+      "SWAP_G1_W3_W6": 64,
+      "SWAP_G17_W0_W2": 64,
+      "CONTROL_G2_W6_TO_W0": 64,
+      "SWAP_G19_W0_W1": 64,
+      "CONTROL_G20_W2_TO_W3": 64,
+      "SWAP_G8_W0_W4": 64,
+      "SWAP_G20_W1_W3": 64,
+      "SWAP_G11_W1_W2": 64,
+      "SWAP_G7_W0_W1": 64,
+      "SWAP_G15_W3_W4": 64,
+      "SWAP_G8_W3_W4": 64,
+      "SWAP_G20_W3_W4": 64,
+      "SWAP_G4_W3_W6": 64,
+      "SWAP_G13_W0_W5": 64,
+      "SWAP_G21_W0_W2": 64,
+      "SWAP_G17_W4_W6": 64,
+      "CONTROL_G24_W0_TO_W3": 64,
+      "CONTROL_G8_W3_TO_W4": 64,
+      "SWAP_G21_W3_W4": 64,
+      "SWAP_G21_W0_W1": 64,
+      "CONTROL_G15_W3_TO_W2": 64,
+      "SWAP_G13_W2_W3": 64,
+      "SWAP_G24_W3_W4": 64,
+      "SWAP_G13_W0_W6": 64,
+      "SWAP_G0_W2_W6": 64,
+      "SWAP_G15_W1_W6": 64,
+      "SWAP_G10_W0_W5": 64,
+      "SWAP_G23_W3_W6": 64,
+      "CONTROL_G4_W6_TO_W0": 64,
+      "SWAP_G14_W3_W5": 64,
+      "CONTROL_G17_W1_TO_W5": 64,
+      "CONTROL_G14_W3_TO_W5": 64,
+      "SWAP_G22_W1_W5": 64,
+      "SWAP_G15_W0_W5": 64,
+      "SWAP_G18_W1_W5": 64,
+      "SWAP_G23_W0_W5": 64,
+      "SWAP_G20_W2_W5": 64,
+      "SWAP_G12_W3_W5": 64,
+      "SWAP_G6_W2_W5": 64,
+      "SWAP_G24_W5_W6": 64,
+      "SWAP_G11_W1_W5": 64,
+      "SWAP_G3_W3_W5": 64,
+      "SWAP_G16_W2_W5": 64,
+      "SWAP_G19_W4_W5": 64,
+      "SWAP_G0_W0_W5": 64,
+      "SWAP_G10_W4_W5": 64,
+      "SWAP_G16_W1_W5": 64,
+      "SWAP_G19_W1_W5": 64,
+      "SWAP_G19_W2_W5": 64,
+      "SWAP_G4_W0_W5": 64,
+      "SWAP_G6_W4_W5": 64,
+      "SWAP_G24_W0_W5": 64,
+      "SWAP_G22_W4_W5": 64,
+      "SWAP_G2_W0_W5": 64,
+      "SWAP_G11_W3_W5": 64,
+      "SWAP_G23_W4_W5": 64,
+      "SWAP_G1_W4_W5": 64,
+      "SWAP_G20_W5_W6": 64,
+      "SWAP_G20_W1_W5": 64,
+      "SWAP_G5_W3_W5": 64,
+      "SWAP_G21_W5_W6": 64,
+      "SWAP_G0_W3_W5": 64,
+      "SWAP_G4_W3_W5": 64,
+      "SWAP_G7_W5_W6": 64,
+      "SWAP_G20_W4_W5": 64,
+      "SWAP_G0_W4_W5": 64,
+      "SWAP_G10_W3_W5": 64,
+      "CONTROL_G23_W0_TO_W5": 64,
+      "CONTROL_G18_W2_TO_W5": 64,
+      "SWAP_G18_W4_W5": 64,
+      "SWAP_G15_W5_W6": 64,
+      "SWAP_G1_W3_W5": 64,
+      "SWAP_G6_W5_W6": 64,
+      "SWAP_G12_W5_W6": 64,
+      "SWAP_G9_W5_W6": 64,
+      "SWAP_G2_W4_W5": 64,
+      "SWAP_G8_W5_W6": 64,
+      "SWAP_G24_W1_W5": 64,
+      "SWAP_G2_W2_W5": 64,
+      "SWAP_G13_W4_W5": 64,
+      "SWAP_G11_W4_W5": 64,
+      "SWAP_G1_W2_W5": 64,
+      "CONTROL_G12_W3_TO_W5": 64,
+      "SWAP_G24_W4_W5": 64,
+      "SWAP_G8_W2_W5": 64,
+      "SWAP_G9_W4_W5": 64,
+      "SWAP_G12_W4_W5": 64,
+      "SWAP_G10_W2_W5": 64,
+      "SWAP_G3_W0_W5": 64,
+      "SWAP_G2_W3_W5": 64,
+      "SWAP_G7_W4_W5": 64,
+      "SWAP_G17_W1_W5": 64,
+      "SWAP_G6_W1_W5": 64,
+      "SWAP_G9_W1_W5": 64,
+      "SWAP_G16_W4_W5": 64,
+      "SWAP_G0_W1_W5": 64,
+      "SWAP_G21_W4_W5": 64,
+      "SWAP_G4_W4_W5": 64,
+      "SWAP_G11_W5_W6": 64,
+      "SWAP_G21_W2_W5": 64,
+      "SWAP_G24_W2_W5": 64,
+      "SWAP_G12_W1_W5": 64,
+      "SWAP_G13_W5_W6": 64,
+      "CONTROL_G21_W1_TO_W5": 64,
+      "SWAP_G1_W1_W5": 64,
+      "SWAP_G1_W0_W5": 64,
+      "SWAP_G17_W2_W5": 64,
+      "SWAP_G9_W2_W5": 64,
+      "SWAP_G10_W5_W6": 64,
+      "SWAP_G23_W2_W5": 64,
+      "SWAP_G8_W1_W5": 64,
+      "SWAP_G21_W1_W5": 64,
+      "SWAP_G13_W3_W5": 64,
+      "SWAP_G7_W1_W5": 64,
+      "SWAP_G0_W2_W5": 64,
+      "SWAP_G10_W1_W5": 64,
+      "SWAP_G7_W2_W5": 64,
+      "SWAP_G23_W1_W5": 64,
+      "SWAP_G23_W5_W6": 64,
+      "SWAP_G8_W4_W5": 64,
+      "SWAP_G5_W0_W5": 64,
+      "SWAP_G22_W5_W6": 64,
+      "SWAP_G18_W2_W5": 64,
+      "SWAP_G14_W5_W6": 64,
+      "SWAP_G3_W4_W5": 64,
+      "CONTROL_G24_W0_TO_W5": 64,
+      "SWAP_G22_W2_W5": 64,
+      "SWAP_G17_W4_W5": 64,
+      "SWAP_G15_W3_W5": 64,
+      "SWAP_G24_W0_W1": 64,
+      "REMOVE_G21": 64,
+      "SWAP_G24_W1_W2": 64,
+      "SWAP_G18_W0_W6": 64,
+      "SWAP_G22_W1_W2": 64,
+      "CONTROL_G15_W3_TO_W6": 64,
+      "SWAP_G13_W1_W2": 64,
+      "SWAP_G15_W2_W4": 64,
+      "SWAP_G10_W3_W4": 64,
+      "SWAP_G20_W1_W4": 64,
+      "SWAP_G19_W1_W4": 64,
+      "SWAP_G22_W1_W6": 64,
+      "CONTROL_G21_W1_TO_W2": 64,
+      "CONTROL_G24_W0_TO_W1": 64,
+      "SWAP_G14_W0_W4": 64,
+      "SWAP_G21_W0_W3": 64,
+      "CONTROL_G17_W1_TO_W2": 64,
+      "CONTROL_G10_W4_TO_W3": 32,
+      "CONTROL_G21_W1_TO_W6": 64,
+      "SWAP_G16_W2_W4": 64,
+      "REMOVE_G16": 32,
+      "SWAP_G22_W1_W4": 64,
+      "CONTROL_G10_W6_TO_W3": 32,
+      "SWAP_G14_W2_W4": 64,
+      "SWAP_G18_W1_W4": 64,
+      "CONTROL_G20_W2_TO_W1": 64,
+      "SWAP_G11_W3_W4": 64,
+      "CONTROL_G12_W3_TO_W6": 64,
+      "SWAP_G18_W1_W2": 64,
+      "CONTROL_G10_W4_TO_W5": 32,
+      "CONTROL_G16_W6_TO_W5": 32,
+      "CONTROL_G12_W3_TO_W4": 64,
+      "CONTROL_G9_W5_TO_W6": 32,
+      "SWAP_G23_W1_W2": 64,
+      "SWAP_G14_W0_W1": 64,
+      "CONTROL_G19_W3_TO_W0": 64,
+      "SWAP_G17_W0_W6": 64,
+      "SWAP_G19_W1_W2": 64,
+      "CONTROL_G9_W5_TO_W4": 32,
+      "SWAP_G24_W1_W4": 64,
+      "SWAP_G15_W3_W6": 64,
+      "SWAP_G17_W0_W3": 64,
+      "CONTROL_G16_W6_TO_W0": 32,
+      "SWAP_G23_W0_W1": 64,
+      "CONTROL_G10_W6_TO_W5": 32,
+      "SWAP_G14_W1_W2": 64,
+      "SWAP_G16_W1_W2": 64,
+      "SWAP_G15_W0_W6": 64,
+      "REMOVE_G17": 64,
+      "CONTROL_G16_W4_TO_W2": 32,
+      "CONTROL_G3_W4_TO_W1": 32,
+      "SWAP_G16_W3_W6": 64,
+      "SWAP_G19_W0_W3": 64,
+      "SWAP_G18_W0_W3": 64,
+      "SWAP_G21_W1_W2": 64,
+      "SWAP_G24_W1_W6": 64,
+      "SWAP_G20_W1_W2": 64,
+      "SWAP_G11_W3_W6": 64,
+      "SWAP_G10_W2_W3": 64,
+      "SWAP_G16_W0_W6": 64,
+      "CONTROL_G3_W4_TO_W2": 32,
+      "SWAP_G13_W3_W6": 64,
+      "SWAP_G13_W3_W4": 64,
+      "SWAP_G14_W3_W6": 64,
+      "SWAP_G21_W1_W4": 64,
+      "SWAP_G17_W2_W4": 64,
+      "SWAP_G12_W1_W3": 64,
+      "SWAP_G12_W3_W6": 64,
+      "SWAP_G23_W1_W6": 64,
+      "SWAP_G20_W0_W3": 64,
+      "SWAP_G11_W1_W3": 64,
+      "SWAP_G15_W1_W2": 64,
+      "CONTROL_G9_W5_TO_W1": 32,
+      "SWAP_G21_W1_W6": 64,
+      "SWAP_G23_W1_W4": 64,
+      "SWAP_G17_W1_W2": 64,
+      "CONTROL_G14_W3_TO_W6": 64,
+      "SWAP_G20_W1_W6": 64,
+      "CONTROL_G23_W0_TO_W1": 64,
+      "CONTROL_G16_W6_TO_W2": 32,
+      "SWAP_G19_W0_W6": 64,
+      "SWAP_G10_W3_W6": 64,
+      "CONTROL_G16_W4_TO_W5": 32,
+      "CONTROL_G21_W1_TO_W4": 64,
+      "SWAP_G12_W3_W4": 64,
+      "SWAP_G13_W0_W1": 64,
+      "SWAP_G10_W1_W3": 64,
+      "SWAP_G8_W2_W6": 64,
+      "CONTROL_G3_W4_TO_W3": 32,
+      "SWAP_G2_W0_W4": 64,
+      "SWAP_G10_W2_W6": 64,
+      "SWAP_G6_W2_W6": 64,
+      "SWAP_G9_W1_W6": 64,
+      "SWAP_G11_W4_W6": 64,
+      "SWAP_G10_W4_W6": 64,
+      "SWAP_G0_W3_W4": 64,
+      "SWAP_G1_W3_W4": 64,
+      "SWAP_G21_W2_W6": 64,
+      "CONTROL_G3_W5_TO_W3": 32,
+      "SWAP_G23_W0_W6": 64,
+      "CONTROL_G4_W6_TO_W2": 64,
+      "CONTROL_G3_W5_TO_W2": 32,
+      "SWAP_G8_W4_W6": 64,
+      "SWAP_G20_W4_W6": 64,
+      "SWAP_G17_W3_W6": 64,
+      "SWAP_G18_W3_W6": 64,
+      "CONTROL_G0_W4_TO_W1": 64,
+      "SWAP_G23_W4_W6": 64,
+      "SWAP_G12_W1_W6": 64,
+      "SWAP_G0_W2_W4": 64,
+      "SWAP_G4_W3_W4": 64,
+      "SWAP_G6_W1_W6": 64,
+      "SWAP_G5_W4_W6": 64,
+      "SWAP_G12_W4_W6": 64,
+      "CONTROL_G0_W4_TO_W0": 64,
+      "SWAP_G1_W2_W4": 64,
+      "SWAP_G0_W1_W4": 64,
+      "CONTROL_G5_W6_TO_W1": 64,
+      "SWAP_G22_W4_W6": 64,
+      "SWAP_G24_W0_W6": 64,
+      "SWAP_G23_W2_W6": 64,
+      "SWAP_G1_W0_W4": 64,
+      "CONTROL_G23_W0_TO_W6": 64,
+      "REMOVE_G3": 32,
+      "SWAP_G4_W1_W6": 64,
+      "SWAP_G3_W3_W4": 64,
+      "CONTROL_G24_W0_TO_W6": 64,
+      "SWAP_G0_W0_W4": 64,
+      "CONTROL_G0_W4_TO_W2": 64,
+      "SWAP_G5_W1_W6": 64,
+      "SWAP_G10_W1_W6": 64,
+      "SWAP_G19_W3_W6": 64,
+      "SWAP_G9_W4_W6": 64,
+      "CONTROL_G3_W5_TO_W1": 32,
+      "SWAP_G7_W4_W6": 64,
+      "SWAP_G2_W2_W4": 64,
+      "CONTROL_G5_W6_TO_W4": 64,
+      "CONTROL_G0_W4_TO_W3": 64,
+      "CONTROL_G3_W4_TO_W0": 32,
+      "CONTROL_G3_W5_TO_W0": 32,
+      "SWAP_G7_W1_W6": 64,
+      "SWAP_G7_W2_W6": 64,
+      "SWAP_G6_W4_W6": 64,
+      "SWAP_G11_W1_W6": 64,
+      "REMOVE_G0": 64,
+      "CONTROL_G4_W6_TO_W1": 64,
+      "SWAP_G9_W2_W6": 64,
+      "SWAP_G24_W4_W6": 64,
+      "SWAP_G4_W0_W4": 64,
+      "SWAP_G21_W4_W6": 64,
+      "SWAP_G24_W2_W6": 64,
+      "SWAP_G3_W0_W4": 64,
+      "SWAP_G2_W3_W4": 64,
+      "CONTROL_G20_W2_TO_W6": 64,
+      "SWAP_G4_W2_W6": 64,
+      "SWAP_G1_W1_W4": 64,
+      "CONTROL_G5_W6_TO_W2": 64,
+      "SWAP_G5_W2_W6": 64,
+      "SWAP_G20_W2_W6": 64,
+      "SWAP_G8_W1_W6": 64,
+      "SWAP_G22_W2_W6": 64,
+      "SWAP_G13_W4_W6": 64,
+      "REMOVE_G18": 64,
+      "SWAP_G24_W0_W2": 64,
+      "SWAP_G23_W2_W4": 64,
+      "SWAP_G13_W0_W2": 64,
+      "CONTROL_G16_W6_TO_W1": 32,
+      "CONTROL_G23_W0_TO_W2": 64,
+      "CONTROL_G11_W5_TO_W0": 32,
+      "SWAP_G18_W2_W4": 64,
+      "SWAP_G21_W2_W4": 64,
+      "SWAP_G23_W0_W2": 64,
+      "CONTROL_G10_W6_TO_W1": 32,
+      "SWAP_G22_W2_W4": 64,
+      "REMOVE_G11": 32,
+      "SWAP_G20_W2_W4": 64,
+      "SWAP_G11_W0_W2": 64,
+      "CONTROL_G11_W5_TO_W6": 32,
+      "CONTROL_G11_W2_TO_W0": 32,
+      "CONTROL_G20_W2_TO_W4": 64,
+      "SWAP_G14_W0_W2": 64,
+      "REMOVE_G20": 64,
+      "SWAP_G12_W0_W2": 64,
+      "CONTROL_G9_W2_TO_W6": 32,
+      "SWAP_G19_W2_W4": 64,
+      "CONTROL_G18_W2_TO_W4": 64,
+      "SWAP_G24_W2_W4": 64,
+      "CONTROL_G23_W0_TO_W4": 64,
+      "SWAP_G7_W2_W4": 64,
+      "SWAP_G10_W2_W4": 64,
+      "SWAP_G9_W1_W4": 64,
+      "SWAP_G24_W0_W4": 64,
+      "SWAP_G12_W1_W4": 64,
+      "SWAP_G14_W1_W4": 64,
+      "SWAP_G6_W2_W4": 64,
+      "SWAP_G7_W1_W4": 64,
+      "SWAP_G15_W1_W4": 64,
+      "SWAP_G8_W1_W4": 64,
+      "SWAP_G10_W1_W4": 64,
+      "SWAP_G8_W2_W4": 64,
+      "SWAP_G11_W1_W4": 64,
+      "SWAP_G5_W2_W4": 64,
+      "SWAP_G6_W1_W4": 64,
+      "SWAP_G23_W0_W4": 64,
+      "SWAP_G9_W2_W4": 64,
+      "SWAP_G16_W1_W4": 64,
+      "CONTROL_G24_W0_TO_W4": 64,
+      "SWAP_G17_W1_W4": 64,
+      "SWAP_G5_W1_W4": 64,
+      "REMOVE_G23": 64,
+      "REMOVE_G24": 64,
+      "CONTROL_G13_W5_TO_W3": 32,
+      "SWAP_G22_W0_W3": 64,
+      "CONTROL_G11_W5_TO_W4": 32,
+      "CONTROL_G13_W6_TO_W3": 32,
+      "CONTROL_G10_W4_TO_W1": 32,
+      "CONTROL_G9_W2_TO_W4": 32,
+      "CONTROL_G15_W3_TO_W0": 64,
+      "SWAP_G6_W0_W3": 64,
+      "CONTROL_G11_W5_TO_W1": 32,
+      "SWAP_G7_W1_W2": 64,
+      "SWAP_G2_W2_W3": 64,
+      "SWAP_G1_W0_W3": 64,
+      "REMOVE_G8": 64,
+      "SWAP_G1_W2_W3": 64,
+      "SWAP_G16_W0_W3": 64,
+      "SWAP_G5_W0_W3": 64,
+      "SWAP_G0_W2_W3": 64,
+      "SWAP_G1_W1_W3": 64,
+      "SWAP_G8_W1_W2": 64,
+      "SWAP_G2_W0_W3": 64,
+      "REMOVE_G7": 64,
+      "REMOVE_G6": 64,
+      "SWAP_G0_W0_W3": 64,
+      "SWAP_G7_W0_W3": 64,
+      "SWAP_G0_W1_W3": 64,
+      "SWAP_G3_W0_W3": 64,
+      "SWAP_G4_W0_W3": 64,
+      "CONTROL_G6_W3_TO_W0": 64,
+      "SWAP_G15_W0_W3": 64,
+      "SWAP_G0_W1_W2": 64,
+      "SWAP_G5_W1_W2": 64,
+      "SWAP_G2_W0_W2": 64,
+      "SWAP_G1_W0_W2": 64,
+      "SWAP_G1_W1_W2": 64,
+      "SWAP_G0_W0_W2": 64,
+      "SWAP_G4_W1_W2": 64,
+      "SWAP_G9_W1_W2": 64,
+      "SWAP_G10_W1_W2": 64,
+      "SWAP_G6_W1_W2": 64,
+      "SWAP_G3_W2_W6": 64,
+      "SWAP_G3_W1_W2": 64,
+      "CONTROL_G9_W2_TO_W1": 32,
+      "SWAP_G2_W1_W6": 64,
+      "SWAP_G1_W0_W1": 64,
+      "SWAP_G0_W0_W1": 64,
+      "SWAP_G3_W1_W6": 64,
+      "CONTROL_G2_W6_TO_W1": 64,
+      "CONTROL_G16_W4_TO_W1": 32,
+      "CONTROL_G8_W3_TO_W0": 64,
+      "SWAP_G9_W0_W3": 64,
+      "SWAP_G8_W0_W3": 64
+    }
+  }
+}
