@@ -2,14 +2,14 @@ run_id: RUN_GRAYCODE6_2026-10-22
 experiment: week5_exhaustive
 circuit: GRAYCODE6
 date: 2026-10-22
-commit: bc6170b
+commit: 859ee34
 wires: 6
 gates: 5
 inputs: 64
 faults simulated: 100
 raw rows: 6400
 undetectable faults: 0 []
-simulation time (s): 0.0599
+simulation time (s): 0.0509
 checks:
   PASS  inputs = 2^wires
   PASS  raw rows = faults x inputs

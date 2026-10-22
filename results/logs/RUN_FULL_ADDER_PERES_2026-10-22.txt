@@ -2,14 +2,14 @@ run_id: RUN_FULL_ADDER_PERES_2026-10-22
 experiment: week5_exhaustive
 circuit: FULL_ADDER_PERES
 date: 2026-10-22
-commit: bc6170b
+commit: 859ee34
 wires: 4
 gates: 2
 inputs: 16
 faults simulated: 18
 raw rows: 288
 undetectable faults: 0 []
-simulation time (s): 0.0020
+simulation time (s): 0.0029
 checks:
   PASS  inputs = 2^wires
   PASS  raw rows = faults x inputs

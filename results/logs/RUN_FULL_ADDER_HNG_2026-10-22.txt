@@ -2,14 +2,14 @@ run_id: RUN_FULL_ADDER_HNG_2026-10-22
 experiment: week5_exhaustive
 circuit: FULL_ADDER_HNG
 date: 2026-10-22
-commit: bc6170b
+commit: 859ee34
 wires: 4
 gates: 1
 inputs: 16
 faults simulated: 7
 raw rows: 112
 undetectable faults: 0 []
-simulation time (s): 0.0013
+simulation time (s): 0.0012
 checks:
   PASS  inputs = 2^wires
   PASS  raw rows = faults x inputs

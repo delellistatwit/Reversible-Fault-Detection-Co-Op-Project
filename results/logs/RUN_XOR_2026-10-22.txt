@@ -2,14 +2,14 @@ run_id: RUN_XOR_2026-10-22
 experiment: week5_exhaustive
 circuit: XOR
 date: 2026-10-22
-commit: bc6170b
+commit: 859ee34
 wires: 2
 gates: 1
 inputs: 4
 faults simulated: 2
 raw rows: 8
 undetectable faults: 0 []
-simulation time (s): 0.0003
+simulation time (s): 0.0002
 checks:
   PASS  inputs = 2^wires
   PASS  raw rows = faults x inputs

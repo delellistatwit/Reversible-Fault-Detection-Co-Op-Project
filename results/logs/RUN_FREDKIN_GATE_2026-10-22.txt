@@ -2,7 +2,7 @@ run_id: RUN_FREDKIN_GATE_2026-10-22
 experiment: week5_exhaustive
 circuit: FREDKIN_GATE
 date: 2026-10-22
-commit: bc6170b
+commit: 859ee34
 wires: 3
 gates: 1
 inputs: 8

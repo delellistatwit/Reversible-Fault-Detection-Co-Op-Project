@@ -2,14 +2,14 @@ run_id: RUN_PERES_GATE_2026-10-22
 experiment: week5_exhaustive
 circuit: PERES_GATE
 date: 2026-10-22
-commit: bc6170b
+commit: 859ee34
 wires: 3
 gates: 1
 inputs: 8
 faults simulated: 4
 raw rows: 32
 undetectable faults: 0 []
-simulation time (s): 0.0007
+simulation time (s): 0.0005
 checks:
   PASS  inputs = 2^wires
   PASS  raw rows = faults x inputs
