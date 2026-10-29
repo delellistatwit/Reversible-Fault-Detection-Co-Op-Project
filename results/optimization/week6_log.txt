@@ -1,0 +1,21 @@
+experiment: week6_optimization
+config: configs/week6.json
+date: 2026-10-29
+commit: c7801b8
+matrix source: results/matrix/RUN_<circuit>_2026-10-22.csv
+timing repeats: 10
+exact time limit (s): 10
+
+RUN_NOT_GATE_2026-10-29: greedy 1 [0], exact 1 [0] PROVEN, re-simulation greedy PASS (missed []), exact PASS
+RUN_CNOT_GATE_2026-10-29: greedy 1 [10], exact 1 [10] PROVEN, re-simulation greedy PASS (missed []), exact PASS
+RUN_TOFFOLI_GATE_2026-10-29: greedy 2 [110;010], exact 2 [010;110] PROVEN, re-simulation greedy PASS (missed []), exact PASS
+RUN_FREDKIN_GATE_2026-10-29: greedy 2 [101;001], exact 2 [001;101] PROVEN, re-simulation greedy PASS (missed []), exact PASS
+RUN_PERES_GATE_2026-10-29: greedy 2 [100;001], exact 2 [001;100] PROVEN, re-simulation greedy PASS (missed []), exact PASS
+RUN_HNG_GATE_2026-10-29: greedy 2 [0101;0011], exact 2 [0011;0101] PROVEN, re-simulation greedy PASS (missed []), exact PASS
+RUN_XOR_2026-10-29: greedy 1 [10], exact 1 [10] PROVEN, re-simulation greedy PASS (missed []), exact PASS
+RUN_HALF_ADDER_2026-10-29: greedy 3 [100;001;110], exact 3 [001;100;110] PROVEN, re-simulation greedy PASS (missed []), exact PASS
+RUN_FULL_ADDER_2026-10-29: greedy 3 [0110;0011;1100], exact 3 [0011;0110;1100] PROVEN, re-simulation greedy PASS (missed []), exact PASS
+RUN_FULL_ADDER_PERES_2026-10-29: greedy 3 [0110;1000;0010], exact 2 [0101;1100] PROVEN, re-simulation greedy PASS (missed []), exact PASS
+RUN_FULL_ADDER_HNG_2026-10-29: greedy 2 [0101;0011], exact 2 [0011;0101] PROVEN, re-simulation greedy PASS (missed []), exact PASS
+RUN_ALL_GATES_2026-10-29: greedy 3 [1001;0100;0111], exact 3 [0100;0111;1001] PROVEN, re-simulation greedy PASS (missed []), exact PASS
+RUN_GRAYCODE6_2026-10-29: greedy 4 [000111;001001;110011;010000], exact 4 [000111;001001;010000;110011] PROVEN, re-simulation greedy PASS (missed []), exact PASS
