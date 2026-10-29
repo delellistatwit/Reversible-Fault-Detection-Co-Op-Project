@@ -27,3 +27,6 @@ No run instructions are required, work can be found under docs/week 4 worked exa
 To run, simply run python baseline_analysis.py in the console. Evidence of proper function will print to console.
 ## Deliverable 2
 No run instructions, can be found under docs/Week 5 Baseline Analysis and Consistency Audit.docx
+# Week 6
+## Deliverable 1
+To run, simply run python src/optimization_analysis.py in the console. Evidence of proper function, optimization tables, greedy traces, VHDL vector lists, and figures will print to console and save to the results folder, and the full report can be found under docs/santorsa_week_6_deliverables.pdf
