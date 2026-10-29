@@ -18,6 +18,7 @@ from datetime import date
 
 from src.faults import FaultGenerator, classify_faults, UNIQUE_VALID, DUPLICATE
 from src.gate_specs import gate_instance_id
+from src.circuit import detects
 
 COLUMNS = ["run_id", "circuit_id", "fault_id", "fault_type", "gate_id", "location",
            "status", "note", "detected_count", "total_vectors", "detected_by"]
@@ -42,7 +43,7 @@ def build_catalog(circuit_id, circuit, run_date=None):
 
         if status == UNIQUE_VALID:
             faulty = fault.apply(circuit).truth_table()
-            detected[fault_id] = [bits(v) for (v, good), (_, bad) in zip(correct, faulty) if good != bad]
+            detected[fault_id] = [bits(v) for (v, good), (_, bad) in zip(correct, faulty) if detects(good, bad)]
             found = detected[fault_id]
         elif status == DUPLICATE:
             found = detected[note]          # same circuit as the earlier fault named in note

@@ -27,6 +27,7 @@ from statistics import mean
 
 from src.experiment import load_config, git_commit, bits
 from src.faults import FaultGenerator, classify_faults, INVALID
+from src.circuit import detects
 from src.greedy_selector import greedy_selector_v1
 from src.optimization_analysis import solve_exact_ots
 
@@ -77,7 +78,7 @@ def resimulate(circuit, selected):
         if status == INVALID:
             continue
         faulty = fault.apply(circuit)
-        if not any(circuit.simulate(v) != faulty.simulate(v) for v in selected):
+        if not any(detects(circuit.simulate(v), faulty.simulate(v)) for v in selected):
             missed.append(fault.get_id())
     return missed
 

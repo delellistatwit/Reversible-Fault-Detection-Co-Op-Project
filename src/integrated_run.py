@@ -18,7 +18,7 @@ from src.faults import FaultGenerator, classify_faults, UNIQUE_VALID, DUPLICATE,
 from src.detectionmatrix import DetectionMatrix
 from src.greedy_selector import run_with_metrics
 from src.real_import import load_real
-from src.circuit import Circuit
+from src.circuit import Circuit, detects
 
 RUN_DATE = date.today().isoformat()
 
@@ -71,7 +71,7 @@ def run(circuit_id):
     for fault in unique:
         faulty_table = fault.apply(circuit).truth_table()
         for (v, good), (_, bad) in zip(correct, faulty_table):
-            if good != bad:
+            if detects(good, bad):
                 dm.create_entry(v, fault.get_id())
 
     # 4. greedy selection

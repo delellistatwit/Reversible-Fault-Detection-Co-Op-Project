@@ -7,7 +7,7 @@ from src.gate_specs import (GATE_SPECS, gate_type_id, gate_instance_id,
 class TestGateSchemas(unittest.TestCase):
 
     def test_every_gate_type_has_a_spec(self):
-        self.assertEqual(list(GATE_SPECS), ["NOT", "CNOT", "TOFFOLI", "FREDKIN", "PERES", "HNG"])
+        self.assertEqual(list(GATE_SPECS), ["NOT", "CNOT", "TOFFOLI", "FREDKIN", "PERES", "HNG", "V", "V_DAG"])
 
     def test_every_gate_matches_its_schema(self):
         for type_id in GATE_SPECS:

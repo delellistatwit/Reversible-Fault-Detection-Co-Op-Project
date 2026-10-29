@@ -1,7 +1,7 @@
 import copy
 
 from src.circuit import Circuit
-from src.gates import Gate, CNOTGate, ToffoliGate, FredkinGate, PeresGate, HNGGate
+from src.gates import Gate, CNOTGate, ToffoliGate, FredkinGate, PeresGate, HNGGate, VGate, VDaggerGate
 
 
 # Which attributes hold the control wires for each gate type
@@ -12,6 +12,8 @@ CONTROL_ATTRS = {
     FredkinGate: ("control",),
     PeresGate: ("a", "b"),
     HNGGate: ("a", "b"),
+    VGate: ("control",),
+    VDaggerGate: ("control",),
 }
 
 # Fault statuses, assigned in this order

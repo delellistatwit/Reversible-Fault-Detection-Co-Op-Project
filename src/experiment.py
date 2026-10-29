@@ -24,6 +24,7 @@ from datetime import date
 
 from src.faults import FaultGenerator, classify_faults, INVALID
 from src.fault_catalog import build_catalog
+from src.circuit import detects
 
 DEFAULT_CONFIG = "configs/week5.json"
 
@@ -70,7 +71,7 @@ def simulate_circuit(circuit):
         faulty = fault.apply(circuit).truth_table()
         row = []
         for (v, good), (_, bad) in zip(correct, faulty):
-            detected = int(good != bad)
+            detected = int(detects(good, bad))
             row.append(detected)
             raw_rows.append({
                 "fault_id": fault.get_id(),

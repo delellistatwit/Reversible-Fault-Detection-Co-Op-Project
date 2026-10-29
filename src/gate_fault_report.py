@@ -12,7 +12,7 @@ Writes results/gate_faults.json and prints a summary.
 import json
 import os
 
-from src.circuit import Circuit
+from src.circuit import Circuit, detects
 from src.gate_specs import GATE_SPECS, build_single_gate, gate_instance_id
 from src.faults import FaultGenerator, classify_faults, UNIQUE_VALID
 
@@ -28,7 +28,7 @@ def gate_report(type_id):
         entry = {"fault_id": fault.get_id(), "type": fault.fault_type, "status": status, "note": note}
         if status == UNIQUE_VALID:
             faulty = fault.apply(circuit).truth_table()
-            entry["detected_by"] = [list(v) for (v, good), (_, bad) in zip(correct, faulty) if good != bad]
+            entry["detected_by"] = [list(v) for (v, good), (_, bad) in zip(correct, faulty) if detects(good, bad)]
         faults.append(entry)
 
     return {

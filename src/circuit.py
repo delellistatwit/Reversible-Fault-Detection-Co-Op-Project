@@ -61,3 +61,12 @@ class Circuit:
         for inputs in product((0, 1), repeat=self.num_wires):
             table.append((inputs, self.simulate(inputs)))
         return table
+
+
+def detects(correct_output, faulty_output):
+    """True if an input detects a fault: some output wire is a definite 0 or 1 in both
+    circuits and the two values differ. A halfway (V0/V1) or unknown output reads as 0 or 1
+    at random, so it is not a guaranteed detection. For 0/1-only circuits this is the same
+    as the outputs being different."""
+    return any(good in (0, 1) and bad in (0, 1) and good != bad
+               for good, bad in zip(correct_output, faulty_output))

@@ -8,7 +8,7 @@ Nothing here may change without notifying the team.
 
 from itertools import product
 
-from src.gates import NOTGate, CNOTGate, ToffoliGate, FredkinGate, PeresGate, HNGGate
+from src.gates import NOTGate, CNOTGate, ToffoliGate, FredkinGate, PeresGate, HNGGate, VGate, VDaggerGate, step
 
 
 GATE_SPECS = {
@@ -77,6 +77,28 @@ GATE_SPECS = {
         "vhdl_outputs": ("P", "Q", "R", "S"),
         "equation": "P = A, Q = B, R = A XOR B XOR C, S = ((A XOR B) AND C) XOR (A AND B) XOR D",
         "reference": lambda a, b, c, d: (a, b, a ^ b ^ c, ((a ^ b) & c) ^ (a & b) ^ d),
+    },
+    "V": {
+        "class": VGate,
+        "fields": ("control", "target"),
+        "controls": ("control",),
+        "targets": ("target",),
+        "vhdl_entity": "-",
+        "vhdl_inputs": ("A", "B"),
+        "vhdl_outputs": ("P", "Q"),
+        "equation": "P = A, Q = V(B) if A else B",
+        "reference": lambda a, b: (a, step(b, 1) if a else b),
+    },
+    "V_DAG": {
+        "class": VDaggerGate,
+        "fields": ("control", "target"),
+        "controls": ("control",),
+        "targets": ("target",),
+        "vhdl_entity": "-",
+        "vhdl_inputs": ("A", "B"),
+        "vhdl_outputs": ("P", "Q"),
+        "equation": "P = A, Q = V+(B) if A else B",
+        "reference": lambda a, b: (a, step(b, -1) if a else b),
     },
 }
 
