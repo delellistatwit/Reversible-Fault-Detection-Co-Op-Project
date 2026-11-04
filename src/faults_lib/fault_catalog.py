@@ -4,8 +4,8 @@ Each row records the fault's ID, type, location, status (INVALID, DUPLICATE,
 or UNIQUE_VALID), and which inputs detect it. Bit strings list wire 0 first.
 
 Run from the repository root:
-    python -m src.fault_catalog                 (team circuits and graycode6)
-    python -m src.fault_catalog HALF_ADDER      (only the circuits named)
+    python -m src.faults_lib.fault_catalog                 (team circuits and graycode6)
+    python -m src.faults_lib.fault_catalog HALF_ADDER      (only the circuits named)
 
 Writes every circuit into one file, results/fault_catalog.csv, and prints a summary.
 HAM7 and FREDKIN7 are left out unless named.
@@ -16,9 +16,9 @@ import os
 import sys
 from datetime import date
 
-from src.faults import FaultGenerator, classify_faults, UNIQUE_VALID, DUPLICATE
-from src.gate_specs import gate_instance_id
-from src.circuit import detects
+from src.faults_lib.faults import FaultGenerator, classify_faults, UNIQUE_VALID, DUPLICATE
+from src.core.gate_specs import gate_instance_id
+from src.core.circuit import detects
 
 COLUMNS = ["run_id", "circuit_id", "fault_id", "fault_type", "gate_id", "location",
            "status", "note", "detected_count", "total_vectors", "detected_by"]
@@ -75,7 +75,7 @@ def write_catalog(rows, path):
 
 
 def main():
-    from src.integrated_run import CIRCUITS
+    from src.experiments.integrated_run import CIRCUITS
 
     EXTRAS = ("HAM7", "FREDKIN7")      # RevLib benchmarks, only included if named
     default = [c for c in CIRCUITS if c not in EXTRAS]

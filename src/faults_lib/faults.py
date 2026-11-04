@@ -1,7 +1,7 @@
 import copy
 
-from src.circuit import Circuit
-from src.gates import Gate, CNOTGate, ToffoliGate, FredkinGate, PeresGate, HNGGate, VGate, VDaggerGate
+from src.core.circuit import Circuit
+from src.core.gates import Gate, CNOTGate, ToffoliGate, FredkinGate, PeresGate, HNGGate, VGate, VDaggerGate
 
 
 # Which attributes hold the control wires for each gate type

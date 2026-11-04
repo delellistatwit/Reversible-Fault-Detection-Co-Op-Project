@@ -1,9 +1,9 @@
 import unittest
-from src.benchmarks import build_half_adder
-from src.circuit import Circuit
-from src.gates import CNOTGate
-from src.faults import Fault, FaultGenerator, classify_faults, UNIQUE_VALID
-from src.mutant_audit import expected_counts, audit_circuit, audit_results
+from src.benchmarking.benchmarks import build_half_adder
+from src.core.circuit import Circuit
+from src.core.gates import CNOTGate
+from src.faults_lib.faults import Fault, FaultGenerator, classify_faults, UNIQUE_VALID
+from src.faults_lib.mutant_audit import expected_counts, audit_circuit, audit_results
 
 
 class TestMutantAudit(unittest.TestCase):

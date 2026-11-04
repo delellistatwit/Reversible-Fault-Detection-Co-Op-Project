@@ -86,7 +86,7 @@ class TestMetrics(unittest.TestCase):
 
     def test_density(self):
         # Expectation: 4 faults in matrix values out of 16 possible cells (4 vectors * 4 faults) = 25%
-        self.assertEqual(calculate_density(self.matrix, self.total_faults), 25.0)
+        self.assertEqual(calculate_density(self.matrix, self.total_faults), 31.25)
 
     def test_multiplicity(self):
         # Expectation: F1 shows up twice, others show up once

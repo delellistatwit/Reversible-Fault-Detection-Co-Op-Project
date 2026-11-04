@@ -1,14 +1,14 @@
 """build and save the CNOT, Toffoli, and Fredkin detection matrices.
 
 run from the repository root with:
-    python -m src.detectionmatrix_runner
+    python -m src.analysis.detectionmatrix_runner
 """
 
 import os
 
-from src.detectionmatrix_cnot import build_cnot_matrix
-from src.detectionmatrix_fredkin import build_fredkin_matrix
-from src.detectionmatrix_toffoli import build_toffoli_matrix
+from src.analysis.detectionmatrix_cnot import build_cnot_matrix
+from src.analysis.detectionmatrix_fredkin import build_fredkin_matrix
+from src.analysis.detectionmatrix_toffoli import build_toffoli_matrix
 
 
 MATRIX_BUILDERS = {

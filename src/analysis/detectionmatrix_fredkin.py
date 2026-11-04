@@ -1,6 +1,6 @@
-from src.circuit import Circuit
-from src.detectionmatrix import build_detection_matrix
-from src.fredkin_gate import FredkinGate
+from src.core.circuit import Circuit
+from src.analysis.detectionmatrix import build_detection_matrix
+from src.core.fredkin_gate import FredkinGate
 
 
 def build_fredkin_matrix():

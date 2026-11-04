@@ -10,8 +10,8 @@ For each circuit it checks:
   7. every INVALID fault records the reason it was rejected
 
 Run from the repository root:
-    python -m src.mutant_audit                 (every circuit)
-    python -m src.mutant_audit HALF_ADDER      (only the circuits named)
+    python -m src.faults_lib.mutant_audit                 (every circuit)
+    python -m src.faults_lib.mutant_audit HALF_ADDER      (only the circuits named)
 
 Writes results/mutant_audit.json and prints PASS or FAIL per circuit.
 """
@@ -20,7 +20,7 @@ import json
 import os
 import sys
 
-from src.faults import (FaultGenerator, classify_faults, circuit_signature, CONTROL_ATTRS,
+from src.faults_lib.faults import (FaultGenerator, classify_faults, circuit_signature, CONTROL_ATTRS,
                         INVALID, DUPLICATE, UNIQUE_VALID)
 
 STATUSES = (INVALID, DUPLICATE, UNIQUE_VALID)
@@ -99,7 +99,7 @@ def audit_circuit(circuit):
 
 
 def main():
-    from src.integrated_run import CIRCUITS
+    from src.experiments.integrated_run import CIRCUITS
 
     report = {}
     print("\nMutant audit")

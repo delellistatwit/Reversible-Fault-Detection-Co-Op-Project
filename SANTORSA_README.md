@@ -30,3 +30,5 @@ No run instructions, can be found under docs/Week 5 Baseline Analysis and Consis
 # Week 6
 ## Deliverable 1
 To run, simply run python src/optimization_analysis.py in the console. Evidence of proper function, optimization tables, greedy traces, VHDL vector lists, and figures will print to console and save to the results folder, and the full report can be found under docs/santorsa_week_6_deliverables.pdf
+# Week 7
+## Deliverable 1

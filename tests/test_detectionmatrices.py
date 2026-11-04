@@ -1,8 +1,8 @@
 import unittest
 
-from src.detectionmatrix_cnot import build_cnot_matrix
-from src.detectionmatrix_fredkin import build_fredkin_matrix
-from src.detectionmatrix_toffoli import build_toffoli_matrix
+from src.analysis.detectionmatrix_cnot import build_cnot_matrix
+from src.analysis.detectionmatrix_fredkin import build_fredkin_matrix
+from src.analysis.detectionmatrix_toffoli import build_toffoli_matrix
 
 
 class TestGateDetectionMatrices(unittest.TestCase):

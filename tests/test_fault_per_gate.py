@@ -6,9 +6,9 @@ gate: one valid case and the rejected cases.
 """
 
 import unittest
-from src.circuit import Circuit
-from src.gate_specs import GATE_SPECS, build_single_gate, check_gate_schema
-from src.faults import Fault, FaultGenerator, classify_faults, UNIQUE_VALID
+from src.core.circuit import Circuit
+from src.core.gate_specs import GATE_SPECS, build_single_gate, check_gate_schema
+from src.faults_lib.faults import Fault, FaultGenerator, classify_faults, UNIQUE_VALID
 
 GATE_TYPES = ("NOT", "CNOT", "TOFFOLI", "FREDKIN", "PERES", "HNG")
 

@@ -1,7 +1,7 @@
 import unittest
-from src.benchmarks import build_half_adder, build_full_adder_peres
-from src.experiment import simulate_circuit
-from src.optimize import load_matrix, run_greedy, run_exact, resimulate
+from src.benchmarking.benchmarks import build_half_adder, build_full_adder_peres
+from src.experiments.experiment import simulate_circuit
+from src.experiments.optimize import load_matrix, run_greedy, run_exact, resimulate
 
 
 def matrix_for(circuit):

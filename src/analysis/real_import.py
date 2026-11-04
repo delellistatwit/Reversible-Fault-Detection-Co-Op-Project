@@ -9,8 +9,8 @@ Supported gates (the NCT library):
 Wires are numbered in the order of the .variables line (first variable = wire 0).
 """
 
-from src.circuit import Circuit
-from src.gates import NOTGate, CNOTGate, ToffoliGate, FredkinGate
+from src.core.circuit import Circuit
+from src.core.gates import NOTGate, CNOTGate, ToffoliGate, FredkinGate
 
 GATE_TYPES = {"t1": NOTGate, "t2": CNOTGate, "t3": ToffoliGate, "f3": FredkinGate}
 

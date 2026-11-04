@@ -1,7 +1,7 @@
 """First integrated run: simulator -> fault generator -> detection matrix -> greedy selection.
 
 Run from the repository root:
-    python -m src.integrated_run
+    python -m src.experiments.experiments.integrated_run
 
 Writes results/integrated_run_<circuit>.json and prints a summary.
 """
@@ -11,14 +11,14 @@ import sys
 import os
 from datetime import date
 
-from src.benchmarks import (build_xor, build_half_adder, build_all_gates, build_full_adder,
+from src.benchmarking.benchmarks import (build_xor, build_half_adder, build_all_gates, build_full_adder,
                             build_full_adder_peres, build_full_adder_hng)
-from src.gate_specs import build_single_gate, check_gate_schema, gate_instance_id
-from src.faults import FaultGenerator, classify_faults, UNIQUE_VALID, DUPLICATE, INVALID
-from src.detectionmatrix import DetectionMatrix
-from src.greedy_selector import run_with_metrics
-from src.real_import import load_real
-from src.circuit import Circuit, detects
+from src.core.gate_specs import build_single_gate, check_gate_schema, gate_instance_id
+from src.faults_lib.faults import FaultGenerator, classify_faults, UNIQUE_VALID, DUPLICATE, INVALID
+from src.analysis.detectionmatrix import DetectionMatrix
+from src.experiments.greedy_selector import run_with_metrics
+from src.analysis.real_import import load_real
+from src.core.circuit import Circuit, detects
 
 RUN_DATE = date.today().isoformat()
 
@@ -121,6 +121,6 @@ def run(circuit_id):
 
 if __name__ == "__main__":
     # Run every circuit, or only the ones named on the command line:
-    #   python -m src.integrated_run FREDKIN7 HAM7
+    #   python -m src.experiments.experiments.integrated_run FREDKIN7 HAM7
     for cid in sys.argv[1:] or CIRCUITS:
         run(cid)

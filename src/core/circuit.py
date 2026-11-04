@@ -1,5 +1,5 @@
 from itertools import product
-from src.gates import Gate
+from src.core.gates import Gate
 
 class Circuit:
     """A reversible circuit: a set number of wires and an ordered list of gates."""

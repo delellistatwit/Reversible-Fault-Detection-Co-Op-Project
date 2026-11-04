@@ -1,6 +1,6 @@
-from src.circuit import Circuit
-from src.detectionmatrix import build_detection_matrix
-from src.toffoli_gate import ToffoliGate
+from src.core.circuit import Circuit
+from src.analysis.detectionmatrix import build_detection_matrix
+from src.core.toffoli_gate import ToffoliGate
 
 
 def build_toffoli_matrix():
