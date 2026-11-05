@@ -1,7 +1,7 @@
 import unittest
-from src.benchmarks import build_half_adder
-from src.fault_catalog import build_catalog, COLUMNS
-from src.faults import INVALID, DUPLICATE, UNIQUE_VALID
+from src.benchmarking.benchmarks import build_half_adder
+from src.faults_lib.fault_catalog import build_catalog, COLUMNS
+from src.faults_lib.faults import INVALID, DUPLICATE, UNIQUE_VALID
 
 
 class TestFaultCatalog(unittest.TestCase):

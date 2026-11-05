@@ -8,7 +8,7 @@ Nothing here may change without notifying the team.
 
 from itertools import product
 
-from src.gates import NOTGate, CNOTGate, ToffoliGate, FredkinGate, PeresGate, HNGGate, VGate, VDaggerGate, step
+from src.core.gates import NOTGate, CNOTGate, ToffoliGate, FredkinGate, PeresGate, HNGGate, VGate, VDaggerGate, step
 
 
 GATE_SPECS = {

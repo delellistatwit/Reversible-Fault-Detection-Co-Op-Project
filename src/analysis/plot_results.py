@@ -1,7 +1,7 @@
 """Generate PNG charts from experiment JSON files in the results directory.
 
 Run from the repository root with:
-    python -m src.plot_results
+    python -m src.analysis.plot_results
 
 Charts are written to results/plots by default. Integrated-run JSON files
 include greedy-selector timings after running src.integrated_run again.

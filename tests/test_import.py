@@ -1,7 +1,7 @@
 import os
 import tempfile
 import unittest
-from src.real_import import load_real
+from src.analysis.real_import import load_real
 
 
 def write_temp(text):

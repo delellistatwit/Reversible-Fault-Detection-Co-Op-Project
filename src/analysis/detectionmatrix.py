@@ -6,7 +6,7 @@ contains deliverable 2
 import json
 import ast
 
-from src.faults import FaultGenerator, UNIQUE_VALID, classify_faults
+from src.faults_lib.faults import FaultGenerator, UNIQUE_VALID, classify_faults
 
 class DetectionMatrix:
     def __init__(self):

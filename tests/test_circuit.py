@@ -1,6 +1,6 @@
 import unittest
-from src.circuit import Circuit
-from src.gates import NOTGate, CNOTGate
+from src.core.circuit import Circuit
+from src.core.gates import NOTGate, CNOTGate
 
 
 class TestCircuit(unittest.TestCase):

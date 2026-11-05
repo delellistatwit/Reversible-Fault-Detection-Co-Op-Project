@@ -1,8 +1,8 @@
 import unittest
-from src.gates import VGate, VDaggerGate, NOTGate, CNOTGate, V0, V1, UNKNOWN
-from src.circuit import Circuit, detects
-from src.faults import FaultGenerator
-from src.mutant_audit import audit_circuit
+from src.core.gates import VGate, VDaggerGate, NOTGate, CNOTGate, V0, V1, UNKNOWN
+from src.core.circuit import Circuit, detects
+from src.faults_lib.faults import FaultGenerator
+from src.faults_lib.mutant_audit import audit_circuit
 
 VALUES = (0, V0, 1, V1)
 

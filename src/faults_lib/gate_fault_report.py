@@ -4,7 +4,7 @@ Each gate is placed alone on its own wires plus one spare wire, so that
 control-line faults have somewhere to move.
 
 Run from the repository root:
-    python -m src.gate_fault_report
+    python -m src.faults_lib.gate_fault_report
 
 Writes results/gate_faults.json and prints a summary.
 """
@@ -12,9 +12,9 @@ Writes results/gate_faults.json and prints a summary.
 import json
 import os
 
-from src.circuit import Circuit, detects
-from src.gate_specs import GATE_SPECS, build_single_gate, gate_instance_id
-from src.faults import FaultGenerator, classify_faults, UNIQUE_VALID
+from src.core.circuit import Circuit, detects
+from src.core.gate_specs import GATE_SPECS, build_single_gate, gate_instance_id
+from src.faults_lib.faults import FaultGenerator, classify_faults, UNIQUE_VALID
 
 
 def gate_report(type_id):

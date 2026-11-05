@@ -1,5 +1,5 @@
-from src.circuit import Circuit
-from src.gates import NOTGate, CNOTGate, ToffoliGate, FredkinGate, PeresGate, HNGGate
+from src.core.circuit import Circuit
+from src.core.gates import NOTGate, CNOTGate, ToffoliGate, FredkinGate, PeresGate, HNGGate
 
 
 def build_xor():

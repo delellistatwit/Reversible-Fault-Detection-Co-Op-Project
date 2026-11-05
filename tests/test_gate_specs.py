@@ -1,6 +1,6 @@
 import unittest
-from src.gates import Gate, NOTGate, CNOTGate, ToffoliGate, FredkinGate
-from src.gate_specs import (GATE_SPECS, gate_type_id, gate_instance_id,
+from src.core.gates import Gate, NOTGate, CNOTGate, ToffoliGate, FredkinGate
+from src.core.gate_specs import (GATE_SPECS, gate_type_id, gate_instance_id,
                             check_gate_schema, build_single_gate, cross_check_with_vhdl)
 
 

@@ -1,6 +1,6 @@
-from src.circuit import Circuit
-from src.cnot_gate import CNOTGate
-from src.detectionmatrix import build_detection_matrix
+from src.core.circuit import Circuit
+from src.core.cnot_gate import CNOTGate
+from src.analysis.detectionmatrix import build_detection_matrix
 
 
 def build_cnot_matrix():

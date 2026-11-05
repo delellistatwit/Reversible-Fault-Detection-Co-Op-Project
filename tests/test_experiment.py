@@ -2,14 +2,14 @@ import json
 import os
 import tempfile
 import unittest
-from src.benchmarks import build_half_adder
-from src.experiment import load_config, simulate_circuit, check_results
+from src.benchmarking.benchmarks import build_half_adder
+from src.experiments.experiment import load_config, simulate_circuit, check_results
 
 
 class TestConfig(unittest.TestCase):
 
     def test_week5_config_lists_known_circuits(self):
-        from src.integrated_run import CIRCUITS
+        from src.experiments.integrated_run import CIRCUITS
         config = load_config("configs/week5.json", CIRCUITS)
         self.assertEqual(len(config["circuits"]), 13)
 

@@ -1,6 +1,6 @@
 import unittest
 from itertools import product
-from src.gates import NOTGate, CNOTGate, ToffoliGate, FredkinGate, PeresGate, HNGGate
+from src.core.gates import NOTGate, CNOTGate, ToffoliGate, FredkinGate, PeresGate, HNGGate
 
 
 class TestNOTGate(unittest.TestCase):

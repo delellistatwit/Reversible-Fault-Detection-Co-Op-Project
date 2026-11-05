@@ -1,5 +1,5 @@
 import unittest
-from src.vhdl_compare import load_vhdl_csv, compare_rows
+from src.analysis.vhdl_compare import load_vhdl_csv, compare_rows
 
 
 class TestVHDLCompare(unittest.TestCase):

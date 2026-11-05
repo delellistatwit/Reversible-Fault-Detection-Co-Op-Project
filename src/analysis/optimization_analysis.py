@@ -238,7 +238,7 @@ def generate_figures(summary_rows: list, traces_by_circuit: dict, results_dir: P
     ax.set_yscale("log", base=2)
     ax.set_xticks(x)
     ax.set_xticklabels(circuits, rotation=30, ha="right")
-    ax.set_ylabel("Number of Test Vectors ($\log_2$ scale)")
+    ax.set_ylabel(r"Number of Test Vectors ($\log_2$ scale)")
     ax.set_title("Exhaustive ($2^n$) vs. Optimized Test-Set Size (GTS)")
     ax.legend()
     ax.grid(axis="y", linestyle="--", alpha=0.5)

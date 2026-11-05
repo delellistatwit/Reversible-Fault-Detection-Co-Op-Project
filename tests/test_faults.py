@@ -1,9 +1,9 @@
 import unittest
-from src.circuit import Circuit
-from src.gates import NOTGate, CNOTGate, ToffoliGate
-from src.faults import (Fault, FaultGenerator, classify_faults,
+from src.core.circuit import Circuit
+from src.core.gates import NOTGate, CNOTGate, ToffoliGate
+from src.faults_lib.faults import (Fault, FaultGenerator, classify_faults,
                         INVALID, DUPLICATE, UNIQUE_VALID)
-from src.benchmarks import build_half_adder
+from src.benchmarking.benchmarks import build_half_adder
 
 
 class TestFaultIDs(unittest.TestCase):

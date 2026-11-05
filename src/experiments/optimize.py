@@ -14,8 +14,8 @@ Writes:
     results/optimization/week6_log.txt       run details and pass/fail checks
 
 Run from the repository root:
-    python -m src.optimize                        (uses configs/week6.json)
-    python -m src.optimize configs/week6.json
+    python -m src.experiments.optimize                        (uses configs/week6.json)
+    python -m src.experiments.optimize configs/week6.json
 """
 
 import csv
@@ -25,11 +25,11 @@ import time
 from datetime import date
 from statistics import mean
 
-from src.experiment import load_config, git_commit, bits
-from src.faults import FaultGenerator, classify_faults, INVALID
-from src.circuit import detects
-from src.greedy_selector import greedy_selector_v1
-from src.optimization_analysis import solve_exact_ots
+from src.experiments.experiment import load_config, git_commit, bits
+from src.faults_lib.faults import FaultGenerator, classify_faults, INVALID
+from src.core.circuit import detects
+from src.experiments.greedy_selector import greedy_selector_v1
+from src.analysis.optimization_analysis import solve_exact_ots
 
 DEFAULT_CONFIG = "configs/week6.json"
 
@@ -125,7 +125,7 @@ def optimize_circuit(circuit_id, circuit, matrix_path, run_date, repeats, timeou
 
 
 def main():
-    from src.integrated_run import CIRCUITS
+    from src.experiments.integrated_run import CIRCUITS
 
     path = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_CONFIG
     config = load_config(path, CIRCUITS)

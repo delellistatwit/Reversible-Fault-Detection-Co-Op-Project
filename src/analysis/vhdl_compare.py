@@ -5,7 +5,7 @@ Each CSV in benchmarks/vhdl/ holds one row per simulation time step:
 Port names come from GATE_SPECS, so VHDL input port i is Python wire i.
 
 Run from the repository root:
-    python -m src.vhdl_compare
+    python -m src.analysis.vhdl_compare
 """
 
 import csv
@@ -13,7 +13,7 @@ import glob
 import json
 import os
 
-from src.gate_specs import GATE_SPECS, build_single_gate
+from src.core.gate_specs import GATE_SPECS, build_single_gate
 
 
 def load_vhdl_csv(path):
