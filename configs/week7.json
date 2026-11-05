@@ -1,0 +1,9 @@
+{
+  "experiment": "week7_reproduction",
+  "description": "Rebuild every software output from the definitions in a clean folder and compare it with the committed results.",
+  "build_folder": "build/reproduction",
+  "week5_config": "configs/week5.json",
+  "week5_reference_date": "2026-10-22",
+  "week6_config": "configs/week6.json",
+  "report": "results/reproduction_report.txt"
+}

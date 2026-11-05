@@ -1,0 +1,16 @@
+# Environment for reproducing the software results
+#   python -m src.experiments.reproduce
+#
+# Tested:
+#   Python 3.14.7 on Windows 11
+#   Python 3.13.16 on Linux
+#
+# Required:
+#   Python 3.13 or newer
+#
+# No extra packages are needed for the simulator, fault engine, Week 5 experiment,
+# Week 6 optimization, fault catalog, mutant audit, or reproduction script; they use
+# only the Python standard library.
+#
+# The plotting and analysis scripts in src/analysis also use numpy and matplotlib:
+#   python -m pip install -r requirements.txt

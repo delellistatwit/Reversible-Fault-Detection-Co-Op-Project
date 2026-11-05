@@ -1,0 +1,25 @@
+Reproduction report
+experiment: week7_reproduction
+config: configs/week7.json
+date: 2026-11-05
+commit: 562e1ce
+build folder: build/reproduction
+
+Environment
+  python: 3.14.7
+  platform: Windows-11-10.0.26300-SP0
+  numpy: not installed
+  matplotlib: not installed
+
+Unit tests
+  PASS  119 run, 0 failures, 0 errors
+
+Rebuilt outputs compared with committed results (run dates, commit IDs, and timing excluded)
+  PASS  Week 5 raw results: 13/13 match
+  PASS  Week 5 matrix source data: 13/13 match
+  PASS  Week 5 run logs (counts and checks): 13/13 match
+  PASS  Week 6 selected vectors, exact status, re-simulation: 1/1 match
+  PASS  Week 4 fault catalog: 1/1 match
+  PASS  Week 4 mutant audit: 1/1 match
+
+RESULT: PASS
