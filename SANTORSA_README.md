@@ -32,3 +32,4 @@ No run instructions, can be found under docs/Week 5 Baseline Analysis and Consis
 To run, simply run python src/optimization_analysis.py in the console. Evidence of proper function, optimization tables, greedy traces, VHDL vector lists, and figures will print to console and save to the results folder, and the full report can be found under docs/santorsa_week_6_deliverables.pdf
 # Week 7
 ## Deliverable 1
+To run the full metric audit and export all standalone source CSVs, run python src/analysis/full_audit.py in the console. To regenerate all 16 heatmaps, distributions, and optimization figures strictly from the exported source CSV files and record the figure-source links, run python src/analysis/regenerate_figures.py in the console. The Audited Master Table, VC/VA Table, and Figure-Source Links Table are saved to the results folder and documented in docs/week_7_deliverables.pdf
