@@ -1,0 +1,2 @@
+circuit_id,multiplicity_value,multiplicity_ratio_pct,fault_count,fault_share_pct
+CNOT_GATE,2,50.0,2,100.0

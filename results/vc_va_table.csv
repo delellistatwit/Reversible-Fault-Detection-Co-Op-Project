@@ -1,0 +1,11 @@
+circuit_id,run_id,vc1_row_count_2n,vc2_fault_catalog_sum,vc3_detectability_sum,vc4_row_col_ones_sum,vc5_density_identity,vc6_sig_class_partition,vc7_greedy_100pct_trace,vc8_reduction_retention_100pct,overall_vc_va_status
+NOT_GATE,RUN_NOT_GATE_2026-10-15,PASS (2==2^1),PASS (1+0+0),PASS (1+0),PASS (2==2),PASS (100.00%),PASS (1 cls -> 1 faults),PASS (1 steps -> 1/1),PASS (50.00%+50.00%),PASS (8/8)
+CNOT_GATE,RUN_CNOT_GATE_2026-10-15,PASS (4==2^2),PASS (2+0+0),PASS (2+0),PASS (4==4),PASS (50.00%),PASS (2 cls -> 2 faults),PASS (1 steps -> 2/2),PASS (75.00%+25.00%),PASS (8/8)
+XOR,RUN_XOR_2026-10-15,PASS (4==2^2),PASS (2+0+0),PASS (2+0),PASS (4==4),PASS (50.00%),PASS (2 cls -> 2 faults),PASS (1 steps -> 2/2),PASS (75.00%+25.00%),PASS (8/8)
+TOFFOLI_GATE,RUN_TOFFOLI_GATE_2026-10-15,PASS (8==2^3),PASS (4+0+0),PASS (4+0),PASS (14==14),PASS (43.75%),PASS (4 cls -> 4 faults),PASS (2 steps -> 4/4),PASS (75.00%+25.00%),PASS (8/8)
+FREDKIN_GATE,RUN_FREDKIN_GATE_2026-10-15,PASS (8==2^3),PASS (4+0+0),PASS (4+0),PASS (14==14),PASS (43.75%),PASS (4 cls -> 4 faults),PASS (2 steps -> 4/4),PASS (75.00%+25.00%),PASS (8/8)
+FREDKIN7,RUN_FREDKIN7_2026-10-15,PASS (8==2^3),PASS (4+0+0),PASS (4+0),PASS (14==14),PASS (43.75%),PASS (4 cls -> 4 faults),PASS (2 steps -> 4/4),PASS (75.00%+25.00%),PASS (8/8)
+HALF_ADDER,RUN_HALF_ADDER_2026-10-15,PASS (8==2^3),PASS (9+0+0),PASS (9+0),PASS (34==34),PASS (47.22%),PASS (7 cls -> 9 faults),PASS (3 steps -> 9/9),PASS (62.50%+37.50%),PASS (8/8)
+ALL_GATES,RUN_ALL_GATES_2026-10-15,PASS (16==2^4),PASS (33+0+0),PASS (33+0),PASS (252==252),PASS (47.73%),PASS (22 cls -> 33 faults),PASS (3 steps -> 33/33),PASS (81.25%+18.75%),PASS (8/8)
+GRAYCODE6,RUN_GRAYCODE6_2026-10-15,PASS (64==2^6),PASS (100+0+0),PASS (100+0),PASS (3200==3200),PASS (50.00%),PASS (34 cls -> 100 faults),PASS (4 steps -> 100/100),PASS (93.75%+6.25%),PASS (8/8)
+HAM7,RUN_HAM7_2026-10-15,PASS (128==2^7),PASS (693+0+0),PASS (693+0),PASS (42624==42624),PASS (48.05%),PASS (193 cls -> 693 faults),PASS (5 steps -> 693/693),PASS (96.09%+3.91%),PASS (8/8)

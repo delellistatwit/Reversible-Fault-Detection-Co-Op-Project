@@ -1,0 +1,3 @@
+circuit_id,equivalence_class_size,signature_class_count,total_faults_in_tier,class_share_pct
+HALF_ADDER,1,5,5,71.43
+HALF_ADDER,2,2,4,28.57

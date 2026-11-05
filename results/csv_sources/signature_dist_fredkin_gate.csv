@@ -1,0 +1,2 @@
+circuit_id,equivalence_class_size,signature_class_count,total_faults_in_tier,class_share_pct
+FREDKIN_GATE,1,4,4,100.0

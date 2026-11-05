@@ -1,0 +1,3 @@
+circuit_id,multiplicity_value,multiplicity_ratio_pct,fault_count,fault_share_pct
+FREDKIN7,2,25.0,1,25.0
+FREDKIN7,4,50.0,3,75.0

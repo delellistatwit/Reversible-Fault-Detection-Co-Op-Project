@@ -1,0 +1,4 @@
+circuit_id,equivalence_class_size,signature_class_count,total_faults_in_tier,class_share_pct
+ALL_GATES,1,15,15,68.18
+ALL_GATES,2,5,10,22.73
+ALL_GATES,4,2,8,9.09

@@ -1,0 +1,7 @@
+circuit_id,equivalence_class_size,signature_class_count,total_faults_in_tier,class_share_pct
+GRAYCODE6,1,9,9,26.47
+GRAYCODE6,2,5,10,14.71
+GRAYCODE6,3,7,21,20.59
+GRAYCODE6,4,6,24,17.65
+GRAYCODE6,5,6,30,17.65
+GRAYCODE6,6,1,6,2.94

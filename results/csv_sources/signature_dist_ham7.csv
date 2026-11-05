@@ -1,0 +1,15 @@
+circuit_id,equivalence_class_size,signature_class_count,total_faults_in_tier,class_share_pct
+HAM7,1,72,72,37.31
+HAM7,2,22,44,11.4
+HAM7,3,23,69,11.92
+HAM7,4,23,92,11.92
+HAM7,5,11,55,5.7
+HAM7,6,12,72,6.22
+HAM7,7,7,49,3.63
+HAM7,8,6,48,3.11
+HAM7,9,2,18,1.04
+HAM7,10,4,40,2.07
+HAM7,11,5,55,2.59
+HAM7,12,3,36,1.55
+HAM7,13,1,13,0.52
+HAM7,15,2,30,1.04
